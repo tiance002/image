@@ -1,0 +1,44 @@
+project:
+  name: saferestore-rf-task-aware
+  seed: 42
+  output_dir: runs/task-aware
+
+data:
+  train_manifest: data/manifests/train.csv
+  val_manifest: data/manifests/val.csv
+  test_manifest: data/manifests/test.csv
+  image_size: [384, 640]
+  num_workers: 4
+  weather_types: [rain, fog, rain_fog]
+
+model:
+  base_channels: 48
+  degradation_dim: 4
+  uncertainty_floor: 0.02
+  detector: yolov8s
+  detector_classes: [person, car, bus, truck, bicycle, motorcycle]
+
+training:
+  epochs: 120
+  batch_size: 4
+  learning_rate: 0.0001
+  detector_learning_rate: 0.00001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  mixed_precision: true
+  early_stopping_patience: 15
+
+loss:
+  pixel: 1.0
+  edge: 0.3
+  ssim: 0.1
+  uncertainty: 0.08
+  uncertainty_regularization: 0.01
+  detection: 0.2
+  detection_consistency: 0.1
+
+evaluation:
+  save_visuals: true
+  max_visuals: 100
+  primary_metric: small_object_ap
+

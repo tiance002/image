@@ -1,0 +1,19 @@
+{
+  "scope": "ACDC val single-seed continuation, no deployment",
+  "checkpoints": {
+    "confidence_v8_20261025_control": {
+      "path": "runs/confidence_v8_20261025_control/best.pt",
+      "iter": 51999,
+      "sha256": "cc59036d6a85ae624ffdfbbf4cafc20641d8e048efb6d7d6d3a94662d995a6c8",
+      "ema_all_finite": true,
+      "adopted": false
+    },
+    "confidence_v8_20261025_guard": {
+      "path": "runs/confidence_v8_20261025_guard/best.pt",
+      "iter": 51999,
+      "sha256": "b1940e9c65bb7e91155b66c55344af1f40547439613dc6631ad1c68a9c930ac0",
+      "ema_all_finite": true,
+      "adopted": false
+    }
+  }
+}

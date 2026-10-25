@@ -1,0 +1,36 @@
+{
+  "steps_per_arm": 4000,
+  "total_lr_schedule": 64000,
+  "confidence_weight": 10.0,
+  "arms": [
+    "confidence_v8_20261025_control",
+    "confidence_v8_20261025_guard"
+  ],
+  "inputs_sha256": {
+    "runs/real_v4_allweather/latest.pt": "8221a9037db0a907dc5d56698b209299061fccf0f01ac72b700cd57910d768d9",
+    "yolov8n.pt": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "data/real_weather/manifests/train.csv": "e5a77a90fb2ddca582b4ed89ebeb31c5adf5c1b86659a2bd262e4252f59a1c48",
+    "data/real_scene/manifests/train.csv": "d34213086393d944a6163fdc8c7eb49b398b20da9091cf9adf4b8c6034c0fc18",
+    "runs/acdc_benchmark/evaluation/weather_input_all406.json": "2ed2bf0200b149b4b77929c19c3a4680beac6707676fa333087a3dbc428fc22c"
+  },
+  "source_sha256": {
+    "scripts/train_restorer.py": "1caf7bfa991f40556d7844fd8cba50555d7b780871e3b9991d574a469f25b9c0",
+    "src/saferestore/losses/perceptual.py": "8be8a61ebeb58517960337a243de611165e092f943a22e96bd0a4c1a32bea28d",
+    "src/saferestore/losses/confidence.py": "a8171db31453bb977ebb4a6ad6c586172c2c61ad018d7d814b6746515c90d2f0",
+    "src/saferestore/models/nafnet.py": "f4802fddea0b254f27fbd9997af0b71acbd1125c48114d1887338755bb6205c0",
+    "scripts/run_confidence_comparison.py": "0e012a494f40290000955d8e06751bf712393e22e0f2c51d01d2024bf40e8b2e",
+    "scripts/diagnose_detection_rootcause.py": "80f2db02de33f13dddcebd74a6a846827903771b26b540cfd62185b7d209b477",
+    "scripts/evaluate_coco_detection.py": "899719cf70807a67c00ad934a3bfa3f16e118558c7c04b0d78e739bbca70f75d",
+    "configs/detector.yaml": "eb4231b9f2510707b3338b7477db9b4fa160cdd26c4cd80c971e436332cb385b"
+  },
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "ultralytics": "8.4.104",
+    "numpy": "2.4.4"
+  },
+  "scope": "ACDC val模型选择；非独立测试；单seed42续训",
+  "status": "completed",
+  "config_match": true,
+  "batch_match": true,
+  "teacher_selection_match": true
+}

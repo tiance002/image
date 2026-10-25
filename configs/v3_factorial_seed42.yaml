@@ -1,0 +1,43 @@
+project:
+  name: saferestore-rf-v3-factorial-seed42
+  seed: 42
+  output_dir: runs/v3_factorial_seed42
+
+data:
+  train_manifest: data/factorial/manifests/train.csv
+  val_manifest: data/factorial/manifests/val.csv
+  test_manifest: data/factorial/manifests/test.csv
+  image_size: [128, 192]
+  num_workers: 0
+  weather_types: [rain, fog, rain_fog]
+
+model:
+  base_channels: 16
+  degradation_dim: 4
+  uncertainty_floor: 0.02
+  use_degradation_gate: false
+  minimum_restoration_strength: 0.2
+
+training:
+  epochs: 18
+  batch_size: 4
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  mixed_precision: false
+  early_stopping_patience: 5
+
+loss:
+  pixel: 1.0
+  edge: 0.2
+  ssim: 0.1
+  uncertainty: 0.05
+  uncertainty_regularization: 0.01
+  degradation: 0.1
+  detection: 0.0
+  detection_consistency: 0.0
+
+evaluation:
+  save_visuals: true
+  max_visuals: 18
+  primary_metric: val_loss

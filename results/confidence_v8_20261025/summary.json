@@ -1,0 +1,5491 @@
+{
+  "scope": "ACDC val模型选择；非独立test；同一v4检查点seed42续训",
+  "comparison": "confidence_v8_20261025",
+  "sources": {
+    "input": "runs/acdc_benchmark/evaluation/weather_input_direct_406.json",
+    "v4_48k": "runs/real_v4_allweather/preds_047999.json",
+    "control_52k": "runs/confidence_v8_20261025_control/preds_051999.json",
+    "guard_52k": "runs/confidence_v8_20261025_guard/preds_051999.json",
+    "records": "runs/acdc_benchmark/evaluation/weather_input_all406.json"
+  },
+  "fairness_plan": {
+    "steps_per_arm": 4000,
+    "total_lr_schedule": 64000,
+    "confidence_weight": 10.0,
+    "arms": [
+      "confidence_v8_20261025_control",
+      "confidence_v8_20261025_guard"
+    ],
+    "inputs_sha256": {
+      "runs/real_v4_allweather/latest.pt": "8221a9037db0a907dc5d56698b209299061fccf0f01ac72b700cd57910d768d9",
+      "yolov8n.pt": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "data/real_weather/manifests/train.csv": "e5a77a90fb2ddca582b4ed89ebeb31c5adf5c1b86659a2bd262e4252f59a1c48",
+      "data/real_scene/manifests/train.csv": "d34213086393d944a6163fdc8c7eb49b398b20da9091cf9adf4b8c6034c0fc18",
+      "runs/acdc_benchmark/evaluation/weather_input_all406.json": "2ed2bf0200b149b4b77929c19c3a4680beac6707676fa333087a3dbc428fc22c"
+    },
+    "source_sha256": {
+      "scripts/train_restorer.py": "1caf7bfa991f40556d7844fd8cba50555d7b780871e3b9991d574a469f25b9c0",
+      "src/saferestore/losses/perceptual.py": "8be8a61ebeb58517960337a243de611165e092f943a22e96bd0a4c1a32bea28d",
+      "src/saferestore/losses/confidence.py": "a8171db31453bb977ebb4a6ad6c586172c2c61ad018d7d814b6746515c90d2f0",
+      "src/saferestore/models/nafnet.py": "f4802fddea0b254f27fbd9997af0b71acbd1125c48114d1887338755bb6205c0",
+      "scripts/run_confidence_comparison.py": "0e012a494f40290000955d8e06751bf712393e22e0f2c51d01d2024bf40e8b2e",
+      "scripts/diagnose_detection_rootcause.py": "80f2db02de33f13dddcebd74a6a846827903771b26b540cfd62185b7d209b477",
+      "scripts/evaluate_coco_detection.py": "899719cf70807a67c00ad934a3bfa3f16e118558c7c04b0d78e739bbca70f75d",
+      "configs/detector.yaml": "eb4231b9f2510707b3338b7477db9b4fa160cdd26c4cd80c971e436332cb385b"
+    },
+    "packages": {
+      "torch": "2.6.0+cu124",
+      "ultralytics": "8.4.104",
+      "numpy": "2.4.4"
+    },
+    "scope": "ACDC val模型选择；非独立测试；单seed42续训",
+    "status": "completed",
+    "config_match": true,
+    "batch_match": true,
+    "teacher_selection_match": true
+  },
+  "teacher_monitor": {
+    "control": {
+      "iter": 51999,
+      "weight": 0.0,
+      "loss_at_logged_step": 0.0002510389604140073,
+      "selected_anchors": {
+        "person": 10303,
+        "bicycle": 482,
+        "car": 53499,
+        "motorcycle": 287,
+        "bus": 3590,
+        "train": 2000,
+        "truck": 5632
+      },
+      "supervised_image_class_pairs": {
+        "person": 1364,
+        "bicycle": 73,
+        "car": 5416,
+        "motorcycle": 59,
+        "bus": 589,
+        "train": 329,
+        "truck": 921
+      }
+    },
+    "guard": {
+      "iter": 51999,
+      "weight": 10.0,
+      "loss_at_logged_step": 0.00019772187806665897,
+      "selected_anchors": {
+        "person": 10303,
+        "bicycle": 482,
+        "car": 53499,
+        "motorcycle": 287,
+        "bus": 3590,
+        "train": 2000,
+        "truck": 5632
+      },
+      "supervised_image_class_pairs": {
+        "person": 1364,
+        "bicycle": 73,
+        "car": 5416,
+        "motorcycle": 59,
+        "bus": 589,
+        "train": 329,
+        "truck": 921
+      }
+    }
+  },
+  "teacher_monitor_note": "教师预测计数，不是GT、独立图像数或真实正样本覆盖率",
+  "scopes": {
+    "all406": {
+      "vs_input": {
+        "input": {
+          "baseline": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.18713694983695486,
+            "map50_without_train": 0.1571702333074985,
+            "recall": 0.37137614678899084,
+            "precision": 0.7071977638015374,
+            "false_positives_per_image": 1.0320197044334976,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 164,
+                "true_positives": 108,
+                "false_positives": 56,
+                "false_negatives": 419,
+                "precision": 0.6585366129875183,
+                "recall": 0.20493358373641968,
+                "ap50": 0.18435359237217666
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 86,
+                "precision": 0.6000000238418579,
+                "recall": 0.033707864582538605,
+                "ap50": 0.03712871287128713
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1095,
+                "true_positives": 847,
+                "false_positives": 248,
+                "false_negatives": 1001,
+                "precision": 0.7735159993171692,
+                "recall": 0.4583333432674408,
+                "ap50": 0.4339914451731314
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 57,
+                "precision": 0.6000000238418579,
+                "recall": 0.05000000074505806,
+                "ap50": 0.05148514898696748
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 32,
+                "true_positives": 9,
+                "false_positives": 23,
+                "false_negatives": 40,
+                "precision": 0.28125,
+                "recall": 0.18367347121238708,
+                "ap50": 0.11099810352419863
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 28,
+                "true_positives": 18,
+                "false_positives": 10,
+                "false_negatives": 28,
+                "precision": 0.6428571343421936,
+                "recall": 0.3913043439388275,
+                "ap50": 0.366937249013693
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 102,
+                "true_positives": 24,
+                "false_positives": 78,
+                "false_negatives": 82,
+                "precision": 0.23529411852359772,
+                "recall": 0.22641509771347046,
+                "ap50": 0.12506439691722984
+              }
+            }
+          },
+          "method": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.18713694983695486,
+            "map50_without_train": 0.1571702333074985,
+            "recall": 0.37137614678899084,
+            "precision": 0.7071977638015374,
+            "false_positives_per_image": 1.0320197044334976,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 164,
+                "true_positives": 108,
+                "false_positives": 56,
+                "false_negatives": 419,
+                "precision": 0.6585366129875183,
+                "recall": 0.20493358373641968,
+                "ap50": 0.18435359237217666
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 86,
+                "precision": 0.6000000238418579,
+                "recall": 0.033707864582538605,
+                "ap50": 0.03712871287128713
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1095,
+                "true_positives": 847,
+                "false_positives": 248,
+                "false_negatives": 1001,
+                "precision": 0.7735159993171692,
+                "recall": 0.4583333432674408,
+                "ap50": 0.4339914451731314
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 57,
+                "precision": 0.6000000238418579,
+                "recall": 0.05000000074505806,
+                "ap50": 0.05148514898696748
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 32,
+                "true_positives": 9,
+                "false_positives": 23,
+                "false_negatives": 40,
+                "precision": 0.28125,
+                "recall": 0.18367347121238708,
+                "ap50": 0.11099810352419863
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 28,
+                "true_positives": 18,
+                "false_positives": 10,
+                "false_negatives": 28,
+                "precision": 0.6428571343421936,
+                "recall": 0.3913043439388275,
+                "ap50": 0.366937249013693
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 102,
+                "true_positives": 24,
+                "false_positives": 78,
+                "false_negatives": 82,
+                "precision": 0.23529411852359772,
+                "recall": 0.22641509771347046,
+                "ap50": 0.12506439691722984
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0,
+            "bicycle": 0.0,
+            "car": 0.0,
+            "motorcycle": 0.0,
+            "bus": 0.0,
+            "train": 0.0,
+            "truck": 0.0
+          },
+          "retention": 1.0,
+          "opr": 1.0,
+          "opr_denominator": 1012,
+          "target_changes": {
+            "person": {
+              "kept": 108,
+              "lost": 0,
+              "gained": 0
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 847,
+              "lost": 0,
+              "gained": 0
+            },
+            "motorcycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 9,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 18,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 24,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 1.0,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.0,
+          "weather_map_redline_pass": true
+        },
+        "v4_48k": {
+          "baseline": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.18713694983695486,
+            "map50_without_train": 0.1571702333074985,
+            "recall": 0.37137614678899084,
+            "precision": 0.7071977638015374,
+            "false_positives_per_image": 1.0320197044334976,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 164,
+                "true_positives": 108,
+                "false_positives": 56,
+                "false_negatives": 419,
+                "precision": 0.6585366129875183,
+                "recall": 0.20493358373641968,
+                "ap50": 0.18435359237217666
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 86,
+                "precision": 0.6000000238418579,
+                "recall": 0.033707864582538605,
+                "ap50": 0.03712871287128713
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1095,
+                "true_positives": 847,
+                "false_positives": 248,
+                "false_negatives": 1001,
+                "precision": 0.7735159993171692,
+                "recall": 0.4583333432674408,
+                "ap50": 0.4339914451731314
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 57,
+                "precision": 0.6000000238418579,
+                "recall": 0.05000000074505806,
+                "ap50": 0.05148514898696748
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 32,
+                "true_positives": 9,
+                "false_positives": 23,
+                "false_negatives": 40,
+                "precision": 0.28125,
+                "recall": 0.18367347121238708,
+                "ap50": 0.11099810352419863
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 28,
+                "true_positives": 18,
+                "false_positives": 10,
+                "false_negatives": 28,
+                "precision": 0.6428571343421936,
+                "recall": 0.3913043439388275,
+                "ap50": 0.366937249013693
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 102,
+                "true_positives": 24,
+                "false_positives": 78,
+                "false_negatives": 82,
+                "precision": 0.23529411852359772,
+                "recall": 0.22641509771347046,
+                "ap50": 0.12506439691722984
+              }
+            }
+          },
+          "method": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.17945419854709752,
+            "map50_without_train": 0.15252178255775972,
+            "recall": 0.3765137614678899,
+            "precision": 0.7037037037037037,
+            "false_positives_per_image": 1.064039408866995,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 175,
+                "true_positives": 113,
+                "false_positives": 62,
+                "false_negatives": 414,
+                "precision": 0.645714282989502,
+                "recall": 0.21442125737667084,
+                "ap50": 0.19210348979081257
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 4,
+                "true_positives": 3,
+                "false_positives": 1,
+                "false_negatives": 86,
+                "precision": 0.75,
+                "recall": 0.033707864582538605,
+                "ap50": 0.039603960396039604
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1111,
+                "true_positives": 859,
+                "false_positives": 252,
+                "false_negatives": 989,
+                "precision": 0.7731773257255554,
+                "recall": 0.4648268520832062,
+                "ap50": 0.44233752713345065
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 7,
+                "true_positives": 3,
+                "false_positives": 4,
+                "false_negatives": 57,
+                "precision": 0.4285714328289032,
+                "recall": 0.05000000074505806,
+                "ap50": 0.041489863749777915
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 26,
+                "true_positives": 6,
+                "false_positives": 20,
+                "false_negatives": 43,
+                "precision": 0.23076923191547394,
+                "recall": 0.12244898080825806,
+                "ap50": 0.08213321348228077
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 25,
+                "true_positives": 17,
+                "false_positives": 8,
+                "false_negatives": 29,
+                "precision": 0.6800000071525574,
+                "recall": 0.3695652186870575,
+                "ap50": 0.34104869448312436
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 110,
+                "true_positives": 25,
+                "false_positives": 85,
+                "false_negatives": 81,
+                "precision": 0.22727273404598236,
+                "recall": 0.2358490526676178,
+                "ap50": 0.11746264079419694
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.007749897418635909,
+            "bicycle": 0.0024752475247524774,
+            "car": 0.008346081960319274,
+            "motorcycle": -0.009995285237189566,
+            "bus": -0.028864890041917862,
+            "train": -0.025888554530568653,
+            "truck": -0.0076017561230329045
+          },
+          "retention": 0.9589458346064151,
+          "opr": 0.9525691699604744,
+          "opr_denominator": 1012,
+          "target_changes": {
+            "person": {
+              "kept": 102,
+              "lost": 6,
+              "gained": 11
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 810,
+              "lost": 37,
+              "gained": 49
+            },
+            "motorcycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 6,
+              "lost": 3,
+              "gained": 0
+            },
+            "train": {
+              "kept": 17,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 23,
+              "lost": 1,
+              "gained": 2
+            }
+          },
+          "opr_legacy": 0.9520078354554359,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.007682751289857348,
+          "weather_map_redline_pass": true
+        },
+        "control_52k": {
+          "baseline": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.18713694983695486,
+            "map50_without_train": 0.1571702333074985,
+            "recall": 0.37137614678899084,
+            "precision": 0.7071977638015374,
+            "false_positives_per_image": 1.0320197044334976,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 164,
+                "true_positives": 108,
+                "false_positives": 56,
+                "false_negatives": 419,
+                "precision": 0.6585366129875183,
+                "recall": 0.20493358373641968,
+                "ap50": 0.18435359237217666
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 86,
+                "precision": 0.6000000238418579,
+                "recall": 0.033707864582538605,
+                "ap50": 0.03712871287128713
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1095,
+                "true_positives": 847,
+                "false_positives": 248,
+                "false_negatives": 1001,
+                "precision": 0.7735159993171692,
+                "recall": 0.4583333432674408,
+                "ap50": 0.4339914451731314
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 57,
+                "precision": 0.6000000238418579,
+                "recall": 0.05000000074505806,
+                "ap50": 0.05148514898696748
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 32,
+                "true_positives": 9,
+                "false_positives": 23,
+                "false_negatives": 40,
+                "precision": 0.28125,
+                "recall": 0.18367347121238708,
+                "ap50": 0.11099810352419863
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 28,
+                "true_positives": 18,
+                "false_positives": 10,
+                "false_negatives": 28,
+                "precision": 0.6428571343421936,
+                "recall": 0.3913043439388275,
+                "ap50": 0.366937249013693
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 102,
+                "true_positives": 24,
+                "false_positives": 78,
+                "false_negatives": 82,
+                "precision": 0.23529411852359772,
+                "recall": 0.22641509771347046,
+                "ap50": 0.12506439691722984
+              }
+            }
+          },
+          "method": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.1773583378532145,
+            "map50_without_train": 0.15339572245728458,
+            "recall": 0.37577981651376147,
+            "precision": 0.7037800687285224,
+            "false_positives_per_image": 1.061576354679803,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 178,
+                "true_positives": 116,
+                "false_positives": 62,
+                "false_negatives": 411,
+                "precision": 0.6516854166984558,
+                "recall": 0.2201138585805893,
+                "ap50": 0.19978108028374095
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 86,
+                "precision": 0.6000000238418579,
+                "recall": 0.033707864582538605,
+                "ap50": 0.03712871287128713
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1104,
+                "true_positives": 856,
+                "false_positives": 248,
+                "false_negatives": 992,
+                "precision": 0.7753623127937317,
+                "recall": 0.46320345997810364,
+                "ap50": 0.44261451936004187
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 7,
+                "true_positives": 2,
+                "false_positives": 5,
+                "false_negatives": 58,
+                "precision": 0.2857142984867096,
+                "recall": 0.03333333507180214,
+                "ap50": 0.039603960396039604
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 26,
+                "true_positives": 5,
+                "false_positives": 21,
+                "false_negatives": 44,
+                "precision": 0.19230769574642181,
+                "recall": 0.10204081982374191,
+                "ap50": 0.07990029808318261
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 25,
+                "true_positives": 16,
+                "false_positives": 9,
+                "false_negatives": 30,
+                "precision": 0.6399999856948853,
+                "recall": 0.3478260934352875,
+                "ap50": 0.3211340302287942
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 110,
+                "true_positives": 26,
+                "false_positives": 84,
+                "false_negatives": 80,
+                "precision": 0.23636363446712494,
+                "recall": 0.24528302252292633,
+                "ap50": 0.12134576374941533
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.015427487911564286,
+            "bicycle": 0.0,
+            "car": 0.008623074186910495,
+            "motorcycle": -0.011881188590927877,
+            "bus": -0.03109780544101602,
+            "train": -0.04580321878489879,
+            "truck": -0.0037186331678145113
+          },
+          "retention": 0.9477462254661088,
+          "opr": 0.9545454545454546,
+          "opr_denominator": 1012,
+          "target_changes": {
+            "person": {
+              "kept": 105,
+              "lost": 3,
+              "gained": 11
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 812,
+              "lost": 35,
+              "gained": 44
+            },
+            "motorcycle": {
+              "kept": 2,
+              "lost": 1,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 5,
+              "lost": 4,
+              "gained": 0
+            },
+            "train": {
+              "kept": 16,
+              "lost": 2,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 23,
+              "lost": 1,
+              "gained": 3
+            }
+          },
+          "opr_legacy": 0.9529872673849168,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.00977861198374036,
+          "weather_map_redline_pass": true
+        },
+        "guard_52k": {
+          "baseline": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.18713694983695486,
+            "map50_without_train": 0.1571702333074985,
+            "recall": 0.37137614678899084,
+            "precision": 0.7071977638015374,
+            "false_positives_per_image": 1.0320197044334976,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 164,
+                "true_positives": 108,
+                "false_positives": 56,
+                "false_negatives": 419,
+                "precision": 0.6585366129875183,
+                "recall": 0.20493358373641968,
+                "ap50": 0.18435359237217666
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 86,
+                "precision": 0.6000000238418579,
+                "recall": 0.033707864582538605,
+                "ap50": 0.03712871287128713
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1095,
+                "true_positives": 847,
+                "false_positives": 248,
+                "false_negatives": 1001,
+                "precision": 0.7735159993171692,
+                "recall": 0.4583333432674408,
+                "ap50": 0.4339914451731314
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 57,
+                "precision": 0.6000000238418579,
+                "recall": 0.05000000074505806,
+                "ap50": 0.05148514898696748
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 32,
+                "true_positives": 9,
+                "false_positives": 23,
+                "false_negatives": 40,
+                "precision": 0.28125,
+                "recall": 0.18367347121238708,
+                "ap50": 0.11099810352419863
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 28,
+                "true_positives": 18,
+                "false_positives": 10,
+                "false_negatives": 28,
+                "precision": 0.6428571343421936,
+                "recall": 0.3913043439388275,
+                "ap50": 0.366937249013693
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 102,
+                "true_positives": 24,
+                "false_positives": 78,
+                "false_negatives": 82,
+                "precision": 0.23529411852359772,
+                "recall": 0.22641509771347046,
+                "ap50": 0.12506439691722984
+              }
+            }
+          },
+          "method": {
+            "n_images": 406,
+            "n_classes_with_gt": 7,
+            "map50": 0.18284823723358684,
+            "map50_without_train": 0.15639850098897914,
+            "recall": 0.38311926605504587,
+            "precision": 0.7049291019581364,
+            "false_positives_per_image": 1.0763546798029557,
+            "per_class": {
+              "person": {
+                "ground_truth": 527,
+                "predictions": 179,
+                "true_positives": 117,
+                "false_positives": 62,
+                "false_negatives": 410,
+                "precision": 0.6536312699317932,
+                "recall": 0.22201138734817505,
+                "ap50": 0.19838985712221352
+              },
+              "bicycle": {
+                "ground_truth": 89,
+                "predictions": 4,
+                "true_positives": 3,
+                "false_positives": 1,
+                "false_negatives": 86,
+                "precision": 0.75,
+                "recall": 0.033707864582538605,
+                "ap50": 0.039603960396039604
+              },
+              "car": {
+                "ground_truth": 1848,
+                "predictions": 1137,
+                "true_positives": 874,
+                "false_positives": 263,
+                "false_negatives": 974,
+                "precision": 0.7686895132064819,
+                "recall": 0.4729437232017517,
+                "ap50": 0.45058869135261764
+              },
+              "motorcycle": {
+                "ground_truth": 60,
+                "predictions": 7,
+                "true_positives": 3,
+                "false_positives": 4,
+                "false_negatives": 57,
+                "precision": 0.4285714328289032,
+                "recall": 0.05000000074505806,
+                "ap50": 0.04950495049504951
+              },
+              "bus": {
+                "ground_truth": 49,
+                "predictions": 25,
+                "true_positives": 5,
+                "false_positives": 20,
+                "false_negatives": 44,
+                "precision": 0.20000000298023224,
+                "recall": 0.10204081982374191,
+                "ap50": 0.07827099833157983
+              },
+              "train": {
+                "ground_truth": 46,
+                "predictions": 26,
+                "true_positives": 17,
+                "false_positives": 9,
+                "false_negatives": 29,
+                "precision": 0.6538461446762085,
+                "recall": 0.3695652186870575,
+                "ap50": 0.3415466547012329
+              },
+              "truck": {
+                "ground_truth": 106,
+                "predictions": 103,
+                "true_positives": 25,
+                "false_positives": 78,
+                "false_negatives": 81,
+                "precision": 0.24271844327449799,
+                "recall": 0.2358490526676178,
+                "ap50": 0.12203254823637481
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.014036264750036859,
+            "bicycle": 0.0024752475247524774,
+            "car": 0.01659724617948627,
+            "motorcycle": -0.001980198491917974,
+            "bus": -0.0327271051926188,
+            "train": -0.025390594312460102,
+            "truck": -0.003031848680855029
+          },
+          "retention": 0.9770824916880145,
+          "opr": 0.9703557312252964,
+          "opr_denominator": 1012,
+          "target_changes": {
+            "person": {
+              "kept": 105,
+              "lost": 3,
+              "gained": 12
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 826,
+              "lost": 21,
+              "gained": 48
+            },
+            "motorcycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 5,
+              "lost": 4,
+              "gained": 0
+            },
+            "train": {
+              "kept": 17,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 23,
+              "lost": 1,
+              "gained": 2
+            }
+          },
+          "opr_legacy": 0.970617042115573,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.004288712603368022,
+          "weather_map_redline_pass": true
+        }
+      },
+      "guard_minus_control": {
+        "map50": 0.005489899380372337,
+        "map50_without_train": 0.003002778531694561,
+        "recall": 0.007339449541284404,
+        "precision": 0.001149033229614016,
+        "false_positives_per_image": 0.014778325123152802,
+        "opr_relative_input": 0.015810276679841806,
+        "retention_relative_input": 0.02933626622190577,
+        "per_class_ap50": {
+          "person": -0.0013912231615274273,
+          "bicycle": 0.0024752475247524774,
+          "car": 0.007974171992575774,
+          "motorcycle": 0.009900990099009903,
+          "bus": -0.0016292997516027807,
+          "train": 0.02041262447243869,
+          "truck": 0.0006867844869594825
+        }
+      }
+    },
+    "fog": {
+      "vs_input": {
+        "input": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3173673798500058,
+            "map50_without_train": 0.2597008870527296,
+            "recall": 0.5031948881789138,
+            "precision": 0.7142857142857143,
+            "false_positives_per_image": 1.26,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 22,
+                "true_positives": 13,
+                "false_positives": 9,
+                "false_negatives": 49,
+                "precision": 0.5909090638160706,
+                "recall": 0.20967741310596466,
+                "ap50": 0.17172386268577952
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 358,
+                "true_positives": 287,
+                "false_positives": 71,
+                "false_negatives": 206,
+                "precision": 0.8016759753227234,
+                "recall": 0.5821501016616821,
+                "ap50": 0.5608356164233519
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 10,
+                "true_positives": 3,
+                "false_positives": 7,
+                "false_negatives": 2,
+                "precision": 0.30000001192092896,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4653465370140453
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 1,
+                "precision": 0.5,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 44,
+                "true_positives": 7,
+                "false_positives": 37,
+                "false_negatives": 34,
+                "precision": 0.15909090638160706,
+                "recall": 0.17073170840740204,
+                "ap50": 0.08307158342092344
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3173673798500058,
+            "map50_without_train": 0.2597008870527296,
+            "recall": 0.5031948881789138,
+            "precision": 0.7142857142857143,
+            "false_positives_per_image": 1.26,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 22,
+                "true_positives": 13,
+                "false_positives": 9,
+                "false_negatives": 49,
+                "precision": 0.5909090638160706,
+                "recall": 0.20967741310596466,
+                "ap50": 0.17172386268577952
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 358,
+                "true_positives": 287,
+                "false_positives": 71,
+                "false_negatives": 206,
+                "precision": 0.8016759753227234,
+                "recall": 0.5821501016616821,
+                "ap50": 0.5608356164233519
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 10,
+                "true_positives": 3,
+                "false_positives": 7,
+                "false_negatives": 2,
+                "precision": 0.30000001192092896,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4653465370140453
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 1,
+                "precision": 0.5,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 44,
+                "true_positives": 7,
+                "false_positives": 37,
+                "false_negatives": 34,
+                "precision": 0.15909090638160706,
+                "recall": 0.17073170840740204,
+                "ap50": 0.08307158342092344
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0,
+            "bicycle": 0.0,
+            "car": 0.0,
+            "motorcycle": 0.0,
+            "bus": 0.0,
+            "train": 0.0,
+            "truck": 0.0
+          },
+          "retention": 1.0,
+          "opr": 1.0,
+          "opr_denominator": 315,
+          "target_changes": {
+            "person": {
+              "kept": 13,
+              "lost": 0,
+              "gained": 0
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 287,
+              "lost": 0,
+              "gained": 0
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 1.0,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.0,
+          "weather_map_redline_pass": true
+        },
+        "v4_48k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3173673798500058,
+            "map50_without_train": 0.2597008870527296,
+            "recall": 0.5031948881789138,
+            "precision": 0.7142857142857143,
+            "false_positives_per_image": 1.26,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 22,
+                "true_positives": 13,
+                "false_positives": 9,
+                "false_negatives": 49,
+                "precision": 0.5909090638160706,
+                "recall": 0.20967741310596466,
+                "ap50": 0.17172386268577952
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 358,
+                "true_positives": 287,
+                "false_positives": 71,
+                "false_negatives": 206,
+                "precision": 0.8016759753227234,
+                "recall": 0.5821501016616821,
+                "ap50": 0.5608356164233519
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 10,
+                "true_positives": 3,
+                "false_positives": 7,
+                "false_negatives": 2,
+                "precision": 0.30000001192092896,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4653465370140453
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 1,
+                "precision": 0.5,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 44,
+                "true_positives": 7,
+                "false_positives": 37,
+                "false_negatives": 34,
+                "precision": 0.15909090638160706,
+                "recall": 0.17073170840740204,
+                "ap50": 0.08307158342092344
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3317393208452128,
+            "map50_without_train": 0.27646815154713766,
+            "recall": 0.5271565495207667,
+            "precision": 0.7415730337078652,
+            "false_positives_per_image": 1.15,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 29,
+                "true_positives": 17,
+                "false_positives": 12,
+                "false_negatives": 45,
+                "precision": 0.5862069129943848,
+                "recall": 0.27419355511665344,
+                "ap50": 0.22605570885214474
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 354,
+                "true_positives": 297,
+                "false_positives": 57,
+                "false_negatives": 196,
+                "precision": 0.8389830589294434,
+                "recall": 0.6024340987205505,
+                "ap50": 0.5831029828232114
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 8,
+                "true_positives": 3,
+                "false_positives": 5,
+                "false_negatives": 2,
+                "precision": 0.375,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4908062243225551
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 2,
+                "true_positives": 2,
+                "false_positives": 0,
+                "false_negatives": 1,
+                "precision": 1.0,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 48,
+                "true_positives": 8,
+                "false_positives": 40,
+                "false_negatives": 33,
+                "precision": 0.1666666716337204,
+                "recall": 0.19512194395065308,
+                "ap50": 0.08161627051263752
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.054331846166365216,
+            "bicycle": 0.0,
+            "car": 0.02226736639985949,
+            "motorcycle": 0.0,
+            "bus": 0.025459687308509782,
+            "train": 0.0,
+            "truck": -0.001455312908285919
+          },
+          "retention": 1.0452848714382665,
+          "opr": 0.9587301587301588,
+          "opr_denominator": 315,
+          "target_changes": {
+            "person": {
+              "kept": 12,
+              "lost": 1,
+              "gained": 5
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 275,
+              "lost": 12,
+              "gained": 22
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 1
+            }
+          },
+          "opr_legacy": 0.9587301587301588,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.014371940995207,
+          "weather_map_redline_pass": true
+        },
+        "control_52k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3173673798500058,
+            "map50_without_train": 0.2597008870527296,
+            "recall": 0.5031948881789138,
+            "precision": 0.7142857142857143,
+            "false_positives_per_image": 1.26,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 22,
+                "true_positives": 13,
+                "false_positives": 9,
+                "false_negatives": 49,
+                "precision": 0.5909090638160706,
+                "recall": 0.20967741310596466,
+                "ap50": 0.17172386268577952
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 358,
+                "true_positives": 287,
+                "false_positives": 71,
+                "false_negatives": 206,
+                "precision": 0.8016759753227234,
+                "recall": 0.5821501016616821,
+                "ap50": 0.5608356164233519
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 10,
+                "true_positives": 3,
+                "false_positives": 7,
+                "false_negatives": 2,
+                "precision": 0.30000001192092896,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4653465370140453
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 1,
+                "precision": 0.5,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 44,
+                "true_positives": 7,
+                "false_positives": 37,
+                "false_negatives": 34,
+                "precision": 0.15909090638160706,
+                "recall": 0.17073170840740204,
+                "ap50": 0.08307158342092344
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.2846159873875398,
+            "map50_without_train": 0.275946374724407,
+            "recall": 0.5287539936102237,
+            "precision": 0.7339246119733924,
+            "false_positives_per_image": 1.2,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 28,
+                "true_positives": 17,
+                "false_positives": 11,
+                "false_negatives": 45,
+                "precision": 0.6071428656578064,
+                "recall": 0.27419355511665344,
+                "ap50": 0.22764199322993212
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 360,
+                "true_positives": 298,
+                "false_positives": 62,
+                "false_negatives": 195,
+                "precision": 0.8277778029441833,
+                "recall": 0.6044625043869019,
+                "ap50": 0.5825624218081483
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 9,
+                "true_positives": 3,
+                "false_positives": 6,
+                "false_negatives": 2,
+                "precision": 0.3333333432674408,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4801980198019802
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 1,
+                "true_positives": 1,
+                "false_positives": 0,
+                "false_negatives": 2,
+                "precision": 1.0,
+                "recall": 0.3333333432674408,
+                "ap50": 0.33663366336633666
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 49,
+                "true_positives": 9,
+                "false_positives": 40,
+                "false_negatives": 32,
+                "precision": 0.18367347121238708,
+                "recall": 0.2195121943950653,
+                "ap50": 0.08804809073410412
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.055918130544152594,
+            "bicycle": 0.0,
+            "car": 0.021726805384796433,
+            "motorcycle": 0.0,
+            "bus": 0.014851482787934855,
+            "train": -0.32673267326732675,
+            "truck": 0.004976507313180681
+          },
+          "retention": 0.8968029024345697,
+          "opr": 0.9619047619047619,
+          "opr_denominator": 315,
+          "target_changes": {
+            "person": {
+              "kept": 12,
+              "lost": 1,
+              "gained": 5
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 277,
+              "lost": 10,
+              "gained": 21
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 1,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 2
+            }
+          },
+          "opr_legacy": 0.9619047619047619,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.032751392462466,
+          "weather_map_redline_pass": false
+        },
+        "guard_52k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3173673798500058,
+            "map50_without_train": 0.2597008870527296,
+            "recall": 0.5031948881789138,
+            "precision": 0.7142857142857143,
+            "false_positives_per_image": 1.26,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 22,
+                "true_positives": 13,
+                "false_positives": 9,
+                "false_negatives": 49,
+                "precision": 0.5909090638160706,
+                "recall": 0.20967741310596466,
+                "ap50": 0.17172386268577952
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 358,
+                "true_positives": 287,
+                "false_positives": 71,
+                "false_negatives": 206,
+                "precision": 0.8016759753227234,
+                "recall": 0.5821501016616821,
+                "ap50": 0.5608356164233519
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 10,
+                "true_positives": 3,
+                "false_positives": 7,
+                "false_negatives": 2,
+                "precision": 0.30000001192092896,
+                "recall": 0.6000000238418579,
+                "ap50": 0.4653465370140453
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 1,
+                "precision": 0.5,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 44,
+                "true_positives": 7,
+                "false_positives": 37,
+                "false_negatives": 34,
+                "precision": 0.15909090638160706,
+                "recall": 0.17073170840740204,
+                "ap50": 0.08307158342092344
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.3197798304881537,
+            "map50_without_train": 0.2625154127972354,
+            "recall": 0.5303514376996805,
+            "precision": 0.7394209354120267,
+            "false_positives_per_image": 1.17,
+            "per_class": {
+              "person": {
+                "ground_truth": 62,
+                "predictions": 26,
+                "true_positives": 17,
+                "false_positives": 9,
+                "false_negatives": 45,
+                "precision": 0.6538461446762085,
+                "recall": 0.27419355511665344,
+                "ap50": 0.22352468849408744
+              },
+              "bicycle": {
+                "ground_truth": 11,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 8,
+                "precision": 1.0,
+                "recall": 0.27272728085517883,
+                "ap50": 0.27722772277227725
+              },
+              "car": {
+                "ground_truth": 493,
+                "predictions": 366,
+                "true_positives": 300,
+                "false_positives": 66,
+                "false_negatives": 193,
+                "precision": 0.8196721076965332,
+                "recall": 0.6085192561149597,
+                "ap50": 0.5823551522623195
+              },
+              "motorcycle": {
+                "ground_truth": 11,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 5,
+                "predictions": 6,
+                "true_positives": 2,
+                "false_positives": 4,
+                "false_negatives": 3,
+                "precision": 0.3333333432674408,
+                "recall": 0.4000000059604645,
+                "ap50": 0.40594059405940597
+              },
+              "train": {
+                "ground_truth": 3,
+                "predictions": 2,
+                "true_positives": 2,
+                "false_positives": 0,
+                "false_negatives": 1,
+                "precision": 1.0,
+                "recall": 0.6666666865348816,
+                "ap50": 0.6633663366336634
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 45,
+                "true_positives": 8,
+                "false_positives": 37,
+                "false_negatives": 33,
+                "precision": 0.17777778208255768,
+                "recall": 0.19512194395065308,
+                "ap50": 0.08604431919532247
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.051800825808307915,
+            "bicycle": 0.0,
+            "car": 0.021519535838967596,
+            "motorcycle": 0.0,
+            "bus": -0.05940594295463936,
+            "train": 0.0,
+            "truck": 0.002972735774399035
+          },
+          "retention": 1.0076014448595445,
+          "opr": 0.9746031746031746,
+          "opr_denominator": 315,
+          "target_changes": {
+            "person": {
+              "kept": 13,
+              "lost": 0,
+              "gained": 4
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 280,
+              "lost": 7,
+              "gained": 20
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 2,
+              "lost": 1,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 1
+            }
+          },
+          "opr_legacy": 0.9746031746031746,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.002412450638147934,
+          "weather_map_redline_pass": true
+        }
+      },
+      "guard_minus_control": {
+        "map50": 0.035163843100613934,
+        "map50_without_train": -0.01343096192717158,
+        "recall": 0.0015974440894568342,
+        "precision": 0.005496323438634265,
+        "false_positives_per_image": -0.030000000000000027,
+        "opr_relative_input": 0.012698412698412653,
+        "retention_relative_input": 0.11079854242497478,
+        "per_class_ap50": {
+          "person": -0.004117304735844679,
+          "bicycle": 0.0,
+          "car": -0.0002072695458288365,
+          "motorcycle": 0.0,
+          "bus": -0.07425742574257421,
+          "train": 0.32673267326732675,
+          "truck": -0.0020037715387816457
+        }
+      }
+    },
+    "rain": {
+      "vs_input": {
+        "input": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.17206191704667778,
+            "map50_without_train": 0.16278510784158612,
+            "recall": 0.3736413043478261,
+            "precision": 0.6773399014778325,
+            "false_positives_per_image": 1.31,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 48,
+                "true_positives": 32,
+                "false_positives": 16,
+                "false_negatives": 100,
+                "precision": 0.6666666865348816,
+                "recall": 0.24242424964904785,
+                "ap50": 0.2196537468693044
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 317,
+                "true_positives": 231,
+                "false_positives": 86,
+                "false_negatives": 295,
+                "precision": 0.7287065982818604,
+                "recall": 0.4391635060310364,
+                "ap50": 0.4112294570054158
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 9,
+                "true_positives": 5,
+                "false_positives": 4,
+                "false_negatives": 27,
+                "precision": 0.5555555820465088,
+                "recall": 0.15625,
+                "ap50": 0.12659123156330374
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 28,
+                "true_positives": 5,
+                "false_positives": 23,
+                "false_negatives": 11,
+                "precision": 0.1785714328289032,
+                "recall": 0.3125,
+                "ap50": 0.2192362116114928
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.17206191704667778,
+            "map50_without_train": 0.16278510784158612,
+            "recall": 0.3736413043478261,
+            "precision": 0.6773399014778325,
+            "false_positives_per_image": 1.31,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 48,
+                "true_positives": 32,
+                "false_positives": 16,
+                "false_negatives": 100,
+                "precision": 0.6666666865348816,
+                "recall": 0.24242424964904785,
+                "ap50": 0.2196537468693044
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 317,
+                "true_positives": 231,
+                "false_positives": 86,
+                "false_negatives": 295,
+                "precision": 0.7287065982818604,
+                "recall": 0.4391635060310364,
+                "ap50": 0.4112294570054158
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 9,
+                "true_positives": 5,
+                "false_positives": 4,
+                "false_negatives": 27,
+                "precision": 0.5555555820465088,
+                "recall": 0.15625,
+                "ap50": 0.12659123156330374
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 28,
+                "true_positives": 5,
+                "false_positives": 23,
+                "false_negatives": 11,
+                "precision": 0.1785714328289032,
+                "recall": 0.3125,
+                "ap50": 0.2192362116114928
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0,
+            "bicycle": 0.0,
+            "car": 0.0,
+            "motorcycle": 0.0,
+            "bus": 0.0,
+            "train": 0.0,
+            "truck": 0.0
+          },
+          "retention": 1.0,
+          "opr": 1.0,
+          "opr_denominator": 275,
+          "target_changes": {
+            "person": {
+              "kept": 32,
+              "lost": 0,
+              "gained": 0
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 231,
+              "lost": 0,
+              "gained": 0
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 5,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 5,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 1.0,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.0,
+          "weather_map_redline_pass": true
+        },
+        "v4_48k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.17206191704667778,
+            "map50_without_train": 0.16278510784158612,
+            "recall": 0.3736413043478261,
+            "precision": 0.6773399014778325,
+            "false_positives_per_image": 1.31,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 48,
+                "true_positives": 32,
+                "false_positives": 16,
+                "false_negatives": 100,
+                "precision": 0.6666666865348816,
+                "recall": 0.24242424964904785,
+                "ap50": 0.2196537468693044
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 317,
+                "true_positives": 231,
+                "false_positives": 86,
+                "false_negatives": 295,
+                "precision": 0.7287065982818604,
+                "recall": 0.4391635060310364,
+                "ap50": 0.4112294570054158
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 9,
+                "true_positives": 5,
+                "false_positives": 4,
+                "false_negatives": 27,
+                "precision": 0.5555555820465088,
+                "recall": 0.15625,
+                "ap50": 0.12659123156330374
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 28,
+                "true_positives": 5,
+                "false_positives": 23,
+                "false_negatives": 11,
+                "precision": 0.1785714328289032,
+                "recall": 0.3125,
+                "ap50": 0.2192362116114928
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.16291756226116055,
+            "map50_without_train": 0.15211669392514937,
+            "recall": 0.3763586956521739,
+            "precision": 0.6739659367396593,
+            "false_positives_per_image": 1.34,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 50,
+                "true_positives": 32,
+                "false_positives": 18,
+                "false_negatives": 100,
+                "precision": 0.6399999856948853,
+                "recall": 0.24242424964904785,
+                "ap50": 0.21396470246928753
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 320,
+                "true_positives": 234,
+                "false_positives": 86,
+                "false_negatives": 292,
+                "precision": 0.731249988079071,
+                "recall": 0.44486692547798157,
+                "ap50": 0.417699664536089
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 7,
+                "true_positives": 3,
+                "false_positives": 4,
+                "false_negatives": 29,
+                "precision": 0.4285714328289032,
+                "recall": 0.09375,
+                "ap50": 0.07425742633271926
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 30,
+                "true_positives": 6,
+                "false_positives": 24,
+                "false_negatives": 10,
+                "precision": 0.20000000298023224,
+                "recall": 0.375,
+                "ap50": 0.20677837021280043
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": -0.005689044400016857,
+            "bicycle": 0.0,
+            "car": 0.006470207530673178,
+            "motorcycle": 0.0,
+            "bus": -0.05233380523058448,
+            "train": 0.0,
+            "truck": -0.012457841398692354
+          },
+          "retention": 0.946854278143161,
+          "opr": 0.9563636363636364,
+          "opr_denominator": 275,
+          "target_changes": {
+            "person": {
+              "kept": 31,
+              "lost": 1,
+              "gained": 1
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 222,
+              "lost": 9,
+              "gained": 12
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 3,
+              "lost": 2,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 5,
+              "lost": 0,
+              "gained": 1
+            }
+          },
+          "opr_legacy": 0.9572953736654805,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.009144354785517228,
+          "weather_map_redline_pass": true
+        },
+        "control_52k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.17206191704667778,
+            "map50_without_train": 0.16278510784158612,
+            "recall": 0.3736413043478261,
+            "precision": 0.6773399014778325,
+            "false_positives_per_image": 1.31,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 48,
+                "true_positives": 32,
+                "false_positives": 16,
+                "false_negatives": 100,
+                "precision": 0.6666666865348816,
+                "recall": 0.24242424964904785,
+                "ap50": 0.2196537468693044
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 317,
+                "true_positives": 231,
+                "false_positives": 86,
+                "false_negatives": 295,
+                "precision": 0.7287065982818604,
+                "recall": 0.4391635060310364,
+                "ap50": 0.4112294570054158
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 9,
+                "true_positives": 5,
+                "false_positives": 4,
+                "false_negatives": 27,
+                "precision": 0.5555555820465088,
+                "recall": 0.15625,
+                "ap50": 0.12659123156330374
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 28,
+                "true_positives": 5,
+                "false_positives": 23,
+                "false_negatives": 11,
+                "precision": 0.1785714328289032,
+                "recall": 0.3125,
+                "ap50": 0.2192362116114928
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.16027260007918978,
+            "map50_without_train": 0.1490309047128501,
+            "recall": 0.37092391304347827,
+            "precision": 0.6724137931034483,
+            "false_positives_per_image": 1.33,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 51,
+                "true_positives": 33,
+                "false_positives": 18,
+                "false_negatives": 99,
+                "precision": 0.6470588445663452,
+                "recall": 0.25,
+                "ap50": 0.22283703383832876
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 314,
+                "true_positives": 230,
+                "false_positives": 84,
+                "false_negatives": 296,
+                "precision": 0.7324841022491455,
+                "recall": 0.4372623562812805,
+                "ap50": 0.40837209531576324
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 6,
+                "true_positives": 2,
+                "false_positives": 4,
+                "false_negatives": 30,
+                "precision": 0.3333333432674408,
+                "recall": 0.0625,
+                "ap50": 0.059405941184204406
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 31,
+                "true_positives": 6,
+                "false_positives": 25,
+                "false_negatives": 10,
+                "precision": 0.19354838132858276,
+                "recall": 0.375,
+                "ap50": 0.20357035793880424
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.003183286969024368,
+            "bicycle": 0.0,
+            "car": -0.00285736168965256,
+            "motorcycle": 0.0,
+            "bus": -0.06718529037909933,
+            "train": 0.0,
+            "truck": -0.01566585367268855
+          },
+          "retention": 0.9314821247499542,
+          "opr": 0.9490909090909091,
+          "opr_denominator": 275,
+          "target_changes": {
+            "person": {
+              "kept": 32,
+              "lost": 0,
+              "gained": 1
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 220,
+              "lost": 11,
+              "gained": 10
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 2,
+              "lost": 3,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 5,
+              "lost": 0,
+              "gained": 1
+            }
+          },
+          "opr_legacy": 0.9466192170818505,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.011789316967488,
+          "weather_map_redline_pass": true
+        },
+        "guard_52k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.17206191704667778,
+            "map50_without_train": 0.16278510784158612,
+            "recall": 0.3736413043478261,
+            "precision": 0.6773399014778325,
+            "false_positives_per_image": 1.31,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 48,
+                "true_positives": 32,
+                "false_positives": 16,
+                "false_negatives": 100,
+                "precision": 0.6666666865348816,
+                "recall": 0.24242424964904785,
+                "ap50": 0.2196537468693044
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 317,
+                "true_positives": 231,
+                "false_positives": 86,
+                "false_negatives": 295,
+                "precision": 0.7287065982818604,
+                "recall": 0.4391635060310364,
+                "ap50": 0.4112294570054158
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 9,
+                "true_positives": 5,
+                "false_positives": 4,
+                "false_negatives": 27,
+                "precision": 0.5555555820465088,
+                "recall": 0.15625,
+                "ap50": 0.12659123156330374
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 28,
+                "true_positives": 5,
+                "false_positives": 23,
+                "false_negatives": 11,
+                "precision": 0.1785714328289032,
+                "recall": 0.3125,
+                "ap50": 0.2192362116114928
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.16353943703704035,
+            "map50_without_train": 0.15284221449700913,
+            "recall": 0.38179347826086957,
+            "precision": 0.6754807692307693,
+            "false_positives_per_image": 1.35,
+            "per_class": {
+              "person": {
+                "ground_truth": 132,
+                "predictions": 51,
+                "true_positives": 33,
+                "false_positives": 18,
+                "false_negatives": 99,
+                "precision": 0.6470588445663452,
+                "recall": 0.25,
+                "ap50": 0.22033475944311312
+              },
+              "bicycle": {
+                "ground_truth": 9,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 9,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 526,
+                "predictions": 325,
+                "true_positives": 237,
+                "false_positives": 88,
+                "false_negatives": 289,
+                "precision": 0.7292307615280151,
+                "recall": 0.45057034492492676,
+                "ap50": 0.4257015904577652
+              },
+              "motorcycle": {
+                "ground_truth": 12,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 32,
+                "predictions": 8,
+                "true_positives": 3,
+                "false_positives": 5,
+                "false_negatives": 29,
+                "precision": 0.375,
+                "recall": 0.09375,
+                "ap50": 0.06506364947498434
+              },
+              "train": {
+                "ground_truth": 9,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.2222222238779068,
+                "ap50": 0.22772277227722773
+              },
+              "truck": {
+                "ground_truth": 16,
+                "predictions": 28,
+                "true_positives": 6,
+                "false_positives": 22,
+                "false_negatives": 10,
+                "precision": 0.2142857164144516,
+                "recall": 0.375,
+                "ap50": 0.2059532876061921
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0006810125738087314,
+            "bicycle": 0.0,
+            "car": 0.014472133452349378,
+            "motorcycle": 0.0,
+            "bus": -0.06152758208831939,
+            "train": 0.0,
+            "truck": -0.013282924005300678
+          },
+          "retention": 0.9504685280977928,
+          "opr": 0.9781818181818182,
+          "opr_denominator": 275,
+          "target_changes": {
+            "person": {
+              "kept": 32,
+              "lost": 0,
+              "gained": 1
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 227,
+              "lost": 4,
+              "gained": 10
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 3,
+              "lost": 2,
+              "gained": 0
+            },
+            "train": {
+              "kept": 2,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 5,
+              "lost": 0,
+              "gained": 1
+            }
+          },
+          "opr_legacy": 0.9786476868327402,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.008522480009637429,
+          "weather_map_redline_pass": true
+        }
+      },
+      "guard_minus_control": {
+        "map50": 0.003266836957850572,
+        "map50_without_train": 0.003811309784159028,
+        "recall": 0.010869565217391297,
+        "precision": 0.003066976127320986,
+        "false_positives_per_image": 0.020000000000000018,
+        "opr_relative_input": 0.029090909090909056,
+        "retention_relative_input": 0.018986403347838632,
+        "per_class_ap50": {
+          "person": -0.0025022743952156368,
+          "bicycle": 0.0,
+          "car": 0.01732949514200194,
+          "motorcycle": 0.0,
+          "bus": 0.005657708290779939,
+          "train": 0.0,
+          "truck": 0.002382929667387873
+        }
+      }
+    },
+    "night": {
+      "vs_input": {
+        "input": {
+          "baseline": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13783103266958358,
+            "map50_without_train": 0.11142898491113493,
+            "recall": 0.21388367729831145,
+            "precision": 0.6063829787234043,
+            "false_positives_per_image": 0.6981132075471698,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 41,
+                "true_positives": 28,
+                "false_positives": 13,
+                "false_negatives": 130,
+                "precision": 0.6829268336296082,
+                "recall": 0.17721518874168396,
+                "ap50": 0.16004332693496554
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 125,
+                "true_positives": 78,
+                "false_positives": 47,
+                "false_negatives": 188,
+                "precision": 0.6240000128746033,
+                "recall": 0.29323309659957886,
+                "ap50": 0.2683887263335804
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 17,
+                "precision": 0.699999988079071,
+                "recall": 0.2916666567325592,
+                "ap50": 0.26984127146182674
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 4,
+                "true_positives": 1,
+                "false_positives": 3,
+                "false_negatives": 7,
+                "precision": 0.25,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "method": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13783103266958358,
+            "map50_without_train": 0.11142898491113493,
+            "recall": 0.21388367729831145,
+            "precision": 0.6063829787234043,
+            "false_positives_per_image": 0.6981132075471698,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 41,
+                "true_positives": 28,
+                "false_positives": 13,
+                "false_negatives": 130,
+                "precision": 0.6829268336296082,
+                "recall": 0.17721518874168396,
+                "ap50": 0.16004332693496554
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 125,
+                "true_positives": 78,
+                "false_positives": 47,
+                "false_negatives": 188,
+                "precision": 0.6240000128746033,
+                "recall": 0.29323309659957886,
+                "ap50": 0.2683887263335804
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 17,
+                "precision": 0.699999988079071,
+                "recall": 0.2916666567325592,
+                "ap50": 0.26984127146182674
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 4,
+                "true_positives": 1,
+                "false_positives": 3,
+                "false_negatives": 7,
+                "precision": 0.25,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0,
+            "bicycle": 0.0,
+            "car": 0.0,
+            "motorcycle": 0.0,
+            "train": 0.0,
+            "truck": 0.0
+          },
+          "retention": 1.0,
+          "opr": 1.0,
+          "opr_denominator": 114,
+          "target_changes": {
+            "person": {
+              "kept": 28,
+              "lost": 0,
+              "gained": 0
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 78,
+              "lost": 0,
+              "gained": 0
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 1,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 1.0,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.0,
+          "weather_map_redline_pass": true
+        },
+        "v4_48k": {
+          "baseline": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13783103266958358,
+            "map50_without_train": 0.11142898491113493,
+            "recall": 0.21388367729831145,
+            "precision": 0.6063829787234043,
+            "false_positives_per_image": 0.6981132075471698,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 41,
+                "true_positives": 28,
+                "false_positives": 13,
+                "false_negatives": 130,
+                "precision": 0.6829268336296082,
+                "recall": 0.17721518874168396,
+                "ap50": 0.16004332693496554
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 125,
+                "true_positives": 78,
+                "false_positives": 47,
+                "false_negatives": 188,
+                "precision": 0.6240000128746033,
+                "recall": 0.29323309659957886,
+                "ap50": 0.2683887263335804
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 17,
+                "precision": 0.699999988079071,
+                "recall": 0.2916666567325592,
+                "ap50": 0.26984127146182674
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 4,
+                "true_positives": 1,
+                "false_positives": 3,
+                "false_negatives": 7,
+                "precision": 0.25,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "method": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13171286817037628,
+            "map50_without_train": 0.111379345336763,
+            "recall": 0.21575984990619138,
+            "precision": 0.5665024630541872,
+            "false_positives_per_image": 0.8301886792452831,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 41,
+                "true_positives": 29,
+                "false_positives": 12,
+                "false_negatives": 129,
+                "precision": 0.707317054271698,
+                "recall": 0.1835443079471588,
+                "ap50": 0.16960310168785625
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 139,
+                "true_positives": 79,
+                "false_positives": 60,
+                "false_negatives": 187,
+                "precision": 0.568345308303833,
+                "recall": 0.2969924807548523,
+                "ap50": 0.25858075370883
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 5,
+                "true_positives": 0,
+                "false_positives": 5,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 11,
+                "true_positives": 6,
+                "false_positives": 5,
+                "false_negatives": 18,
+                "precision": 0.5454545617103577,
+                "recall": 0.25,
+                "ap50": 0.23338048233844266
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 4,
+                "true_positives": 1,
+                "false_positives": 3,
+                "false_negatives": 7,
+                "precision": 0.25,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.009559774752890715,
+            "bicycle": 0.0,
+            "car": -0.009807972624750416,
+            "motorcycle": 0.0,
+            "train": -0.036460789123384074,
+            "truck": 0.0
+          },
+          "retention": 0.9556111248627578,
+          "opr": 0.9298245614035088,
+          "opr_denominator": 114,
+          "target_changes": {
+            "person": {
+              "kept": 25,
+              "lost": 3,
+              "gained": 4
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 74,
+              "lost": 4,
+              "gained": 5
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 6,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 1,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 0.9304347826086956,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.006118164499207296,
+          "weather_map_redline_pass": true
+        },
+        "control_52k": {
+          "baseline": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13783103266958358,
+            "map50_without_train": 0.11142898491113493,
+            "recall": 0.21388367729831145,
+            "precision": 0.6063829787234043,
+            "false_positives_per_image": 0.6981132075471698,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 41,
+                "true_positives": 28,
+                "false_positives": 13,
+                "false_negatives": 130,
+                "precision": 0.6829268336296082,
+                "recall": 0.17721518874168396,
+                "ap50": 0.16004332693496554
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 125,
+                "true_positives": 78,
+                "false_positives": 47,
+                "false_negatives": 188,
+                "precision": 0.6240000128746033,
+                "recall": 0.29323309659957886,
+                "ap50": 0.2683887263335804
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 17,
+                "precision": 0.699999988079071,
+                "recall": 0.2916666567325592,
+                "ap50": 0.26984127146182674
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 4,
+                "true_positives": 1,
+                "false_positives": 3,
+                "false_negatives": 7,
+                "precision": 0.25,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "method": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13288633540125178,
+            "map50_without_train": 0.11391904767196959,
+            "recall": 0.21951219512195122,
+            "precision": 0.5879396984924623,
+            "false_positives_per_image": 0.7735849056603774,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 43,
+                "true_positives": 30,
+                "false_positives": 13,
+                "false_negatives": 128,
+                "precision": 0.6976743936538696,
+                "recall": 0.18987341225147247,
+                "ap50": 0.1716442597974645
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 134,
+                "true_positives": 80,
+                "false_positives": 54,
+                "false_negatives": 186,
+                "precision": 0.5970149040222168,
+                "recall": 0.30075186491012573,
+                "ap50": 0.26923810727525466
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 12,
+                "true_positives": 6,
+                "false_positives": 6,
+                "false_negatives": 18,
+                "precision": 0.5,
+                "recall": 0.25,
+                "ap50": 0.22772277404766272
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 2,
+                "true_positives": 1,
+                "false_positives": 1,
+                "false_negatives": 7,
+                "precision": 0.5,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.01160093286249897,
+            "bicycle": 0.0,
+            "car": 0.0008493809416742493,
+            "motorcycle": 0.0,
+            "train": -0.04211849741416401,
+            "truck": 0.0
+          },
+          "retention": 0.9641249349108084,
+          "opr": 0.9649122807017544,
+          "opr_denominator": 114,
+          "target_changes": {
+            "person": {
+              "kept": 27,
+              "lost": 1,
+              "gained": 3
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 76,
+              "lost": 2,
+              "gained": 4
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 6,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 1,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 0.9652173913043478,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.004944697268331799,
+          "weather_map_redline_pass": true
+        },
+        "guard_52k": {
+          "baseline": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13783103266958358,
+            "map50_without_train": 0.11142898491113493,
+            "recall": 0.21388367729831145,
+            "precision": 0.6063829787234043,
+            "false_positives_per_image": 0.6981132075471698,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 41,
+                "true_positives": 28,
+                "false_positives": 13,
+                "false_negatives": 130,
+                "precision": 0.6829268336296082,
+                "recall": 0.17721518874168396,
+                "ap50": 0.16004332693496554
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 125,
+                "true_positives": 78,
+                "false_positives": 47,
+                "false_negatives": 188,
+                "precision": 0.6240000128746033,
+                "recall": 0.29323309659957886,
+                "ap50": 0.2683887263335804
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 17,
+                "precision": 0.699999988079071,
+                "recall": 0.2916666567325592,
+                "ap50": 0.26984127146182674
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 4,
+                "true_positives": 1,
+                "false_positives": 3,
+                "false_negatives": 7,
+                "precision": 0.25,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "method": {
+            "n_images": 106,
+            "n_classes_with_gt": 6,
+            "map50": 0.13347113565249805,
+            "map50_without_train": 0.11462080797346512,
+            "recall": 0.22326454033771106,
+            "precision": 0.5891089108910891,
+            "false_positives_per_image": 0.7830188679245284,
+            "per_class": {
+              "person": {
+                "ground_truth": 158,
+                "predictions": 45,
+                "true_positives": 31,
+                "false_positives": 14,
+                "false_negatives": 127,
+                "precision": 0.6888889074325562,
+                "recall": 0.19620253145694733,
+                "ap50": 0.17779757834897184
+              },
+              "bicycle": {
+                "ground_truth": 56,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 56,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 266,
+                "predictions": 136,
+                "true_positives": 81,
+                "false_positives": 55,
+                "false_negatives": 185,
+                "precision": 0.595588207244873,
+                "recall": 0.30451127886772156,
+                "ap50": 0.26659359023122503
+              },
+              "motorcycle": {
+                "ground_truth": 21,
+                "predictions": 2,
+                "true_positives": 0,
+                "false_positives": 2,
+                "false_negatives": 21,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 0,
+                "predictions": 4,
+                "true_positives": 0,
+                "false_positives": 4,
+                "false_negatives": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": null
+              },
+              "train": {
+                "ground_truth": 24,
+                "predictions": 11,
+                "true_positives": 6,
+                "false_positives": 5,
+                "false_negatives": 18,
+                "precision": 0.5454545617103577,
+                "recall": 0.25,
+                "ap50": 0.22772277404766272
+              },
+              "truck": {
+                "ground_truth": 8,
+                "predictions": 3,
+                "true_positives": 1,
+                "false_positives": 2,
+                "false_negatives": 7,
+                "precision": 0.3333333432674408,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0177542514140063,
+            "bicycle": 0.0,
+            "car": -0.001795136102355377,
+            "motorcycle": 0.0,
+            "train": -0.04211849741416401,
+            "truck": 0.0
+          },
+          "retention": 0.9683678128746425,
+          "opr": 0.956140350877193,
+          "opr_denominator": 114,
+          "target_changes": {
+            "person": {
+              "kept": 27,
+              "lost": 1,
+              "gained": 4
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 75,
+              "lost": 3,
+              "gained": 6
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 6,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 1,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 0.9565217391304348,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.004359897017085529,
+          "weather_map_redline_pass": true
+        }
+      },
+      "guard_minus_control": {
+        "map50": 0.0005848002512462702,
+        "map50_without_train": 0.0007017603014955326,
+        "recall": 0.0037523452157598447,
+        "precision": 0.0011692123986267733,
+        "false_positives_per_image": 0.009433962264150941,
+        "opr_relative_input": -0.00877192982456143,
+        "retention_relative_input": 0.004242877963834046,
+        "per_class_ap50": {
+          "person": 0.006153318551507331,
+          "bicycle": 0.0,
+          "car": -0.002644517044029626,
+          "motorcycle": 0.0,
+          "bus": null,
+          "train": 0.0,
+          "truck": 0.0
+        }
+      }
+    },
+    "snow": {
+      "vs_input": {
+        "input": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.24506994498079532,
+            "map50_without_train": 0.17225982029937673,
+            "recall": 0.3710843373493976,
+            "precision": 0.7777777777777778,
+            "false_positives_per_image": 0.88,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 53,
+                "true_positives": 35,
+                "false_positives": 18,
+                "false_negatives": 140,
+                "precision": 0.6603773832321167,
+                "recall": 0.20000000298023224,
+                "ap50": 0.19255656240010025
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 295,
+                "true_positives": 251,
+                "false_positives": 44,
+                "false_negatives": 312,
+                "precision": 0.8508474826812744,
+                "recall": 0.4458259344100952,
+                "ap50": 0.4306350551029243
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 1.0,
+                "recall": 0.1875,
+                "ap50": 0.18811881188118812
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 9,
+                "true_positives": 1,
+                "false_positives": 8,
+                "false_negatives": 11,
+                "precision": 0.1111111119389534,
+                "recall": 0.0833333358168602,
+                "ap50": 0.01272984498208112
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 3,
+                "precision": 0.699999988079071,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 26,
+                "true_positives": 11,
+                "false_positives": 15,
+                "false_negatives": 30,
+                "precision": 0.42307692766189575,
+                "recall": 0.26829269528388977,
+                "ap50": 0.2095186474299667
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.24506994498079532,
+            "map50_without_train": 0.17225982029937673,
+            "recall": 0.3710843373493976,
+            "precision": 0.7777777777777778,
+            "false_positives_per_image": 0.88,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 53,
+                "true_positives": 35,
+                "false_positives": 18,
+                "false_negatives": 140,
+                "precision": 0.6603773832321167,
+                "recall": 0.20000000298023224,
+                "ap50": 0.19255656240010025
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 295,
+                "true_positives": 251,
+                "false_positives": 44,
+                "false_negatives": 312,
+                "precision": 0.8508474826812744,
+                "recall": 0.4458259344100952,
+                "ap50": 0.4306350551029243
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 1.0,
+                "recall": 0.1875,
+                "ap50": 0.18811881188118812
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 9,
+                "true_positives": 1,
+                "false_positives": 8,
+                "false_negatives": 11,
+                "precision": 0.1111111119389534,
+                "recall": 0.0833333358168602,
+                "ap50": 0.01272984498208112
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 3,
+                "precision": 0.699999988079071,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 26,
+                "true_positives": 11,
+                "false_positives": 15,
+                "false_negatives": 30,
+                "precision": 0.42307692766189575,
+                "recall": 0.26829269528388977,
+                "ap50": 0.2095186474299667
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0,
+            "bicycle": 0.0,
+            "car": 0.0,
+            "motorcycle": 0.0,
+            "bus": 0.0,
+            "train": 0.0,
+            "truck": 0.0
+          },
+          "retention": 1.0,
+          "opr": 1.0,
+          "opr_denominator": 308,
+          "target_changes": {
+            "person": {
+              "kept": 35,
+              "lost": 0,
+              "gained": 0
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 251,
+              "lost": 0,
+              "gained": 0
+            },
+            "motorcycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 1,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 11,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 1.0,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.0,
+          "weather_map_redline_pass": true
+        },
+        "v4_48k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.24506994498079532,
+            "map50_without_train": 0.17225982029937673,
+            "recall": 0.3710843373493976,
+            "precision": 0.7777777777777778,
+            "false_positives_per_image": 0.88,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 53,
+                "true_positives": 35,
+                "false_positives": 18,
+                "false_negatives": 140,
+                "precision": 0.6603773832321167,
+                "recall": 0.20000000298023224,
+                "ap50": 0.19255656240010025
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 295,
+                "true_positives": 251,
+                "false_positives": 44,
+                "false_negatives": 312,
+                "precision": 0.8508474826812744,
+                "recall": 0.4458259344100952,
+                "ap50": 0.4306350551029243
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 1.0,
+                "recall": 0.1875,
+                "ap50": 0.18811881188118812
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 9,
+                "true_positives": 1,
+                "false_positives": 8,
+                "false_negatives": 11,
+                "precision": 0.1111111119389534,
+                "recall": 0.0833333358168602,
+                "ap50": 0.01272984498208112
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 3,
+                "precision": 0.699999988079071,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 26,
+                "true_positives": 11,
+                "false_positives": 15,
+                "false_negatives": 30,
+                "precision": 0.42307692766189575,
+                "recall": 0.26829269528388977,
+                "ap50": 0.2095186474299667
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.2369070641559455,
+            "map50_without_train": 0.16273645933705194,
+            "recall": 0.36626506024096384,
+            "precision": 0.7619047619047619,
+            "false_positives_per_image": 0.95,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 55,
+                "true_positives": 35,
+                "false_positives": 20,
+                "false_negatives": 140,
+                "precision": 0.6363636255264282,
+                "recall": 0.20000000298023224,
+                "ap50": 0.1931796622748422
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 298,
+                "true_positives": 249,
+                "false_positives": 49,
+                "false_negatives": 314,
+                "precision": 0.8355704545974731,
+                "recall": 0.4422735273838043,
+                "ap50": 0.4297501704480388
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 4,
+                "true_positives": 3,
+                "false_positives": 1,
+                "false_negatives": 13,
+                "precision": 0.75,
+                "recall": 0.1875,
+                "ap50": 0.17326732673267325
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 6,
+                "true_positives": 0,
+                "false_positives": 6,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 8,
+                "true_positives": 7,
+                "false_positives": 1,
+                "false_negatives": 3,
+                "precision": 0.875,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 28,
+                "true_positives": 10,
+                "false_positives": 18,
+                "false_negatives": 31,
+                "precision": 0.3571428656578064,
+                "recall": 0.24390244483947754,
+                "ap50": 0.18022159656675735
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0006230998747419614,
+            "bicycle": 0.0,
+            "car": -0.0008848846548855094,
+            "motorcycle": -0.014851485148514865,
+            "bus": -0.01272984498208112,
+            "train": 0.0,
+            "truck": -0.029297050863209356
+          },
+          "retention": 0.9666916282798795,
+          "opr": 0.9512987012987013,
+          "opr_denominator": 308,
+          "target_changes": {
+            "person": {
+              "kept": 34,
+              "lost": 1,
+              "gained": 1
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 239,
+              "lost": 12,
+              "gained": 10
+            },
+            "motorcycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 1,
+              "gained": 0
+            },
+            "train": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 10,
+              "lost": 1,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 0.9483870967741935,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.00816288082484981,
+          "weather_map_redline_pass": true
+        },
+        "control_52k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.24506994498079532,
+            "map50_without_train": 0.17225982029937673,
+            "recall": 0.3710843373493976,
+            "precision": 0.7777777777777778,
+            "false_positives_per_image": 0.88,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 53,
+                "true_positives": 35,
+                "false_positives": 18,
+                "false_negatives": 140,
+                "precision": 0.6603773832321167,
+                "recall": 0.20000000298023224,
+                "ap50": 0.19255656240010025
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 295,
+                "true_positives": 251,
+                "false_positives": 44,
+                "false_negatives": 312,
+                "precision": 0.8508474826812744,
+                "recall": 0.4458259344100952,
+                "ap50": 0.4306350551029243
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 1.0,
+                "recall": 0.1875,
+                "ap50": 0.18811881188118812
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 9,
+                "true_positives": 1,
+                "false_positives": 8,
+                "false_negatives": 11,
+                "precision": 0.1111111119389534,
+                "recall": 0.0833333358168602,
+                "ap50": 0.01272984498208112
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 3,
+                "precision": 0.699999988079071,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 26,
+                "true_positives": 11,
+                "false_positives": 15,
+                "false_negatives": 30,
+                "precision": 0.42307692766189575,
+                "recall": 0.26829269528388977,
+                "ap50": 0.2095186474299667
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.22901926544801857,
+            "map50_without_train": 0.15559673378176422,
+            "recall": 0.3650602409638554,
+            "precision": 0.7593984962406015,
+            "false_positives_per_image": 0.96,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 56,
+                "true_positives": 36,
+                "false_positives": 20,
+                "false_negatives": 139,
+                "precision": 0.6428571343421936,
+                "recall": 0.20571428537368774,
+                "ap50": 0.1948478640896259
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 296,
+                "true_positives": 248,
+                "false_positives": 48,
+                "false_negatives": 315,
+                "precision": 0.837837815284729,
+                "recall": 0.44049733877182007,
+                "ap50": 0.43064672640054535
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 4,
+                "true_positives": 2,
+                "false_positives": 2,
+                "false_negatives": 14,
+                "precision": 0.5,
+                "recall": 0.125,
+                "ap50": 0.12871287128712872
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 7,
+                "true_positives": 0,
+                "false_positives": 7,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 8,
+                "true_positives": 7,
+                "false_positives": 1,
+                "false_negatives": 3,
+                "precision": 0.875,
+                "recall": 0.699999988079071,
+                "ap50": 0.6695544554455446
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 28,
+                "true_positives": 10,
+                "false_positives": 18,
+                "false_negatives": 31,
+                "precision": 0.3571428656578064,
+                "recall": 0.24390244483947754,
+                "ap50": 0.17937294091328537
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0022913016895256544,
+            "bicycle": 0.0,
+            "car": 1.1671297621029808e-05,
+            "motorcycle": -0.0594059405940594,
+            "bus": -0.01272984498208112,
+            "train": -0.012376237623762387,
+            "truck": -0.03014570651668133
+          },
+          "retention": 0.9345057202586202,
+          "opr": 0.948051948051948,
+          "opr_denominator": 308,
+          "target_changes": {
+            "person": {
+              "kept": 34,
+              "lost": 1,
+              "gained": 2
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 239,
+              "lost": 12,
+              "gained": 9
+            },
+            "motorcycle": {
+              "kept": 2,
+              "lost": 1,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 1,
+              "gained": 0
+            },
+            "train": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 10,
+              "lost": 1,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 0.9451612903225807,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.01605067953277675,
+          "weather_map_redline_pass": true
+        },
+        "guard_52k": {
+          "baseline": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.24506994498079532,
+            "map50_without_train": 0.17225982029937673,
+            "recall": 0.3710843373493976,
+            "precision": 0.7777777777777778,
+            "false_positives_per_image": 0.88,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 53,
+                "true_positives": 35,
+                "false_positives": 18,
+                "false_negatives": 140,
+                "precision": 0.6603773832321167,
+                "recall": 0.20000000298023224,
+                "ap50": 0.19255656240010025
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 295,
+                "true_positives": 251,
+                "false_positives": 44,
+                "false_negatives": 312,
+                "precision": 0.8508474826812744,
+                "recall": 0.4458259344100952,
+                "ap50": 0.4306350551029243
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 1.0,
+                "recall": 0.1875,
+                "ap50": 0.18811881188118812
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 9,
+                "true_positives": 1,
+                "false_positives": 8,
+                "false_negatives": 11,
+                "precision": 0.1111111119389534,
+                "recall": 0.0833333358168602,
+                "ap50": 0.01272984498208112
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 10,
+                "true_positives": 7,
+                "false_positives": 3,
+                "false_negatives": 3,
+                "precision": 0.699999988079071,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 26,
+                "true_positives": 11,
+                "false_positives": 15,
+                "false_negatives": 30,
+                "precision": 0.42307692766189575,
+                "recall": 0.26829269528388977,
+                "ap50": 0.2095186474299667
+              }
+            }
+          },
+          "method": {
+            "n_images": 100,
+            "n_classes_with_gt": 7,
+            "map50": 0.24064843590559684,
+            "map50_without_train": 0.16710139304497848,
+            "recall": 0.3759036144578313,
+            "precision": 0.7536231884057971,
+            "false_positives_per_image": 1.02,
+            "per_class": {
+              "person": {
+                "ground_truth": 175,
+                "predictions": 57,
+                "true_positives": 36,
+                "false_positives": 21,
+                "false_negatives": 139,
+                "precision": 0.6315789222717285,
+                "recall": 0.20571428537368774,
+                "ap50": 0.19346908295508658
+              },
+              "bicycle": {
+                "ground_truth": 13,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "car": {
+                "ground_truth": 563,
+                "predictions": 310,
+                "true_positives": 256,
+                "false_positives": 54,
+                "false_negatives": 307,
+                "precision": 0.8258064389228821,
+                "recall": 0.45470693707466125,
+                "ap50": 0.43908976800370925
+              },
+              "motorcycle": {
+                "ground_truth": 16,
+                "predictions": 4,
+                "true_positives": 3,
+                "false_positives": 1,
+                "false_negatives": 13,
+                "precision": 0.75,
+                "recall": 0.1875,
+                "ap50": 0.18811881188118812
+              },
+              "bus": {
+                "ground_truth": 12,
+                "predictions": 7,
+                "true_positives": 0,
+                "false_positives": 7,
+                "false_negatives": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "train": {
+                "ground_truth": 10,
+                "predictions": 9,
+                "true_positives": 7,
+                "false_positives": 2,
+                "false_negatives": 3,
+                "precision": 0.7777777910232544,
+                "recall": 0.699999988079071,
+                "ap50": 0.681930693069307
+              },
+              "truck": {
+                "ground_truth": 41,
+                "predictions": 27,
+                "true_positives": 10,
+                "false_positives": 17,
+                "false_negatives": 31,
+                "precision": 0.37037035822868347,
+                "recall": 0.24390244483947754,
+                "ap50": 0.18193069542988693
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0009125205549863347,
+            "bicycle": 0.0,
+            "car": 0.008454712900784922,
+            "motorcycle": 0.0,
+            "bus": -0.01272984498208112,
+            "train": 0.0,
+            "truck": -0.02758795200007977
+          },
+          "retention": 0.981958174938404,
+          "opr": 0.9642857142857143,
+          "opr_denominator": 308,
+          "target_changes": {
+            "person": {
+              "kept": 33,
+              "lost": 2,
+              "gained": 3
+            },
+            "bicycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 244,
+              "lost": 7,
+              "gained": 12
+            },
+            "motorcycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 0,
+              "lost": 1,
+              "gained": 0
+            },
+            "train": {
+              "kept": 7,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 10,
+              "lost": 1,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 0.964516129032258,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.0044215090751984765,
+          "weather_map_redline_pass": true
+        }
+      },
+      "guard_minus_control": {
+        "map50": 0.011629170457578275,
+        "map50_without_train": 0.011504659263214256,
+        "recall": 0.010843373493975905,
+        "precision": -0.0057753078348044,
+        "false_positives_per_image": 0.06000000000000005,
+        "opr_relative_input": 0.016233766233766267,
+        "retention_relative_input": 0.04745245467978376,
+        "per_class_ap50": {
+          "person": -0.0013787811345393197,
+          "bicycle": 0.0,
+          "car": 0.008443041603163892,
+          "motorcycle": 0.0594059405940594,
+          "bus": 0.0,
+          "train": 0.012376237623762387,
+          "truck": 0.0025577545166015625
+        }
+      }
+    },
+    "rain_fog200": {
+      "vs_input": {
+        "input": {
+          "baseline": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20422078776561894,
+            "map50_without_train": 0.18655241494721705,
+            "recall": 0.4331864904552129,
+            "precision": 0.6965761511216056,
+            "false_positives_per_image": 1.285,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 70,
+                "true_positives": 45,
+                "false_positives": 25,
+                "false_negatives": 149,
+                "precision": 0.6428571343421936,
+                "recall": 0.2319587618112564,
+                "ap50": 0.20365219246042837
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 675,
+                "true_positives": 518,
+                "false_positives": 157,
+                "false_negatives": 501,
+                "precision": 0.7674074172973633,
+                "recall": 0.5083414912223816,
+                "ap50": 0.4813523687938652
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 19,
+                "true_positives": 8,
+                "false_positives": 11,
+                "false_negatives": 29,
+                "precision": 0.42105263471603394,
+                "recall": 0.21621622145175934,
+                "ap50": 0.16353840403037495
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 8,
+                "true_positives": 4,
+                "false_positives": 4,
+                "false_negatives": 8,
+                "precision": 0.5,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 72,
+                "true_positives": 12,
+                "false_positives": 60,
+                "false_negatives": 45,
+                "precision": 0.1666666716337204,
+                "recall": 0.21052631735801697,
+                "ap50": 0.11235568281447533
+              }
+            }
+          },
+          "method": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20422078776561894,
+            "map50_without_train": 0.18655241494721705,
+            "recall": 0.4331864904552129,
+            "precision": 0.6965761511216056,
+            "false_positives_per_image": 1.285,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 70,
+                "true_positives": 45,
+                "false_positives": 25,
+                "false_negatives": 149,
+                "precision": 0.6428571343421936,
+                "recall": 0.2319587618112564,
+                "ap50": 0.20365219246042837
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 675,
+                "true_positives": 518,
+                "false_positives": 157,
+                "false_negatives": 501,
+                "precision": 0.7674074172973633,
+                "recall": 0.5083414912223816,
+                "ap50": 0.4813523687938652
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 19,
+                "true_positives": 8,
+                "false_positives": 11,
+                "false_negatives": 29,
+                "precision": 0.42105263471603394,
+                "recall": 0.21621622145175934,
+                "ap50": 0.16353840403037495
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 8,
+                "true_positives": 4,
+                "false_positives": 4,
+                "false_negatives": 8,
+                "precision": 0.5,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 72,
+                "true_positives": 12,
+                "false_positives": 60,
+                "false_negatives": 45,
+                "precision": 0.1666666716337204,
+                "recall": 0.21052631735801697,
+                "ap50": 0.11235568281447533
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.0,
+            "bicycle": 0.0,
+            "car": 0.0,
+            "motorcycle": 0.0,
+            "bus": 0.0,
+            "train": 0.0,
+            "truck": 0.0
+          },
+          "retention": 1.0,
+          "opr": 1.0,
+          "opr_denominator": 590,
+          "target_changes": {
+            "person": {
+              "kept": 45,
+              "lost": 0,
+              "gained": 0
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 518,
+              "lost": 0,
+              "gained": 0
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 8,
+              "lost": 0,
+              "gained": 0
+            },
+            "train": {
+              "kept": 4,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 12,
+              "lost": 0,
+              "gained": 0
+            }
+          },
+          "opr_legacy": 1.0,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": 0.0,
+          "weather_map_redline_pass": true
+        },
+        "v4_48k": {
+          "baseline": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20422078776561894,
+            "map50_without_train": 0.18655241494721705,
+            "recall": 0.4331864904552129,
+            "precision": 0.6965761511216056,
+            "false_positives_per_image": 1.285,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 70,
+                "true_positives": 45,
+                "false_positives": 25,
+                "false_negatives": 149,
+                "precision": 0.6428571343421936,
+                "recall": 0.2319587618112564,
+                "ap50": 0.20365219246042837
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 675,
+                "true_positives": 518,
+                "false_positives": 157,
+                "false_negatives": 501,
+                "precision": 0.7674074172973633,
+                "recall": 0.5083414912223816,
+                "ap50": 0.4813523687938652
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 19,
+                "true_positives": 8,
+                "false_positives": 11,
+                "false_negatives": 29,
+                "precision": 0.42105263471603394,
+                "recall": 0.21621622145175934,
+                "ap50": 0.16353840403037495
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 8,
+                "true_positives": 4,
+                "false_positives": 4,
+                "false_negatives": 8,
+                "precision": 0.5,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 72,
+                "true_positives": 12,
+                "false_positives": 60,
+                "false_negatives": 45,
+                "precision": 0.1666666716337204,
+                "recall": 0.21052631735801697,
+                "ap50": 0.11235568281447533
+              }
+            }
+          },
+          "method": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20315746891363679,
+            "map50_without_train": 0.1853118762865712,
+            "recall": 0.4456681350954479,
+            "precision": 0.7091121495327103,
+            "false_positives_per_image": 1.245,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 79,
+                "true_positives": 49,
+                "false_positives": 30,
+                "false_negatives": 145,
+                "precision": 0.6202531456947327,
+                "recall": 0.2525773048400879,
+                "ap50": 0.21697869277236484
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 674,
+                "true_positives": 531,
+                "false_positives": 143,
+                "false_negatives": 488,
+                "precision": 0.7878338098526001,
+                "recall": 0.5210990905761719,
+                "ap50": 0.4998430763140763
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 15,
+                "true_positives": 6,
+                "false_positives": 9,
+                "false_negatives": 31,
+                "precision": 0.4000000059604645,
+                "recall": 0.1621621549129486,
+                "ap50": 0.12642802755431373
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 6,
+                "true_positives": 4,
+                "false_positives": 2,
+                "false_negatives": 8,
+                "precision": 0.6666666865348816,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 78,
+                "true_positives": 14,
+                "false_positives": 64,
+                "false_negatives": 43,
+                "precision": 0.1794871836900711,
+                "recall": 0.24561403691768646,
+                "ap50": 0.11020561949451371
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.013326500311936468,
+            "bicycle": 0.0,
+            "car": 0.01849070752021109,
+            "motorcycle": 0.0,
+            "bus": -0.03711037647606122,
+            "train": 0.0,
+            "truck": -0.0021500633199616204
+          },
+          "retention": 0.9947932878742858,
+          "opr": 0.9576271186440678,
+          "opr_denominator": 590,
+          "target_changes": {
+            "person": {
+              "kept": 43,
+              "lost": 2,
+              "gained": 6
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 497,
+              "lost": 21,
+              "gained": 34
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 6,
+              "lost": 2,
+              "gained": 0
+            },
+            "train": {
+              "kept": 4,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 12,
+              "lost": 0,
+              "gained": 2
+            }
+          },
+          "opr_legacy": 0.9580536912751678,
+          "class_redline_pass": true,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.001063318851982159,
+          "weather_map_redline_pass": true
+        },
+        "control_52k": {
+          "baseline": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20422078776561894,
+            "map50_without_train": 0.18655241494721705,
+            "recall": 0.4331864904552129,
+            "precision": 0.6965761511216056,
+            "false_positives_per_image": 1.285,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 70,
+                "true_positives": 45,
+                "false_positives": 25,
+                "false_negatives": 149,
+                "precision": 0.6428571343421936,
+                "recall": 0.2319587618112564,
+                "ap50": 0.20365219246042837
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 675,
+                "true_positives": 518,
+                "false_positives": 157,
+                "false_negatives": 501,
+                "precision": 0.7674074172973633,
+                "recall": 0.5083414912223816,
+                "ap50": 0.4813523687938652
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 19,
+                "true_positives": 8,
+                "false_positives": 11,
+                "false_negatives": 29,
+                "precision": 0.42105263471603394,
+                "recall": 0.21621622145175934,
+                "ap50": 0.16353840403037495
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 8,
+                "true_positives": 4,
+                "false_positives": 4,
+                "false_negatives": 8,
+                "precision": 0.5,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 72,
+                "true_positives": 12,
+                "false_positives": 60,
+                "false_negatives": 45,
+                "precision": 0.1666666716337204,
+                "recall": 0.21052631735801697,
+                "ap50": 0.11235568281447533
+              }
+            }
+          },
+          "method": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.19273378926591458,
+            "map50_without_train": 0.18195179704785744,
+            "recall": 0.4434654919236417,
+            "precision": 0.704784130688448,
+            "false_positives_per_image": 1.265,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 79,
+                "true_positives": 50,
+                "false_positives": 29,
+                "false_negatives": 144,
+                "precision": 0.6329113841056824,
+                "recall": 0.25773194432258606,
+                "ap50": 0.21763429193213435
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 674,
+                "true_positives": 528,
+                "false_positives": 146,
+                "false_negatives": 491,
+                "precision": 0.783382773399353,
+                "recall": 0.518155038356781,
+                "ap50": 0.4911320658013372
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 15,
+                "true_positives": 5,
+                "false_positives": 10,
+                "false_negatives": 32,
+                "precision": 0.3333333432674408,
+                "recall": 0.13513512909412384,
+                "ap50": 0.1096181049205289
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 5,
+                "true_positives": 3,
+                "false_positives": 2,
+                "false_negatives": 9,
+                "precision": 0.6000000238418579,
+                "recall": 0.25,
+                "ap50": 0.25742574257425743
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 80,
+                "true_positives": 15,
+                "false_positives": 65,
+                "false_negatives": 42,
+                "precision": 0.1875,
+                "recall": 0.2631579041481018,
+                "ap50": 0.11491047804898555
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.013982099471705978,
+            "bicycle": 0.0,
+            "car": 0.009779697007471999,
+            "motorcycle": 0.0,
+            "bus": -0.053920299109846054,
+            "train": -0.052805282101772766,
+            "truck": 0.0025547952345102154
+          },
+          "retention": 0.943752060574324,
+          "opr": 0.9559322033898305,
+          "opr_denominator": 590,
+          "target_changes": {
+            "person": {
+              "kept": 44,
+              "lost": 1,
+              "gained": 6
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 497,
+              "lost": 21,
+              "gained": 31
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 5,
+              "lost": 3,
+              "gained": 0
+            },
+            "train": {
+              "kept": 3,
+              "lost": 1,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 12,
+              "lost": 0,
+              "gained": 3
+            }
+          },
+          "opr_legacy": 0.9546979865771812,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.01148699849970436,
+          "weather_map_redline_pass": true
+        },
+        "guard_52k": {
+          "baseline": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20422078776561894,
+            "map50_without_train": 0.18655241494721705,
+            "recall": 0.4331864904552129,
+            "precision": 0.6965761511216056,
+            "false_positives_per_image": 1.285,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 70,
+                "true_positives": 45,
+                "false_positives": 25,
+                "false_negatives": 149,
+                "precision": 0.6428571343421936,
+                "recall": 0.2319587618112564,
+                "ap50": 0.20365219246042837
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 675,
+                "true_positives": 518,
+                "false_positives": 157,
+                "false_negatives": 501,
+                "precision": 0.7674074172973633,
+                "recall": 0.5083414912223816,
+                "ap50": 0.4813523687938652
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 0,
+                "true_positives": 0,
+                "false_positives": 0,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 19,
+                "true_positives": 8,
+                "false_positives": 11,
+                "false_negatives": 29,
+                "precision": 0.42105263471603394,
+                "recall": 0.21621622145175934,
+                "ap50": 0.16353840403037495
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 8,
+                "true_positives": 4,
+                "false_positives": 4,
+                "false_negatives": 8,
+                "precision": 0.5,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 72,
+                "true_positives": 12,
+                "false_positives": 60,
+                "false_negatives": 45,
+                "precision": 0.1666666716337204,
+                "recall": 0.21052631735801697,
+                "ap50": 0.11235568281447533
+              }
+            }
+          },
+          "method": {
+            "n_images": 200,
+            "n_classes_with_gt": 7,
+            "map50": 0.20076411578914907,
+            "map50_without_train": 0.18251963097466886,
+            "recall": 0.4500734214390602,
+            "precision": 0.7086705202312139,
+            "false_positives_per_image": 1.26,
+            "per_class": {
+              "person": {
+                "ground_truth": 194,
+                "predictions": 77,
+                "true_positives": 50,
+                "false_positives": 27,
+                "false_negatives": 144,
+                "precision": 0.649350643157959,
+                "recall": 0.25773194432258606,
+                "ap50": 0.21505257929905808
+              },
+              "bicycle": {
+                "ground_truth": 20,
+                "predictions": 3,
+                "true_positives": 3,
+                "false_positives": 0,
+                "false_negatives": 17,
+                "precision": 1.0,
+                "recall": 0.15000000596046448,
+                "ap50": 0.15841584158415842
+              },
+              "car": {
+                "ground_truth": 1019,
+                "predictions": 691,
+                "true_positives": 537,
+                "false_positives": 154,
+                "false_negatives": 482,
+                "precision": 0.7771345973014832,
+                "recall": 0.5269872546195984,
+                "ap50": 0.49994463967804864
+              },
+              "motorcycle": {
+                "ground_truth": 23,
+                "predictions": 1,
+                "true_positives": 0,
+                "false_positives": 1,
+                "false_negatives": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "ap50": 0.0
+              },
+              "bus": {
+                "ground_truth": 37,
+                "predictions": 14,
+                "true_positives": 5,
+                "false_positives": 9,
+                "false_negatives": 32,
+                "precision": 0.3571428656578064,
+                "recall": 0.13513512909412384,
+                "ap50": 0.10845392263761841
+              },
+              "train": {
+                "ground_truth": 12,
+                "predictions": 6,
+                "true_positives": 4,
+                "false_positives": 2,
+                "false_negatives": 8,
+                "precision": 0.6666666865348816,
+                "recall": 0.3333333432674408,
+                "ap50": 0.3102310246760302
+              },
+              "truck": {
+                "ground_truth": 57,
+                "predictions": 73,
+                "true_positives": 14,
+                "false_positives": 59,
+                "false_negatives": 43,
+                "precision": 0.19178082048892975,
+                "recall": 0.24561403691768646,
+                "ap50": 0.11325080264912973
+              }
+            }
+          },
+          "delta_ap50": {
+            "person": 0.011400386838629706,
+            "bicycle": 0.0,
+            "car": 0.018592270884183415,
+            "motorcycle": 0.0,
+            "bus": -0.05508448139275654,
+            "train": 0.0,
+            "truck": 0.0008951198346544009
+          },
+          "retention": 0.9830738485817759,
+          "opr": 0.976271186440678,
+          "opr_denominator": 590,
+          "target_changes": {
+            "person": {
+              "kept": 45,
+              "lost": 0,
+              "gained": 5
+            },
+            "bicycle": {
+              "kept": 3,
+              "lost": 0,
+              "gained": 0
+            },
+            "car": {
+              "kept": 507,
+              "lost": 11,
+              "gained": 30
+            },
+            "motorcycle": {
+              "kept": 0,
+              "lost": 0,
+              "gained": 0
+            },
+            "bus": {
+              "kept": 5,
+              "lost": 3,
+              "gained": 0
+            },
+            "train": {
+              "kept": 4,
+              "lost": 0,
+              "gained": 0
+            },
+            "truck": {
+              "kept": 12,
+              "lost": 0,
+              "gained": 2
+            }
+          },
+          "opr_legacy": 0.9765100671140939,
+          "class_redline_pass": false,
+          "recall_redline_pass": true,
+          "delta_map50_vs_input": -0.0034566719764698717,
+          "weather_map_redline_pass": true
+        }
+      },
+      "guard_minus_control": {
+        "map50": 0.008030326523234488,
+        "map50_without_train": 0.000567833926811423,
+        "recall": 0.006607929515418498,
+        "precision": 0.003886389542765878,
+        "false_positives_per_image": -0.004999999999999893,
+        "opr_relative_input": 0.02033898305084747,
+        "retention_relative_input": 0.0393217880074519,
+        "per_class_ap50": {
+          "person": -0.002581712633076272,
+          "bicycle": 0.0,
+          "car": 0.008812573876711416,
+          "motorcycle": 0.0,
+          "bus": -0.0011641822829104864,
+          "train": 0.052805282101772766,
+          "truck": -0.0016596753998558145
+        }
+      }
+    }
+  },
+  "detection_only_val_checks_vs_input": {
+    "v4_48k": {
+      "retention_ge_95pct": true,
+      "opr_ge_85pct": true,
+      "class_redline_pass": true,
+      "recall_redline_pass": true,
+      "weather_redline_pass": true,
+      "detection_only_val_pass": true,
+      "full_d1_verified": false
+    },
+    "control_52k": {
+      "retention_ge_95pct": false,
+      "opr_ge_85pct": true,
+      "class_redline_pass": false,
+      "recall_redline_pass": true,
+      "weather_redline_pass": false,
+      "detection_only_val_pass": false,
+      "full_d1_verified": false
+    },
+    "guard_52k": {
+      "retention_ge_95pct": true,
+      "opr_ge_85pct": true,
+      "class_redline_pass": false,
+      "recall_redline_pass": true,
+      "weather_redline_pass": true,
+      "detection_only_val_pass": false,
+      "full_d1_verified": false
+    }
+  },
+  "limitations": [
+    "未验证独立test、多种子、统计显著性或PSNR/LPIPS红线",
+    "置信度约束不包含框回归，不保证定位或NMS后的框保留"
+  ]
+}

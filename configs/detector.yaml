@@ -1,0 +1,13 @@
+model: yolov8n.pt
+image_size: 640
+confidence: 0.25
+iou: 0.7
+device: 0
+classes:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  5: bus
+  7: truck
+

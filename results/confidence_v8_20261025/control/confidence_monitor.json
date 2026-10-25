@@ -1,0 +1,23 @@
+{
+  "iter": 51999,
+  "weight": 0.0,
+  "loss_at_logged_step": 0.0002510389604140073,
+  "selected_anchors": {
+    "person": 10303,
+    "bicycle": 482,
+    "car": 53499,
+    "motorcycle": 287,
+    "bus": 3590,
+    "train": 2000,
+    "truck": 5632
+  },
+  "supervised_image_class_pairs": {
+    "person": 1364,
+    "bicycle": 73,
+    "car": 5416,
+    "motorcycle": 59,
+    "bus": 589,
+    "train": 329,
+    "truck": 921
+  }
+}
