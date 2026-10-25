@@ -1,0 +1,63 @@
+{
+  "detector_path": "yolov8n.pt",
+  "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+  "restorers": [
+    {
+      "path": "runs/real_v4_allweather/latest.pt",
+      "iter": 47999,
+      "file_sha256": "8221a9037db0a907dc5d56698b209299061fccf0f01ac72b700cd57910d768d9",
+      "tensor_state_sha256": {
+        "model": "21458c7e80029635a1e67aae9678ca2f628375c38c6bd9cd59a57556599c32a8",
+        "ema": "dea119dd32546cd4895ba96acdb124a8febdb15433a17439f6047c08ea04c9fe"
+      },
+      "tensor_elements": {
+        "model": 17061219,
+        "ema": 17061219
+      },
+      "all_values_finite": true
+    },
+    {
+      "path": "runs/confidence_v8_20261025_guard/latest.pt",
+      "iter": 51999,
+      "file_sha256": "1c5a1b9abd79d41ede758c4885afaea459d8795114a9b1c42fcca366830d522b",
+      "tensor_state_sha256": {
+        "model": "ca883aca8756e340efc8cbbb8977e5c8b26ad8a25c68818f8adedddb9582fab1",
+        "ema": "cae07ef02e4b8f119e7ec34e99ae15c362511bf00f956f3f8f5fbacdd52f5837"
+      },
+      "tensor_elements": {
+        "model": 17061219,
+        "ema": 17061219
+      },
+      "all_values_finite": true
+    },
+    {
+      "path": "runs/gt_next_phase_20261025_C0/latest.pt",
+      "iter": 51999,
+      "file_sha256": "512b8677945ceee1161c568081d9660fcaaf2f1a3eb02b54f0be55405e6bd3ad",
+      "tensor_state_sha256": {
+        "model": "c24897a1afe8474f40c76bdf8838142b7f22bbb6740fa5db68e9a1ce35288e0b",
+        "ema": "874b72e049b28c9487642884282f20a2073ebf2553ed3fd63cd8a03fac7d138f"
+      },
+      "tensor_elements": {
+        "model": 17061219,
+        "ema": 17061219
+      },
+      "all_values_finite": true
+    },
+    {
+      "path": "runs/gt_next_phase_20261025_C1/latest.pt",
+      "iter": 51999,
+      "file_sha256": "e17b1940179e00b705ee3f5bd5e828555de0b6ca4c86d043af7bbe1d288d91ff",
+      "tensor_state_sha256": {
+        "model": "99d804efa1d13524d3cb004f95c24cd40ecb7e27c01df94e7b49768cd67e68d9",
+        "ema": "0e2e28b9112535a08d4f22f3747b734b7114653b9adbfa32a12616efaa3ec246"
+      },
+      "tensor_elements": {
+        "model": 17061219,
+        "ema": 17061219
+      },
+      "all_values_finite": true
+    }
+  ],
+  "note": "CPU checkpoint integrity audit; no optimization/inference, no default-weight replacement"
+}

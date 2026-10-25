@@ -1,0 +1,210 @@
+{
+  "weight": 0.009570541647407782,
+  "batches": 8,
+  "records": [
+    {
+      "batch": 0,
+      "restoration_grad_l2": 0.5801777243614197,
+      "task_grad_l2": 16.402830123901367,
+      "proposed_weight": 0.007074117331935473,
+      "task": {
+        "box_loss": 0.8049971461296082,
+        "cls_loss": 0.8061544895172119,
+        "dfl_loss": 0.8887086510658264,
+        "total": 2.4998602867126465,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 5
+      },
+      "restoration": {
+        "pixel": 0.024864060804247856,
+        "ssim": 0.05159991979598999,
+        "grad": 0.4416958689689636,
+        "color": 0.012791169807314873,
+        "delta": 0.09181724488735199,
+        "detector_feature": 0.009430916979908943
+      },
+      "gt_indices": [
+        595
+      ]
+    },
+    {
+      "batch": 1,
+      "restoration_grad_l2": 1.3103917837142944,
+      "task_grad_l2": 12.641829490661621,
+      "proposed_weight": 0.0207310466366006,
+      "task": {
+        "box_loss": 0.9053427577018738,
+        "cls_loss": 0.7151269316673279,
+        "dfl_loss": 0.8662550449371338,
+        "total": 2.486724853515625,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 5
+      },
+      "restoration": {
+        "pixel": 0.030357373878359795,
+        "ssim": 0.10885292291641235,
+        "grad": 0.3345969021320343,
+        "color": 0.014167321845889091,
+        "delta": 0.1415993571281433,
+        "detector_feature": 0.029968267306685448
+      },
+      "gt_indices": [
+        868
+      ]
+    },
+    {
+      "batch": 2,
+      "restoration_grad_l2": 0.6503625512123108,
+      "task_grad_l2": 10.882394790649414,
+      "proposed_weight": 0.011952563084205108,
+      "task": {
+        "box_loss": 1.3286070823669434,
+        "cls_loss": 0.8726740479469299,
+        "dfl_loss": 0.9847668409347534,
+        "total": 3.1860480308532715,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 14
+      },
+      "restoration": {
+        "pixel": 0.02487904205918312,
+        "ssim": 0.05014157295227051,
+        "grad": 0.33143848180770874,
+        "color": 0.01869974099099636,
+        "delta": 0.1063777506351471,
+        "detector_feature": 0.008782407268881798
+      },
+      "gt_indices": [
+        713
+      ]
+    },
+    {
+      "batch": 3,
+      "restoration_grad_l2": 1.3212687969207764,
+      "task_grad_l2": 23.523117065429688,
+      "proposed_weight": 0.011233790090366506,
+      "task": {
+        "box_loss": 1.9427785873413086,
+        "cls_loss": 1.0995264053344727,
+        "dfl_loss": 0.9630584120750427,
+        "total": 4.005363464355469,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 5
+      },
+      "restoration": {
+        "pixel": 0.03055698797106743,
+        "ssim": 0.05414813756942749,
+        "grad": 0.31460076570510864,
+        "color": 0.023582957684993744,
+        "delta": 0.09672654420137405,
+        "detector_feature": 0.012672667391598225
+      },
+      "gt_indices": [
+        150
+      ]
+    },
+    {
+      "batch": 4,
+      "restoration_grad_l2": 1.7478480339050293,
+      "task_grad_l2": 44.45235061645508,
+      "proposed_weight": 0.007863917249217514,
+      "task": {
+        "box_loss": 2.4865753650665283,
+        "cls_loss": 2.7034175395965576,
+        "dfl_loss": 1.2259821891784668,
+        "total": 6.415975093841553,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 8
+      },
+      "restoration": {
+        "pixel": 0.03261761739850044,
+        "ssim": 0.06169998645782471,
+        "grad": 0.28627461194992065,
+        "color": 0.022365128621459007,
+        "delta": 0.0448271706700325,
+        "detector_feature": 0.012996560893952847
+      },
+      "gt_indices": [
+        470
+      ]
+    },
+    {
+      "batch": 5,
+      "restoration_grad_l2": 1.7510462999343872,
+      "task_grad_l2": 40.988521575927734,
+      "proposed_weight": 0.008544081282320582,
+      "task": {
+        "box_loss": 1.6201950311660767,
+        "cls_loss": 1.2553964853286743,
+        "dfl_loss": 0.9353740215301514,
+        "total": 3.8109655380249023,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 2
+      },
+      "restoration": {
+        "pixel": 0.03980547562241554,
+        "ssim": 0.08802437782287598,
+        "grad": 0.3947443962097168,
+        "color": 0.028987839818000793,
+        "delta": 0.15589876472949982,
+        "detector_feature": 0.016082672402262688
+      },
+      "gt_indices": [
+        1448
+      ]
+    },
+    {
+      "batch": 6,
+      "restoration_grad_l2": 1.1640172004699707,
+      "task_grad_l2": 41.298091888427734,
+      "proposed_weight": 0.005637147612605044,
+      "task": {
+        "box_loss": 2.9244539737701416,
+        "cls_loss": 1.8964238166809082,
+        "dfl_loss": 2.1007843017578125,
+        "total": 6.921661853790283,
+        "ignored_anchor_fraction": 0.013095238246023655,
+        "gt_count": 5
+      },
+      "restoration": {
+        "pixel": 0.037645816802978516,
+        "ssim": 0.07320129871368408,
+        "grad": 0.38880372047424316,
+        "color": 0.020048003643751144,
+        "delta": 0.12450437247753143,
+        "detector_feature": 0.011344143189489841
+      },
+      "gt_indices": [
+        666
+      ]
+    },
+    {
+      "batch": 7,
+      "restoration_grad_l2": 0.9047043323516846,
+      "task_grad_l2": 17.074722290039062,
+      "proposed_weight": 0.010597002012494984,
+      "task": {
+        "box_loss": 2.235800266265869,
+        "cls_loss": 1.5214272737503052,
+        "dfl_loss": 0.9505860805511475,
+        "total": 4.707813739776611,
+        "ignored_anchor_fraction": 0.0,
+        "gt_count": 9
+      },
+      "restoration": {
+        "pixel": 0.03875339776277542,
+        "ssim": 0.0622020959854126,
+        "grad": 0.39606398344039917,
+        "color": 0.029295962303876877,
+        "delta": 0.14784975349903107,
+        "detector_feature": 0.011394145898520947
+      },
+      "gt_indices": [
+        738
+      ]
+    }
+  ],
+  "no_optimizer_updates": true,
+  "model_unchanged": true,
+  "detectors_unchanged": true,
+  "plan_fingerprint": "a6478d24067c227794dab9dc5e6e8ba1becf95b21fda57485158594f97a4421a"
+}

@@ -21,7 +21,9 @@ v3 只在 fog/rain 上训练，night 上把画面亮度从 0.1 提到 0.2、饱�
 额外退化必须像素对齐，因此刻意避开会移动像素的湿路反射。
 """
 
+import argparse
 import csv
+import hashlib
 import json
 import random
 from pathlib import Path
@@ -29,9 +31,9 @@ from pathlib import Path
 import numpy as np
 import cv2
 
-ROOT = Path(".")
+ROOT = Path(__file__).resolve().parents[1]
 ACDC = ROOT / "data/raw/ACDC_images/rgb_anon"
-OUT = ROOT / "data/real_scene"
+OUT = ROOT / "data/real_scene_rgb_v2"
 CALIB = ROOT / "data/real_weather/calibration/night_snow.json"
 
 
@@ -40,12 +42,19 @@ def imread(path: Path):
     return cv2.imdecode(np.fromfile(str(path), dtype=np.uint8), cv2.IMREAD_COLOR)
 
 
-def imwrite(path: Path, img: np.ndarray, quality: int = 95) -> bool:
-    """写图（同样走字节流）。"""
+def imwrite(path: Path, img: np.ndarray, quality: int = 95, size=None) -> bool:
+    """将 RGB uint8 编码为 JPEG；size 保留旧版先编码再缩图的压缩链路。"""
     path.parent.mkdir(parents=True, exist_ok=True)
-    ok, buf = cv2.imencode(".jpg", img, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
+    bgr = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    ok, buf = cv2.imencode(".jpg", bgr, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
     if not ok:
         return False
+    if size is not None and (img.shape[1], img.shape[0]) != tuple(size):
+        decoded = cv2.imdecode(buf, cv2.IMREAD_COLOR)
+        small = cv2.resize(decoded, tuple(size), interpolation=cv2.INTER_AREA)
+        ok, buf = cv2.imencode(".jpg", small, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
+        if not ok:
+            return False
     buf.tofile(str(path))
     return True
 
@@ -132,6 +141,14 @@ DEGRADERS = {"night": extra_night_degrade, "snow": extra_snow_degrade}
 
 
 def main() -> None:
+    global OUT
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-dir", type=Path, default=OUT)
+    args = parser.parse_args()
+    OUT = args.output_dir.resolve()
+    OUT.relative_to(ROOT)  # 清单使用项目相对路径。
+    if OUT.exists() and any(OUT.iterdir()):
+        raise FileExistsError(f"拒绝覆盖已有数据目录: {OUT}")
     rng = random.Random(20261025)
     rows: list[dict[str, str]] = []
 
@@ -154,8 +171,10 @@ def main() -> None:
             tag = f"{scene}__selfsup{weather}"
             clean_path = OUT / "target" / weather / f"{tag}.jpg"
             deg_path = OUT / "input" / weather / f"{tag}.jpg"
-            imwrite(clean_path, (rgb * 255).astype(np.uint8))
-            imwrite(deg_path, (np.clip(degraded, 0, 1) * 255).astype(np.uint8))
+            if not imwrite(clean_path, (rgb * 255).astype(np.uint8), size=(960, 540)):
+                raise OSError(clean_path)
+            if not imwrite(deg_path, (np.clip(degraded, 0, 1) * 255).astype(np.uint8), size=(960, 540)):
+                raise OSError(deg_path)
             rows.append({
                 "degraded_path": str(deg_path.relative_to(ROOT)).replace("\\", "/"),
                 "clean_path": str(clean_path.relative_to(ROOT)).replace("\\", "/"),
@@ -165,7 +184,7 @@ def main() -> None:
             })
         print("   已生成 %d 对" % sum(1 for r in rows if r["weather"].startswith(weather)))
 
-    out_csv = ROOT / "data/real_scene/manifests/train.csv"
+    out_csv = OUT / "manifests/train.csv"
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     with out_csv.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(
@@ -175,6 +194,12 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(rows)
     print("清单已写入 %s（%d 对）" % (out_csv, len(rows)))
+    (OUT / "color_contract.json").write_text(json.dumps({
+        "version": "rgb_v2", "synthesis_color_order": "RGB", "opencv_encoding": "RGB2BGR",
+        "output_size": [960, 540], "seed": 20261025,
+        "jpeg_pipeline": "full-resolution JPEG95 decode→INTER_AREA960x540→JPEG95 (same compression order as history)",
+        "pairs": len(rows), "manifest_sha256": hashlib.sha256(out_csv.read_bytes()).hexdigest(),
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

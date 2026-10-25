@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "train": {
+      "images": 1600,
+      "annotations": 10135,
+      "duplicate_annotation_ids": 0,
+      "invalid_box_dimensions": 0,
+      "annotation_missing_image": 0,
+      "explicit_ignore_count": 0
+    },
+    "val": {
+      "images": 406,
+      "annotations": 2794,
+      "duplicate_annotation_ids": 0,
+      "invalid_box_dimensions": 0,
+      "annotation_missing_image": 0,
+      "explicit_ignore_count": 0
+    }
+  },
+  "train_val_identical_file_duplicates": [],
+  "val_file_hash_count": 406,
+  "val_file_hash_stream_sha256": "8fc8d7831847ffe9cf4f910e43daeae73c7b9aa10a5ade8c80b82a26accffe63",
+  "train_hash_source": "runs/gt_next_phase_20261025/comparison_plan.json"
+}

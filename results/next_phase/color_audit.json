@@ -1,0 +1,343 @@
+{
+  "protocol": "本地原始PNG→指定JPEG质量重编码，与历史产物逐字节比较",
+  "datasets": {
+    "real_scene": {
+      "manifest": "data\\real_scene\\manifests\\train.csv",
+      "manifest_sha256": "d34213086393d944a6163fdc8c7eb49b398b20da9091cf9adf4b8c6034c0fc18",
+      "pairs": 800,
+      "weather_pairs": {
+        "night_selfsup": 400,
+        "snow_selfsup": 400
+      },
+      "unique_targets": 800,
+      "existing_inputs": 800,
+      "target_encoding": {
+        "exact_correct_color": 0,
+        "exact_channel_swapped": 800,
+        "neither": 0
+      },
+      "examples": [
+        {
+          "source": "data\\raw\\ACDC_images\\rgb_anon\\night\\train\\GOPR0351\\GOPR0351_frame_000159_rgb_anon.png",
+          "historical_target": "data/real_scene/target/night/GOPR0351_frame_000159__selfsupnight.jpg",
+          "exact_correct_color": false,
+          "exact_channel_swapped": true,
+          "rgb_mae_vs_source": 3.018059492111206,
+          "rgb_mae_after_channel_reversal": 0.9985224008560181,
+          "historical_sha256": "90e0379464a02c4023cd8b60a1e5145dd852d4e5ceffd6b2eeb9764b0911a4bf"
+        },
+        {
+          "source": "data\\raw\\ACDC_images\\rgb_anon\\night\\train\\GOPR0351\\GOPR0351_frame_000161_rgb_anon.png",
+          "historical_target": "data/real_scene/target/night/GOPR0351_frame_000161__selfsupnight.jpg",
+          "exact_correct_color": false,
+          "exact_channel_swapped": true,
+          "rgb_mae_vs_source": 2.189326763153076,
+          "rgb_mae_after_channel_reversal": 0.9555754661560059,
+          "historical_sha256": "4cdf479adf5e3119ce7bc33c68e583a68e8a491b4a3dd34dbb6dc8f9836b46d2"
+        },
+        {
+          "source": "data\\raw\\ACDC_images\\rgb_anon\\snow\\train\\GOPR0122\\GOPR0122_frame_000161_rgb_anon.png",
+          "historical_target": "data/real_scene/target/snow/GOPR0122_frame_000161__selfsupsnow.jpg",
+          "exact_correct_color": false,
+          "exact_channel_swapped": true,
+          "rgb_mae_vs_source": 5.643394947052002,
+          "rgb_mae_after_channel_reversal": 1.5115972757339478,
+          "historical_sha256": "cdf4319ed79432af64fa781f481f1a8d49208aac410227baff59a1f3190f0d30"
+        }
+      ]
+    },
+    "real_weather": {
+      "manifest": "data\\real_weather\\manifests\\train.csv",
+      "manifest_sha256": "e5a77a90fb2ddca582b4ed89ebeb31c5adf5c1b86659a2bd262e4252f59a1c48",
+      "pairs": 2400,
+      "weather_pairs": {
+        "fog": 1200,
+        "rain": 1200
+      },
+      "unique_targets": 800,
+      "existing_inputs": 2400,
+      "target_encoding": {
+        "exact_correct_color": 800,
+        "exact_channel_swapped": 0,
+        "neither": 0
+      },
+      "examples": [
+        {
+          "source": "data\\raw\\ACDC_images\\rgb_anon\\fog\\train_ref\\GOPR0475\\GOPR0475_frame_000041_rgb_ref_anon.png",
+          "historical_target": "data\\real_weather\\clean\\train\\GOPR0475__GOPR0475_frame_000041.jpg",
+          "exact_correct_color": true,
+          "exact_channel_swapped": false,
+          "rgb_mae_vs_source": 1.110768437385559,
+          "rgb_mae_after_channel_reversal": 16.71189308166504,
+          "historical_sha256": "177ded77bacc149aba46faecc57aa70420ed2217c0f42025bb7bc41c3da84bf5"
+        },
+        {
+          "source": "data\\raw\\ACDC_images\\rgb_anon\\fog\\train_ref\\GOPR0475\\GOPR0475_frame_000049_rgb_ref_anon.png",
+          "historical_target": "data\\real_weather\\clean\\train\\GOPR0475__GOPR0475_frame_000049.jpg",
+          "exact_correct_color": true,
+          "exact_channel_swapped": false,
+          "rgb_mae_vs_source": 1.0844193696975708,
+          "rgb_mae_after_channel_reversal": 10.867993354797363,
+          "historical_sha256": "d4a4146f1a5144a408bb4c0b8a21193dc38d59e0d909f645a0ec1399ae128101"
+        },
+        {
+          "source": "data\\raw\\ACDC_images\\rgb_anon\\rain\\train_ref\\GOPR0400\\GOPR0400_frame_000216_rgb_ref_anon.png",
+          "historical_target": "data\\real_weather\\clean\\train\\GOPR0400__GOPR0400_frame_000216.jpg",
+          "exact_correct_color": true,
+          "exact_channel_swapped": false,
+          "rgb_mae_vs_source": 0.9748450517654419,
+          "rgb_mae_after_channel_reversal": 16.123554229736328,
+          "historical_sha256": "d5fd0199a11aa997c71f11b091fc42a53bd9f46c18fe9aea51fa4f059ac3b224"
+        }
+      ]
+    }
+  },
+  "calibration": {
+    "path": "data\\real_weather\\calibration.json",
+    "sha256": "c3f86ca2b6dbbc281ede7fa470c3a689ee3fa3e166ac1d8d4a495af18347fcaf",
+    "checks": [
+      {
+        "weather": "fog",
+        "source": "data\\raw\\ACDC_images\\rgb_anon\\fog\\train\\GOPR0475\\GOPR0475_frame_000041_rgb_anon.png",
+        "stored": {
+          "air": [
+            0.9408,
+            0.9762,
+            0.9888
+          ]
+        },
+        "recomputed_bgr": {
+          "air": [
+            0.9408000111579895,
+            0.9761999845504761,
+            0.9887999892234802
+          ]
+        },
+        "matches_bgr": true
+      },
+      {
+        "weather": "rain",
+        "source": "data\\raw\\ACDC_images\\rgb_anon\\rain\\train\\GOPR0400\\GOPR0400_frame_000216_rgb_anon.png",
+        "stored": {
+          "mean_c": [
+            0.4062,
+            0.4318,
+            0.436
+          ],
+          "std_c": [
+            0.3478,
+            0.3152,
+            0.319
+          ]
+        },
+        "recomputed_bgr": {
+          "mean_c": [
+            0.40619999170303345,
+            0.4318000078201294,
+            0.4359999895095825
+          ],
+          "std_c": [
+            0.34779998660087585,
+            0.31520000100135803,
+            0.3190000057220459
+          ]
+        },
+        "matches_bgr": true
+      }
+    ]
+  },
+  "configured_versions": [
+    {
+      "name": "confidence_gpu_smoke_20261025",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "confidence_v8_20261025_control",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "confidence_v8_20261025_guard",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v1",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [],
+      "scene_swapped_targets": false,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v2_detfeat",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [],
+      "scene_swapped_targets": false,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v3_conservative",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [],
+      "scene_swapped_targets": false,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v4_allweather",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v5_rebalance",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v6_bigobj",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v6_bigobj_controlled",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "real_v7_context_controlled",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [
+        "data/real_scene/manifests/train.csv"
+      ],
+      "scene_swapped_targets": true,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "smoke",
+      "train_manifest": "data/real_weather/manifests/dev.csv",
+      "extra_manifest": [],
+      "scene_swapped_targets": false,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "smoke_v3",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [],
+      "scene_swapped_targets": false,
+      "weather_uses_at_risk_manifest": true
+    },
+    {
+      "name": "smoke_v4_noextra",
+      "train_manifest": "data/real_weather/manifests/train.csv",
+      "extra_manifest": [],
+      "scene_swapped_targets": false,
+      "weather_uses_at_risk_manifest": true
+    }
+  ],
+  "weather_input_replay": [
+    {
+      "historical_input": "data\\real_weather\\degraded\\train\\GOPR0475__GOPR0475_frame_000041__fog0.jpg",
+      "exact_legacy_bgr_calibration_replay": false
+    },
+    {
+      "historical_input": "data\\real_weather\\degraded\\train\\GOPR0475__GOPR0475_frame_000041__fog1.jpg",
+      "exact_legacy_bgr_calibration_replay": false
+    },
+    {
+      "historical_input": "data\\real_weather\\degraded\\train\\GOPR0475__GOPR0475_frame_000041__fog2.jpg",
+      "exact_legacy_bgr_calibration_replay": false
+    },
+    {
+      "historical_input": "data\\real_weather\\degraded\\train\\GOPR0400__GOPR0400_frame_000216__rain0.jpg",
+      "exact_legacy_bgr_calibration_replay": false
+    },
+    {
+      "historical_input": "data\\real_weather\\degraded\\train\\GOPR0400__GOPR0400_frame_000216__rain1.jpg",
+      "exact_legacy_bgr_calibration_replay": false
+    },
+    {
+      "historical_input": "data\\real_weather\\degraded\\train\\GOPR0400__GOPR0400_frame_000216__rain2.jpg",
+      "exact_legacy_bgr_calibration_replay": false
+    }
+  ],
+  "scene_input_replay": {
+    "sample": "GOPR0351_frame_000159__selfsupnight",
+    "exact_swapped_legacy_replay": true,
+    "seed": 20261025
+  },
+  "historical_weather_provenance": "Current-source seed42 replay fails exact-byte matching on six sampled historical inputs; current BGR calibration contract bug is confirmed but exact historical input recipe/seed is unresolved. Do not claim all historical weather inputs physically verified affected.",
+  "fixed_version_validation": {
+    "real_scene/train": {
+      "manifest": "data\\real_scene_rgb_v2\\manifests\\train.csv",
+      "manifest_sha256": "06524465ec0e51335be87d05e2e1b5e97361d1254a4084c6f1258a1243ce0e40",
+      "pairs": 800,
+      "sample_ids_and_order_unchanged": true,
+      "decoded_files": 1600,
+      "invalid_files": 0,
+      "image_shapes": {
+        "960x540x3": 1600
+      },
+      "unique_targets_correct": 800,
+      "degraded_files_changed": 800,
+      "files_sha256_stream": "60bc38859793349dd0d335a9b335dfcd2bbbc93623297669e56871dff3ffd9e8"
+    },
+    "real_weather/train": {
+      "manifest": "data\\real_weather_rgb_v2\\manifests\\train.csv",
+      "manifest_sha256": "7a531ea9bb211d9c1494bc7790935ce9edd303bf541ec01af79971fcad690bb7",
+      "pairs": 2400,
+      "sample_ids_and_order_unchanged": true,
+      "decoded_files": 3200,
+      "invalid_files": 0,
+      "image_shapes": {
+        "960x540x3": 3200
+      },
+      "unique_targets_correct": 800,
+      "degraded_files_changed": 2400,
+      "files_sha256_stream": "2c77eb5deb0402b4e0ea84fd85c29c98fa6c8e31235ad335f507de848562a8f4"
+    },
+    "real_weather/dev": {
+      "manifest": "data\\real_weather_rgb_v2\\manifests\\dev.csv",
+      "manifest_sha256": "e002e57820b8039cf4d1970107bd04821dbb7cebad6c5abef375e2010397206f",
+      "pairs": 200,
+      "sample_ids_and_order_unchanged": true,
+      "decoded_files": 400,
+      "invalid_files": 0,
+      "image_shapes": {
+        "960x540x3": 400
+      },
+      "unique_targets_correct": 200,
+      "degraded_files_changed": 200,
+      "files_sha256_stream": "72cd843edabe7ff7afc2216afff9db662dddad2e2755efadcfb920436b7dbaef"
+    }
+  },
+  "historical_manifests_unchanged": true,
+  "historical_calibration_unchanged": true
+}

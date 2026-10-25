@@ -2,11 +2,11 @@
 
 面向雨雾道路感知的任务感知图像复原研究：改善图像的同时，检查复原是否损伤下游目标检测。项目把逐类 AP、输入目标保留率与失败案例纳入候选筛选，关注“看起来更清晰”与“检测更可靠”之间的差距。
 
-**当前研究状态（2026-10-25）：保留 v4，拒绝用新增置信度保护版本替换。** 新约束缓解了同预算续训中的 train 类损伤，但 bus 类仍失败。本仓库公开源码、测试、配置和聚合证据，尚不提供可直接使用的预训练模型。
+**当前研究状态（2026-10-25）：保留 v4 基线，停止本轮 C1 配方续训。** 已完成 RGB/评估正确性修复和真实 GT 原生 YOLO 损失的 C0/C1 公平对照，各新增 4000 步。C1 没有解决 bus/train 掉分，不替换默认权重。本轮只提交本地，不自动 push；仓库仍不附带数据或预训练模型。
 
 ## 方法与代码入口
 
-当前实验主线采用 **NAFNet（约 17M 参数）** 复原网络，通过冻结的 YOLOv8n 提取检测特征参与训练，并探索直接置信度保护损失。检测器参数冻结，复原图像分支仍保留梯度。置信度教师使用原始退化图像；按图像与类别选择高分锚点，惩罚学生类别概率下降。它不包含直接定位约束，也不保证最终 AP 或虚警改善。
+当前实验主线采用 **NAFNet（17.06M 参数）** 复原网络，复用冻结 YOLOv8n 的特征和原生真实 GT 分类/box/DFL 损失。原有骨干和损失保留，新增两条同预算数据流；置信度保护为历史对照，本轮关闭。检测器参数冻结，复原图像分支仍保留梯度。置信度教师使用原始退化图像；按图像与类别选择高分锚点，惩罚学生类别概率下降。它不包含直接定位约束，也不保证最终 AP 或虚警改善。
 
 | 入口 | 用途 |
 |---|---|
@@ -18,7 +18,25 @@
 
 早期双分支、退化感知融合与界面演示仍保留为工程原型；它们与当前 NAFNet 主线的架构、训练入口和检查点不同，不能用其冒烟结果证明下表的科研结论。
 
-## 当前结果与决定
+## 下一阶段实测（标准AP conf=0.001）
+
+AP使用COCO官方bbox匹配、正annotation ID、AP50/AP50:95/PR和maxDets100；runtime Recall/FP/OPR另跑conf=0.25、maxDet300。配置补齐train类。当前200/406均是val模型选择集，不是独立test。
+
+| 方法 | 雨雾200 AP50 | 雨雾200 AP50:95 | 全天气406 AP50 |
+|---|---:|---:|---:|
+| input | 0.256338 | 0.155289 | 0.233510 |
+| v4 | 0.251481 | 0.150662 | 0.220924 |
+| guard | 0.251884 | 0.151387 | 0.224067 |
+| C0 | 0.249156 | 0.145423 | 0.214648 |
+| C1 | 0.252121 | 0.150022 | 0.215576 |
+
+主200 bus AP50：C0 0.148824 → C1 0.148829（input 0.173570），95%差值区间跨零；bus/train运行时目标集合无新增恢复。主AP50的C1−C0区间跨零，AP50:95有局部正向信号；全天气train相对input下降7.132个百分点。合成对齐dev200 PSNR为C0 28.496dB、C1 28.430dB；LPIPS及AdaIR/Histoformer外部推理因缺本地资源BLOCKED。
+
+保留正确性修复和GT研究接口，不把当前C1权重当作已验证改进。详见[最终决策](results/next_phase/FINAL_DECISION.md)、[训练与完整结果](results/next_phase/TRAINING_REPORT.md)、[成熟模型核查](results/next_phase/BASELINE_COMPARISON.md)及[产物/复现说明](results/next_phase/ARTIFACTS.md)。本轮27项相关测试通过；源码快照的聚合范围见[SNAPSHOT_SCOPE](results/next_phase/SNAPSHOT_SCOPE.md)。
+
+新增入口：`scripts/run_gt_comparison.py`、`scripts/run_next_phase_evaluation.py`。固定Python3.11.15、torch2.6.0+cu124、Ultralytics8.4.104、NumPy2.4.4；其余实际版本记录于execution_manifest。旧数据存在颜色缺陷，不应按旧命令重建替代数据后声称重现历史分数。
+
+## 历史置信度结果（旧 conf=0.25 截断 AP）
 
 主口径为 **ACDC val 中固定的 200 张雨雾图像（fog100 + rain100）**，补充口径为同一 val 的 406 张全天气图像。两者均已用于模型选择，**不是独立 test**。指标为 person、bicycle、car、motorcycle、bus、train、truck 七类等权 mAP50。
 
@@ -31,7 +49,7 @@ control 与 guard 从同一 v4 检查点出发，各续训 4000 步，使用 see
 
 bus AP50 由输入的 0.163538 降至 guard 的 0.108454，下降 0.055084，超过单类 0.05 筛选红线。因此拒绝 guard，继续保留 v4；这也不表示 v4 已通过完整安全验收。主口径 motorcycle 在固定基线中的 AP50 为零，相关解释仅适用于该检测器与该集合。
 
-完整逐类、逐天气、虚警、OPR 与对称丢失/恢复结果见 [`results/confidence_v8_20261025/REPORT.md`](results/confidence_v8_20261025/REPORT.md)；实验定义与局限见[置信度对照记录](docs/CONFIDENCE_COMPARISON_2026-10-25.md)和[当前状态](docs/STATUS.md)。本轮没有三种子验证、置信区间、显著性检验或独立 test；PSNR/LPIPS 红线未验证，不宣称完整 D1 通过或 SOTA。
+完整逐类、逐天气、虚警、OPR 与对称丢失/恢复结果见 [`results/confidence_v8_20261025/REPORT.md`](results/confidence_v8_20261025/REPORT.md)；实验定义与局限见[置信度对照记录](docs/CONFIDENCE_COMPARISON_2026-10-25.md)和[当前状态](docs/STATUS.md)。该历史置信度阶段没有三种子验证、置信区间、显著性检验或独立 test；PSNR/LPIPS 红线未验证，不宣称完整 D1 通过或 SOTA。
 
 ## 安装与本地检查
 

@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-25",
+  "scope": "Official text/metadata inspection only; zero data/model/package downloads and no external model inference",
+  "image_remote_main_sha": "396af4a50a2512b7dabb00a69b3ccfded403dea9",
+  "sources": [
+    {
+      "title": "UniRestore README",
+      "repository": "unirestore/UniRestore",
+      "revision": "6457cd1406e03be627dd06710406169671d89afb",
+      "path": "README.md",
+      "url": "https://github.com/unirestore/UniRestore/blob/6457cd1406e03be627dd06710406169671d89afb/README.md",
+      "blob_sha": "83a6ba76c61fccf611fc23eb8a5c21c9a814f475"
+    },
+    {
+      "title": "UniRestore DetectionLoss",
+      "repository": "unirestore/UniRestore",
+      "revision": "6457cd1406e03be627dd06710406169671d89afb",
+      "path": "src/core/base/eval_detection.py",
+      "url": "https://github.com/unirestore/UniRestore/blob/6457cd1406e03be627dd06710406169671d89afb/src/core/base/eval_detection.py",
+      "blob_sha": "a294ccccb1607634fd767774d16b5f6a3e3ee21a"
+    },
+    {
+      "title": "UniRestore train stage2",
+      "repository": "unirestore/UniRestore",
+      "revision": "6457cd1406e03be627dd06710406169671d89afb",
+      "path": "configs/train_stage2.yaml",
+      "url": "https://github.com/unirestore/UniRestore/blob/6457cd1406e03be627dd06710406169671d89afb/configs/train_stage2.yaml",
+      "blob_sha": "e7a820ef4ad03396931a4aec77ff2ddf67b4bf0b"
+    },
+    {
+      "title": "UniRestore detection dataset",
+      "repository": "unirestore/UniRestore",
+      "revision": "6457cd1406e03be627dd06710406169671d89afb",
+      "path": "src/data/dataset_det.py",
+      "url": "https://github.com/unirestore/UniRestore/blob/6457cd1406e03be627dd06710406169671d89afb/src/data/dataset_det.py",
+      "blob_sha": "5b984cd380f5f4e2412ffdc764b6bccce9d9fff0"
+    },
+    {
+      "title": "UniRestore license",
+      "repository": "unirestore/UniRestore",
+      "revision": "6457cd1406e03be627dd06710406169671d89afb",
+      "path": "LICENSE",
+      "url": "https://github.com/unirestore/UniRestore/blob/6457cd1406e03be627dd06710406169671d89afb/LICENSE",
+      "blob_sha": "fa978a23db2219551b09c25d318d758e03caa7a5"
+    },
+    {
+      "title": "AdaIR README",
+      "repository": "c-yn/AdaIR",
+      "revision": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "path": "README.md",
+      "url": "https://github.com/c-yn/AdaIR/blob/ccb8b98e49614e07badd0641e5163fa7635c2f02/README.md",
+      "blob_sha": "593e2448333076cbf992557a9cf4ec6706f2dfbd"
+    },
+    {
+      "title": "AdaIR inference",
+      "repository": "c-yn/AdaIR",
+      "revision": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "path": "test.py",
+      "url": "https://github.com/c-yn/AdaIR/blob/ccb8b98e49614e07badd0641e5163fa7635c2f02/test.py",
+      "blob_sha": "6340091da0b8eb271b2aa3fb0ed07391b717096c"
+    },
+    {
+      "title": "AdaIR dataset preprocessing",
+      "repository": "c-yn/AdaIR",
+      "revision": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "path": "utils/dataset_utils.py",
+      "url": "https://github.com/c-yn/AdaIR/blob/ccb8b98e49614e07badd0641e5163fa7635c2f02/utils/dataset_utils.py",
+      "blob_sha": "c7525c0ef18fe7fc5be574169dc4310a1289b2b4"
+    },
+    {
+      "title": "AdaIR architecture",
+      "repository": "c-yn/AdaIR",
+      "revision": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "path": "net/model.py",
+      "url": "https://github.com/c-yn/AdaIR/blob/ccb8b98e49614e07badd0641e5163fa7635c2f02/net/model.py",
+      "blob_sha": "0cd3fee1e39030467e05cb1e13449944ad9167c0"
+    },
+    {
+      "title": "AdaIR environment",
+      "repository": "c-yn/AdaIR",
+      "revision": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "path": "env.yaml",
+      "url": "https://github.com/c-yn/AdaIR/blob/ccb8b98e49614e07badd0641e5163fa7635c2f02/env.yaml",
+      "blob_sha": "8210978911fb6bc5fc2be0119c713896de56c0bf"
+    },
+    {
+      "title": "AdaIR license",
+      "repository": "c-yn/AdaIR",
+      "revision": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "path": "LICENSE",
+      "url": "https://github.com/c-yn/AdaIR/blob/ccb8b98e49614e07badd0641e5163fa7635c2f02/LICENSE",
+      "blob_sha": "c224fdeeed0e344baa91bc57faf7fd98b307a261"
+    },
+    {
+      "title": "Histoformer README",
+      "repository": "sunshangquan/Histoformer",
+      "revision": "1f045f06c03551c31504d8042dbe6ff9b9569108",
+      "path": "README.md",
+      "url": "https://github.com/sunshangquan/Histoformer/blob/1f045f06c03551c31504d8042dbe6ff9b9569108/README.md",
+      "blob_sha": "5f616a8ac7c71c882ee71ff85d1a024865cfabaa"
+    },
+    {
+      "title": "Histoformer inference",
+      "repository": "sunshangquan/Histoformer",
+      "revision": "1f045f06c03551c31504d8042dbe6ff9b9569108",
+      "path": "Allweather/test_histoformer.py",
+      "url": "https://github.com/sunshangquan/Histoformer/blob/1f045f06c03551c31504d8042dbe6ff9b9569108/Allweather/test_histoformer.py",
+      "blob_sha": "a36be4652bbe3bb72fbf1f3dfb68b9952621ca00"
+    },
+    {
+      "title": "Histoformer model config",
+      "repository": "sunshangquan/Histoformer",
+      "revision": "1f045f06c03551c31504d8042dbe6ff9b9569108",
+      "path": "Allweather/Options/Allweather_Histoformer.yml",
+      "url": "https://github.com/sunshangquan/Histoformer/blob/1f045f06c03551c31504d8042dbe6ff9b9569108/Allweather/Options/Allweather_Histoformer.yml",
+      "blob_sha": "2a690c2a1d0e488fefd785b56283d9518bba2543"
+    },
+    {
+      "title": "Histoformer installation",
+      "repository": "sunshangquan/Histoformer",
+      "revision": "1f045f06c03551c31504d8042dbe6ff9b9569108",
+      "path": "INSTALL.md",
+      "url": "https://github.com/sunshangquan/Histoformer/blob/1f045f06c03551c31504d8042dbe6ff9b9569108/INSTALL.md",
+      "blob_sha": "90106a2604a0626468dcea203f6e8c2d8f17749f"
+    }
+  ],
+  "external_status": {
+    "AdaIR_5D": "BLOCKED_MISSING_LOCAL_PRETRAINED_WEIGHT_AND_DEPENDENCIES",
+    "Histoformer_Allweather": "BLOCKED_MISSING_LOCAL_PRETRAINED_WEIGHT_AND_DEPENDENCIES"
+  },
+  "weights": {
+    "adair": {
+      "official_folder": "https://drive.google.com/drive/folders/1x2LN4kWkO3S65jJlH-1INUFiYt8KFzPH?usp=sharing",
+      "expected_name": "adair5d.ckpt",
+      "size_bytes": null,
+      "size_note": "Official inspected text does not state size; not estimated."
+    },
+    "histoformer": {
+      "official_folder": "https://drive.google.com/drive/folders/1dmPhr8Z5iPRx9lh7TwdUFPSfwGIxp5l0?usp=drive_link",
+      "official_hf": "https://huggingface.co/sunsean/Histoformer",
+      "hf_revision": "f6acde20acaa26ef5e235f2c71ff7637f4d9a945",
+      "hf_license_metadata": "mit",
+      "github_license_file_found": false,
+      "available_hf_file": "Allweather/pretrained_models/net_g_real.pth",
+      "available_hf_file_size_bytes": 66603665,
+      "benchmark_weight": "net_g_best.pth",
+      "benchmark_weight_present_in_hf_metadata": false
+    }
+  },
+  "local_inventory": {
+    "roots": [
+      {
+        "path": "D:/数字图像处理",
+        "exists": true,
+        "checkpoint_count": 58,
+        "target_named_paths": []
+      },
+      {
+        "path": "<USERPROFILE>/.cache/huggingface",
+        "exists": true,
+        "checkpoint_count": 0,
+        "target_named_paths": [],
+        "hub_model_dirs": [
+          "models--Systran--faster-whisper-base"
+        ]
+      },
+      {
+        "path": "<USERPROFILE>/.cache/torch",
+        "exists": false,
+        "checkpoint_count": 0,
+        "target_named_paths": []
+      }
+    ],
+    "checkpoint_suffixes": [
+      ".pt",
+      ".pth",
+      ".ckpt",
+      ".safetensors"
+    ],
+    "excluded_directories": [
+      ".git",
+      "__pycache__"
+    ],
+    "interpretation": "Known project checkpoints and test fixtures, no identified official AdaIR/Histoformer weights; filename-based inventory is bounded to listed roots."
+  },
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.6.0+cu124",
+    "ultralytics": "8.4.104",
+    "numpy": "2.4.4",
+    "absent_modules": [
+      "einops",
+      "timm",
+      "lightning",
+      "pytorch_lightning",
+      "torchmetrics",
+      "basicsr",
+      "lpips",
+      "yacs",
+      "natsort"
+    ]
+  },
+  "planned_fixed_routing": {
+    "AdaIR_5D": {
+      "fog": "adair5d.ckpt",
+      "rain": "adair5d.ckpt",
+      "night": "adair5d.ckpt",
+      "snow": "UNSUPPORTED_DO_NOT_INFER"
+    },
+    "Histoformer_Allweather": {
+      "rain": "net_g_best.pth",
+      "snow": "net_g_best.pth",
+      "fog": "NO_DEDICATED_SUPPORT_CLAIM_IN_INSPECTED_SOURCES",
+      "night": "UNSUPPORTED_DO_NOT_INFER"
+    }
+  },
+  "measured_external_metrics": null
+}

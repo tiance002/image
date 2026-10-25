@@ -1,0 +1,62 @@
+{
+  "selection": "Each weather first10 paths lexicographically, GT-independent; five warmup images, then40 timed images; warm filesystem cache",
+  "included": "file read/decode, RGB conversion, H2D, bf16 NAFNet tiled restoration, quantize/D2H, BGR conversion, FP32 YOLO640 .25 NMS .7 maxDet300, CPU boxes transfer",
+  "excluded": "one-off model loading, weight hashing, GUI rendering, saving images or JSON",
+  "methods": {
+    "input": {
+      "n": 40,
+      "mean_ms": 514.0435449866345,
+      "median_ms": 452.1680499310605,
+      "p95_ms": 1160.1219049829517,
+      "restoration_parameters": 0,
+      "detector_parameters": 3157200,
+      "peak_allocated_mib": 38.4248046875,
+      "peak_reserved_mib": 62.0,
+      "checkpoint_sha256": null
+    },
+    "v4": {
+      "n": 40,
+      "mean_ms": 1772.8238200012129,
+      "median_ms": 1453.4452999942005,
+      "p95_ms": 3306.3301200163546,
+      "restoration_parameters": 17061219,
+      "detector_parameters": 3157200,
+      "peak_allocated_mib": 1158.45703125,
+      "peak_reserved_mib": 1432.0,
+      "checkpoint_sha256": "8221a9037db0a907dc5d56698b209299061fccf0f01ac72b700cd57910d768d9"
+    },
+    "guard": {
+      "n": 40,
+      "mean_ms": 2112.481017506798,
+      "median_ms": 1905.4895500303246,
+      "p95_ms": 3451.5783800976346,
+      "restoration_parameters": 17061219,
+      "detector_parameters": 3157200,
+      "peak_allocated_mib": 1169.8994140625,
+      "peak_reserved_mib": 1438.0,
+      "checkpoint_sha256": "1c5a1b9abd79d41ede758c4885afaea459d8795114a9b1c42fcca366830d522b"
+    },
+    "C0": {
+      "n": 40,
+      "mean_ms": 1685.3090349846752,
+      "median_ms": 1416.317350056488,
+      "p95_ms": 3401.3246749411337,
+      "restoration_parameters": 17061219,
+      "detector_parameters": 3157200,
+      "peak_allocated_mib": 1145.13037109375,
+      "peak_reserved_mib": 1418.0,
+      "checkpoint_sha256": "512b8677945ceee1161c568081d9660fcaaf2f1a3eb02b54f0be55405e6bd3ad"
+    },
+    "C1": {
+      "n": 40,
+      "mean_ms": 1370.5785274796654,
+      "median_ms": 1272.614249959588,
+      "p95_ms": 1871.6694150411054,
+      "restoration_parameters": 17061219,
+      "detector_parameters": 3157200,
+      "peak_allocated_mib": 1157.38134765625,
+      "peak_reserved_mib": 1432.0,
+      "checkpoint_sha256": "e17b1940179e00b705ee3f5bd5e828555de0b6ca4c86d043af7bbe1d288d91ff"
+    }
+  }
+}

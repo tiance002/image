@@ -44,6 +44,8 @@
 
 ### D0 指标口径说明（2026-10-25 补充，必须随结果一起报告）
 
+> **下一阶段评估协议勘误（2026-10-25）**：下文 0.2042 等数值及 motorcycle=0.0000 描述属于历史 conf=0.25 截断 AP，不能作为新标准 AP 基准。新标准使用 conf=0.001、COCO 官方 bbox 评估（IoU=.50:.05:.95、maxDets100、保留 crowd），运行时 Recall/FP/OPR 独立使用 conf=0.25、maxDet300。新协议下原图雨雾200张 motorcycle AP50=0.032247，故历史零分不能证明“检测器能力上限”。新旧协议分别报告，不把阈值/匹配/crowd处理变化作为模型提升。D1的旧绝对数值0.1940不可移植到新协议；相对输入保留率与类别/天气差值在同一协议内比较。当前406/200均是val模型选择集，非独立test，不据此宣告完整D1。协议配置见 `configs/next_phase_evaluation.yaml`，真实结果见 `results/next_phase/`。
+
 在 ACDC 这 200 张（fog 100 + rain 100）上实测的类别分布极不均衡：
 
 | 类别 | car | person | truck | bus | motorcycle | bicycle | train |

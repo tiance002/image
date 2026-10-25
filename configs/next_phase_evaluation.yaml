@@ -1,0 +1,16 @@
+model: yolov8n.pt
+image_size: 640
+ap_confidence: 0.001
+runtime_confidence: 0.25
+nms_iou: 0.7
+agnostic_nms: false
+max_det: 300
+coco_max_dets: 100
+classes: [0, 1, 2, 3, 5, 6, 7]
+restoration_precision: bfloat16
+restoration_tile: 1024
+restoration_overlap: 64
+detector_precision: float32
+annotations: data/raw/ACDC_detection/gt_detection/instancesonly_val_gt_detection.json
+images_root: data/raw/ACDC_images/rgb_anon
+split: validation_model_selection

@@ -1,0 +1,29 @@
+{
+  "old_source_sha256": "f4802fddea0b254f27fbd9997af0b71acbd1125c48114d1887338755bb6205c0",
+  "new_source_sha256": "452b7a60d40ddd46f82e2db07d1c7f7c5b5c1f4c53741783247871a458546fd7",
+  "weights": "C0 EMA@51999, unchanged",
+  "checks": [
+    {
+      "size": 320,
+      "bfloat16": false,
+      "outputs_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "size": 640,
+      "bfloat16": false,
+      "outputs_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    {
+      "size": 1024,
+      "bfloat16": true,
+      "outputs_bitwise_equal": true,
+      "max_abs_difference": 0.0
+    }
+  ],
+  "validation_dimensions": {
+    "(1920, 1080)": 406
+  },
+  "note": "Post-training geometry fix only; archived exact6 training sources; no optimizer updates. Existing1024-tile AP predictions remain valid."
+}

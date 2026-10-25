@@ -9,3 +9,7 @@ NAFNet结构参考Chen等的Simple Baselines for Image Restoration；YOLO检测�
 results目录保留配置、训练曲线、权重SHA256和公平性记录。其原始路径和源码哈希对应实验时的本地研究快照；公开副本对文档路径做了脱敏，省略私人运行脚本，因此不能用公开副本直接冒充原冻结快照。复算逐图AP还需要用户自行准备合法获取的本地数据、标注、预测及权重。
 
 历史机器绑定的Shell/PowerShell调度脚本和autopilot未纳入公开版本；请使用README列出的可移植Python入口。公开过程没有下载新的数据、模型或依赖。
+
+## 下一阶段本地提交
+
+C0/C1各4000步，27项直接相关测试。只同步源码、聚合报告/CI/PR/质量/效率和资源清单；不附数据、权重、逐图GT/预测或私人STATUS历史。本轮未push。新增COCO官方评估源码附原BSD许可证和修改说明；没有重新授权第三方资源。原始科研manifest与脱敏聚合副本字节不同，见SNAPSHOT_SCOPE及PUBLICATION_MANIFEST。未下载数据/模型权重或安装软件包，仅核查少量官方文本及评估源码。

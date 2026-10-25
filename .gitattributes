@@ -1,2 +1,4 @@
 * text=auto eol=lf
 *.md whitespace=-blank-at-eol
+# Preserve upstream COCO source/license whitespace.
+src/saferestore/metrics/coco_official/** whitespace=-blank-at-eol,-blank-at-eof

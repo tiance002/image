@@ -1,0 +1,97 @@
+{
+  "manifest": "data/real_weather_rgb_v2/manifests/dev.csv",
+  "n": 200,
+  "metric_protocol": "RGB float range0..1, PSNR allpixels, SSIM gaussian11 sigma1.5 valid-window; no extra image resize",
+  "evidence_scope": "同一清晰源图合成退化的像素对齐dev（fog100/rain100），不是ACDC真实跨时刻weather/reference配对；不能推断真实夜雪画质",
+  "lpips": {
+    "status": "BLOCKED",
+    "reason": "本地没有LPIPS包及预训练感知权重；禁止自动下载，不用随机网络冒充"
+  },
+  "methods": {
+    "input": {
+      "checkpoint": null,
+      "summary": {
+        "all": {
+          "psnr": 18.265962705612182,
+          "ssim": 0.8092953506112098
+        },
+        "fog": {
+          "psnr": 13.455722913742065,
+          "ssim": 0.7646362650394439
+        },
+        "rain": {
+          "psnr": 23.0762024974823,
+          "ssim": 0.8539544361829757
+        }
+      }
+    },
+    "v4": {
+      "checkpoint": "runs/real_v4_allweather/latest.pt",
+      "summary": {
+        "all": {
+          "psnr": 27.766425447463988,
+          "ssim": 0.9397188138961792
+        },
+        "fog": {
+          "psnr": 27.70454689025879,
+          "ssim": 0.9434548884630203
+        },
+        "rain": {
+          "psnr": 27.82830400466919,
+          "ssim": 0.9359827393293381
+        }
+      }
+    },
+    "guard": {
+      "checkpoint": "runs/confidence_v8_20261025_guard/latest.pt",
+      "summary": {
+        "all": {
+          "psnr": 27.73287637710571,
+          "ssim": 0.9393432331085205
+        },
+        "fog": {
+          "psnr": 27.487226123809815,
+          "ssim": 0.9419479459524155
+        },
+        "rain": {
+          "psnr": 27.97852663040161,
+          "ssim": 0.9367385202646256
+        }
+      }
+    },
+    "C0": {
+      "checkpoint": "runs/gt_next_phase_20261025_C0/latest.pt",
+      "summary": {
+        "all": {
+          "psnr": 28.49575881958008,
+          "ssim": 0.943494343161583
+        },
+        "fog": {
+          "psnr": 27.970806789398193,
+          "ssim": 0.9449841338396072
+        },
+        "rain": {
+          "psnr": 29.02071084976196,
+          "ssim": 0.9420045524835586
+        }
+      }
+    },
+    "C1": {
+      "checkpoint": "runs/gt_next_phase_20261025_C1/latest.pt",
+      "summary": {
+        "all": {
+          "psnr": 28.43001717567444,
+          "ssim": 0.9431976133584976
+        },
+        "fog": {
+          "psnr": 27.953045177459718,
+          "ssim": 0.9448528051376343
+        },
+        "rain": {
+          "psnr": 28.90698917388916,
+          "ssim": 0.941542421579361
+        }
+      }
+    }
+  }
+}

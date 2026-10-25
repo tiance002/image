@@ -1,0 +1,252 @@
+{
+  "decision": "retain_v4_baseline; reject_current_C1_as_replacement; stop_same_recipe",
+  "training_steps": {
+    "C0": 4000,
+    "C1": 4000
+  },
+  "adopted_checkpoint": null,
+  "push_performed": false,
+  "retained_fixes": [
+    "RGB/BGR generation",
+    "standard AP/runtime separation",
+    "positive COCO annotation IDs",
+    "nondivisible NAF residual shape",
+    "native GT training and reproducible auditing tools"
+  ],
+  "blocked": [
+    "AdaIR-5D official local weights/dependencies",
+    "Histoformer-Allweather official local weights/dependencies",
+    "LPIPS package/pretrained perceptual weights"
+  ],
+  "primary_C1_C0": {
+    "map50": {
+      "delta": 0.00296485424458387,
+      "ci95": [
+        -0.004839840496681687,
+        0.011533616902491401
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "map50_95": {
+      "delta": 0.004598799794532149,
+      "ci95": [
+        0.000967348031555311,
+        0.009287333445015441
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": true
+    },
+    "person": {
+      "delta": 0.005970582744075081,
+      "ci95": [
+        -3.0483101370271016e-06,
+        0.011822307473634936
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "bicycle": {
+      "delta": -0.015595654532913866,
+      "ci95": [
+        -0.04693405593756307,
+        0.009220699243880245
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "car": {
+      "delta": 0.005258143427357753,
+      "ci95": [
+        0.0006724270494647911,
+        0.010940293023566649
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": true
+    },
+    "motorcycle": {
+      "delta": 0.022997373628988516,
+      "ci95": [
+        -0.000994813767090996,
+        0.07412664323155
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "bus": {
+      "delta": 5.3051653435831625e-06,
+      "ci95": [
+        -0.012054797890543664,
+        0.004493782253787579
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "train": {
+      "delta": 0.000626149571478829,
+      "ci95": [
+        -0.004368874912701321,
+        0.0058470461081196355
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "truck": {
+      "delta": 0.0014920797077574294,
+      "ci95": [
+        -0.009183766125642463,
+        0.01357332977888122
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "recall": {
+      "delta": 0.0066079295154185536,
+      "ci95": [
+        0.000726419978254736,
+        0.012831159927441998
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": true
+    },
+    "fp_per_image": {
+      "delta": -0.010000000000000009,
+      "ci95": [
+        -0.07499999999999996,
+        0.05012499999999993
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "opr": {
+      "delta": 0.005084745762711784,
+      "ci95": [
+        -0.005093812456072802,
+        0.014976919738006318
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    }
+  },
+  "all406_C1_C0": {
+    "map50": {
+      "delta": 0.0009277644683335917,
+      "ci95": [
+        -0.0022293793054282405,
+        0.0054560484129745805
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "map50_95": {
+      "delta": 0.0017650774907982392,
+      "ci95": [
+        -0.0006991734742150118,
+        0.003976477024620424
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "person": {
+      "delta": 0.0036254712540539358,
+      "ci95": [
+        0.0008275400858260633,
+        0.006629376218617472
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": true
+    },
+    "bicycle": {
+      "delta": -0.00627614795767302,
+      "ci95": [
+        -0.01414502134459502,
+        0.001600276199570775
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "car": {
+      "delta": 0.007157951145245645,
+      "ci95": [
+        0.0033058649149139752,
+        0.010594615195100018
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": true
+    },
+    "motorcycle": {
+      "delta": 0.0002617431779358137,
+      "ci95": [
+        -0.0071523109509663355,
+        0.008175155383774536
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "bus": {
+      "delta": 0.002206526257294769,
+      "ci95": [
+        -0.01410853601071881,
+        0.021621732429208985
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "train": {
+      "delta": -0.0021619696561661628,
+      "ci95": [
+        -0.011794965563829937,
+        0.008737606267663388
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "truck": {
+      "delta": 0.0016807770576439118,
+      "ci95": [
+        -0.006300217199108985,
+        0.010123376427622142
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "recall": {
+      "delta": 0.006338553318419093,
+      "ci95": [
+        0.002600224812334759,
+        0.010332520554028815
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": true
+    },
+    "fp_per_image": {
+      "delta": 0.0049261083743843415,
+      "ci95": [
+        -0.034482758620689724,
+        0.041871921182266014
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    },
+    "opr": {
+      "delta": 0.0049554013875123815,
+      "ci95": [
+        -0.0019290151657852528,
+        0.01096819651156641
+      ],
+      "valid_resamples": 1000,
+      "sign_positive": false
+    }
+  },
+  "note": "single-seed validation, frame bootstrap, not independent-scene test; existing weights retained",
+  "production_default_weights_changed": false,
+  "primary_per_class_delta_C1_C0": {
+    "person": 0.005970582744075081,
+    "bicycle": -0.015595654532913866,
+    "car": 0.005258143427357753,
+    "motorcycle": 0.022997373628988516,
+    "bus": 5.3051653435831625e-06,
+    "train": 0.000626149571478829,
+    "truck": 0.0014920797077574294
+  }
+}

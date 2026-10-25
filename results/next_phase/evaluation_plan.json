@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "fixed_checkpoint": "EMA latest@51999, no selection by validation",
+  "completed": [
+    "eval_C0",
+    "eval_C1",
+    "score_final",
+    "failure_final",
+    "quality_final",
+    "bootstrap_gt",
+    "benchmark_final",
+    "reports_final",
+    "plots_final"
+  ],
+  "reused_predictions": [
+    "C0",
+    "C1"
+  ],
+  "background_bootstrap": false
+}

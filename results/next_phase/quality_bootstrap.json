@@ -1,0 +1,191 @@
+{
+  "unit": "paired synthetic image, percentile95, shared project statistics helper",
+  "pairs": {
+    "C1:C0": {
+      "all": {
+        "psnr": {
+          "sample_count": 200,
+          "mean": -0.06574164390563965,
+          "ci_lower": -0.08861909413337707,
+          "ci_upper": -0.044627323150634765,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 200,
+          "mean": -0.00029672980308532716,
+          "ci_lower": -0.000377911701798439,
+          "ci_upper": -0.00022525592148303988,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      },
+      "fog": {
+        "psnr": {
+          "sample_count": 100,
+          "mean": -0.017761611938476564,
+          "ci_lower": -0.038978765010833735,
+          "ci_upper": 0.0031250247955322235,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 100,
+          "mean": -0.00013132870197296142,
+          "ci_lower": -0.00018617285788059232,
+          "ci_upper": -7.003648579120635e-05,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      },
+      "rain": {
+        "psnr": {
+          "sample_count": 100,
+          "mean": -0.11372167587280274,
+          "ci_lower": -0.15189947509765622,
+          "ci_upper": -0.07692859125137329,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 100,
+          "mean": -0.0004621309041976929,
+          "ci_lower": -0.0005934670865535736,
+          "ci_upper": -0.0003416558504104614,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      }
+    },
+    "C1:v4": {
+      "all": {
+        "psnr": {
+          "sample_count": 200,
+          "mean": 0.6635917282104492,
+          "ci_lower": 0.4510433964729309,
+          "ci_upper": 0.8792164995670317,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 200,
+          "mean": 0.0034787994623184204,
+          "ci_lower": 0.0025967975929379467,
+          "ci_upper": 0.00446235579252243,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      },
+      "fog": {
+        "psnr": {
+          "sample_count": 100,
+          "mean": 0.24849828720092773,
+          "ci_lower": 0.136923734664917,
+          "ci_upper": 0.35776506233215327,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 100,
+          "mean": 0.0013979166746139527,
+          "ci_lower": 0.0008365431874990465,
+          "ci_upper": 0.0020761468708515164,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      },
+      "rain": {
+        "psnr": {
+          "sample_count": 100,
+          "mean": 1.0786851692199706,
+          "ci_lower": 0.7079784007072449,
+          "ci_upper": 1.439601095676422,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 100,
+          "mean": 0.0055596822500228885,
+          "ci_lower": 0.004098769038915634,
+          "ci_upper": 0.00705468225479126,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      }
+    },
+    "C0:v4": {
+      "all": {
+        "psnr": {
+          "sample_count": 200,
+          "mean": 0.7293333721160888,
+          "ci_lower": 0.5161639416217804,
+          "ci_upper": 0.9470061519145965,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 200,
+          "mean": 0.0037755292654037477,
+          "ci_lower": 0.00288199482858181,
+          "ci_upper": 0.004765004642307758,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      },
+      "fog": {
+        "psnr": {
+          "sample_count": 100,
+          "mean": 0.2662598991394043,
+          "ci_lower": 0.14887317705154418,
+          "ci_upper": 0.38452059841156006,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 100,
+          "mean": 0.001529245376586914,
+          "ci_lower": 0.0009620339870452883,
+          "ci_upper": 0.0022171970903873445,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      },
+      "rain": {
+        "psnr": {
+          "sample_count": 100,
+          "mean": 1.1924068450927734,
+          "ci_lower": 0.819351333141327,
+          "ci_upper": 1.5555338191986083,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        },
+        "ssim": {
+          "sample_count": 100,
+          "mean": 0.006021813154220581,
+          "ci_lower": 0.004553306102752686,
+          "ci_upper": 0.007541973680257798,
+          "confidence": 0.95,
+          "resamples": 1000,
+          "seed": 20261025
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "arm": "C0",
+  "steps": 4000,
+  "stream_sha256": "777dc1d35fa7ef4a12bea0916fd45009f046079dae56aad0546ed4b6739534b7",
+  "initial_model_sha256": "21458c7e80029635a1e67aae9678ca2f628375c38c6bd9cd59a57556599c32a8",
+  "initial_ema_sha256": "dea119dd32546cd4895ba96acdb124a8febdb15433a17439f6047c08ea04c9fe",
+  "frozen_before": {
+    "native_task": "5d13798cae8d3a65421f7217717711856dccba2ae911d20a9aa223a7a40d6865",
+    "feature": "5d13798cae8d3a65421f7217717711856dccba2ae911d20a9aa223a7a40d6865"
+  },
+  "frozen_after": {
+    "native_task": "5d13798cae8d3a65421f7217717711856dccba2ae911d20a9aa223a7a40d6865",
+    "feature": "5d13798cae8d3a65421f7217717711856dccba2ae911d20a9aa223a7a40d6865"
+  },
+  "detector_unchanged": true,
+  "task_gradient_nonzero": true,
+  "elapsed_seconds": 3947.667264999938,
+  "peak_gpu_allocated_bytes": 6737635328,
+  "checkpoint_sha256": {
+    "iter_049999.pt": "737fd0a5292e6dbaa6291e52d13255d334212141ed5469f8ae9c30c0b0f8ae0a",
+    "iter_051999.pt": "512b8677945ceee1161c568081d9660fcaaf2f1a3eb02b54f0be55405e6bd3ad",
+    "latest.pt": "512b8677945ceee1161c568081d9660fcaaf2f1a3eb02b54f0be55405e6bd3ad"
+  }
+}

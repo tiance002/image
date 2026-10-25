@@ -1,0 +1,452 @@
+{
+  "resamples": 1000,
+  "seed": 20261025,
+  "unit": "paired image, stratified by weather, percentile95",
+  "limitation": "相邻帧相关；图像重采样不构成场景独立或多随机种子证据。区间跨零表示证据不足，不证明无损。无真值类别重采样记为NaN并报告有效次数。",
+  "scopes": {
+    "rain_fog200": {
+      "v4:input": {
+        "map50": {
+          "delta": -0.004857436545863458,
+          "ci95": [
+            -0.01997585053644055,
+            0.011749029012018259
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "map50_95": {
+          "delta": -0.004626963171776882,
+          "ci95": [
+            -0.014700796322003216,
+            0.004178037839726134
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "person": {
+          "delta": 0.020363273735743648,
+          "ci95": [
+            0.0008334952670882346,
+            0.043227259386923345
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": true
+        },
+        "bicycle": {
+          "delta": -0.032030754511470444,
+          "ci95": [
+            -0.10835513135242733,
+            0.0041707912039435704
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "car": {
+          "delta": 0.003986047364706868,
+          "ci95": [
+            -0.005769540260703315,
+            0.014969193568364753
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "motorcycle": {
+          "delta": 0.02731865928528336,
+          "ci95": [
+            0.0,
+            0.11124292072460759
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bus": {
+          "delta": -0.03529592542217996,
+          "ci95": [
+            -0.09851922022780257,
+            0.0062358649415123315
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "train": {
+          "delta": -0.0061291843470061,
+          "ci95": [
+            -0.026405949253096323,
+            0.0
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "truck": {
+          "delta": -0.012214171926121647,
+          "ci95": [
+            -0.038638198052862234,
+            0.006946543233904769
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "recall": {
+          "delta": 0.01248164464023499,
+          "ci95": [
+            0.0006821050068584744,
+            0.02502197983568287
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": true
+        },
+        "fp_per_image": {
+          "delta": -0.02499999999999991,
+          "ci95": [
+            -0.14000000000000012,
+            0.07999999999999985
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "opr": {
+          "delta": -0.0423728813559322,
+          "ci95": [
+            -0.05871829465731247,
+            -0.027415301972852715
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        }
+      },
+      "guard:input": {
+        "map50": {
+          "delta": -0.004454064174517491,
+          "ci95": [
+            -0.018233613341466087,
+            0.011956418485795046
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "map50_95": {
+          "delta": -0.003902094431936426,
+          "ci95": [
+            -0.01376352574002269,
+            0.0050918473804996605
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "person": {
+          "delta": 0.012178583439794888,
+          "ci95": [
+            -0.005517376830907762,
+            0.03178185635914558
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bicycle": {
+          "delta": -0.028103084874594175,
+          "ci95": [
+            -0.08728505495557155,
+            0.001292345694196793
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "car": {
+          "delta": 0.008674349958978644,
+          "ci95": [
+            -0.0003360909215208429,
+            0.018282774323588217
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "motorcycle": {
+          "delta": 0.0288959817034335,
+          "ci95": [
+            0.0,
+            0.12126990959965561
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bus": {
+          "delta": -0.03639669239461368,
+          "ci95": [
+            -0.09697835533760622,
+            0.00011021580819329412
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "train": {
+          "delta": -0.0035418175963937704,
+          "ci95": [
+            -0.017409662961180978,
+            0.0
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "truck": {
+          "delta": -0.012885769458227503,
+          "ci95": [
+            -0.03587955202674801,
+            0.0031945090377415403
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "recall": {
+          "delta": 0.016886930983847304,
+          "ci95": [
+            0.006366930894714772,
+            0.02897529310111931
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": true
+        },
+        "fp_per_image": {
+          "delta": -0.004999999999999893,
+          "ci95": [
+            -0.10999999999999988,
+            0.10999999999999988
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "opr": {
+          "delta": -0.023728813559321993,
+          "ci95": [
+            -0.03608293944694628,
+            -0.013625742437497135
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        }
+      }
+    },
+    "all406": {
+      "v4:input": {
+        "map50": {
+          "delta": -0.012586794951485153,
+          "ci95": [
+            -0.02335433639627248,
+            -0.002683708957998746
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "map50_95": {
+          "delta": -0.01111406208725002,
+          "ci95": [
+            -0.019353267960161784,
+            -0.004464214945573893
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "person": {
+          "delta": 0.009660057268316258,
+          "ci95": [
+            -0.0006613491242473206,
+            0.021551097576620243
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bicycle": {
+          "delta": -0.01454279106629991,
+          "ci95": [
+            -0.043759341376812776,
+            0.0020663236396505054
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "car": {
+          "delta": -0.001744189211025371,
+          "ci95": [
+            -0.009781932859448238,
+            0.005056684559258794
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "motorcycle": {
+          "delta": -0.008979515943297503,
+          "ci95": [
+            -0.03443915384916726,
+            0.025427326329929965
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bus": {
+          "delta": -0.0324776629752772,
+          "ci95": [
+            -0.07944802508484815,
+            -0.004302981938516531
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "train": {
+          "delta": -0.02987349859551791,
+          "ci95": [
+            -0.07689528415817494,
+            0.006980979557915933
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "truck": {
+          "delta": -0.010149964137294132,
+          "ci95": [
+            -0.031652251437903976,
+            0.007293950739804777
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "recall": {
+          "delta": 0.005219985085756884,
+          "ci95": [
+            -0.0025420122681065306,
+            0.013110217034477904
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "fp_per_image": {
+          "delta": 0.041871921182266014,
+          "ci95": [
+            -0.0344827586206895,
+            0.11822660098522153
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "opr": {
+          "delta": -0.04757185332011893,
+          "ci95": [
+            -0.06185642962752922,
+            -0.035265159787435385
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        }
+      },
+      "guard:input": {
+        "map50": {
+          "delta": -0.009443386659805625,
+          "ci95": [
+            -0.01952925975911047,
+            -0.00018992499547306344
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "map50_95": {
+          "delta": -0.008949055640139009,
+          "ci95": [
+            -0.017555573261762263,
+            -0.002815536757789414
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "person": {
+          "delta": 0.008943195847540497,
+          "ci95": [
+            -0.002120475171435254,
+            0.020663388252701333
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bicycle": {
+          "delta": -0.016974829810857087,
+          "ci95": [
+            -0.04148184899519209,
+            -0.0009210383359471456
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "car": {
+          "delta": 0.004583958750090322,
+          "ci95": [
+            -0.0018286262603411012,
+            0.01047992434074176
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "motorcycle": {
+          "delta": 0.009143112577610732,
+          "ci95": [
+            -0.005686269284823216,
+            0.03908178879876288
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "bus": {
+          "delta": -0.02675612974694959,
+          "ci95": [
+            -0.07574358525198634,
+            0.0035799746232565415
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "train": {
+          "delta": -0.03659881982795504,
+          "ci95": [
+            -0.08436069828134099,
+            0.007052358545520437
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "truck": {
+          "delta": -0.008444194408119138,
+          "ci95": [
+            -0.028133493487703165,
+            0.007520461391674983
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "recall": {
+          "delta": 0.011931394481730029,
+          "ci95": [
+            0.0051851371919865025,
+            0.019312801515023095
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": true
+        },
+        "fp_per_image": {
+          "delta": 0.051724137931034475,
+          "ci95": [
+            -0.014778325123152691,
+            0.12075123152709356
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        },
+        "opr": {
+          "delta": -0.02973240832507429,
+          "ci95": [
+            -0.04028319748060626,
+            -0.019748853423409034
+          ],
+          "valid_resamples": 1000,
+          "sign_positive": false
+        }
+      }
+    }
+  }
+}

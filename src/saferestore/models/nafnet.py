@@ -164,7 +164,8 @@ class NAFNet(nn.Module):
 
         out = self.ending(y)
         out = out[..., :h, :w]
-        return torch.clamp(x + out, 0.0, 1.0) if self.residual else out
+        # x可能为pad后的尺寸；残差也必须裁回原始高宽。
+        return torch.clamp(x[..., :h, :w] + out, 0.0, 1.0) if self.residual else out
 
 
 def build_nafnet(width: int = 32, variant: str = "standard") -> NAFNet:

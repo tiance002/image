@@ -1,0 +1,67 @@
+{
+  "note": "真实GT标签输入次数，不是独立图像数或原生assigner实际正anchor计数；后者未逐类记录",
+  "arms": {
+    "C0": {
+      "steps": 4000,
+      "unique_images": 1600,
+      "gt_box_input_draws": {
+        "car": 16104,
+        "train": 540,
+        "truck": 1321,
+        "person": 4155,
+        "motorcycle": 607,
+        "bus": 429,
+        "bicycle": 872
+      },
+      "image_class_input_draws": {
+        "car": 3803,
+        "train": 471,
+        "truck": 865,
+        "person": 1585,
+        "motorcycle": 493,
+        "bus": 352,
+        "bicycle": 590
+      },
+      "unique_images_by_class": {
+        "car": 1520,
+        "train": 184,
+        "truck": 348,
+        "person": 632,
+        "motorcycle": 190,
+        "bus": 138,
+        "bicycle": 234
+      }
+    },
+    "C1": {
+      "steps": 4000,
+      "unique_images": 1600,
+      "gt_box_input_draws": {
+        "car": 16104,
+        "train": 540,
+        "truck": 1321,
+        "person": 4155,
+        "motorcycle": 607,
+        "bus": 429,
+        "bicycle": 872
+      },
+      "image_class_input_draws": {
+        "car": 3803,
+        "train": 471,
+        "truck": 865,
+        "person": 1585,
+        "motorcycle": 493,
+        "bus": 352,
+        "bicycle": 590
+      },
+      "unique_images_by_class": {
+        "car": 1520,
+        "train": 184,
+        "truck": 348,
+        "person": 632,
+        "motorcycle": 190,
+        "bus": 138,
+        "bicycle": 234
+      }
+    }
+  }
+}

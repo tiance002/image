@@ -23,3 +23,9 @@ __pycache__/
 *.pem
 *.key
 .DS_Store
+
+/results/next_phase/predictions/
+/results/next_phase/audit_history/
+/results/next_phase/qualitative/
+/results/next_phase/failure_cases.json
+/results/next_phase/*.log

@@ -1,0 +1,17 @@
+{
+  "image": [
+    "fog/train/GP020478/GP020478_frame_000142_rgb_anon.png"
+  ],
+  "stats": {
+    "box_loss": 0.8951312303543091,
+    "cls_loss": 0.7105380296707153,
+    "dfl_loss": 0.9923244714736938,
+    "total": 2.597993850708008,
+    "ignored_anchor_fraction": 0.0,
+    "gt_count": 7
+  },
+  "input_grad_l2": 7.655293941497803,
+  "input_grad_finite": true,
+  "detector_grad_count": 0,
+  "note": "CPU真实train帧单次反传，不是训练试验"
+}

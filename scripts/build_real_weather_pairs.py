@@ -15,15 +15,18 @@ docs/ROOTCAUSE_AND_PLAN_2026-10-24.html）。
         保证天空是灰的、饱和度是低的。
 
 用法：
-    python scripts/build_real_weather_pairs.py --calibrate
+    # 默认复用历史 BGR 标定表，输出到新版本目录，不覆盖旧训练数据。
     python scripts/build_real_weather_pairs.py --split train --per-image 3
     python scripts/build_real_weather_pairs.py --split dev --per-image 1
+    # 重新标定必须显式选择一个不存在的新文件。
+    python scripts/build_real_weather_pairs.py --calibrate --calibration data/real_weather_rgb_v2/calibration_new.json
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import random
 from pathlib import Path
@@ -33,8 +36,9 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 ACDC = ROOT / "data/raw/ACDC_images/rgb_anon"
-OUT = ROOT / "data/real_weather"
-CALIB = OUT / "calibration.json"
+OUT = ROOT / "data/real_weather_rgb_v2"
+# 历史标定表按 OpenCV BGR 顺序保存；在合成入口显式转为 RGB，不改写历史文件。
+CALIB = ROOT / "data/real_weather/calibration.json"
 
 OUT_W, OUT_H = 960, 540
 
@@ -97,6 +101,8 @@ def channel_stats(bgr01: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 
 
 def build_calibration() -> dict:
+    if CALIB.exists():
+        raise FileExistsError(f"拒绝覆盖已有标定表，请用 --calibration 指定新路径: {CALIB}")
     payload: dict[str, list] = {"fog": [], "rain": []}
     for weather in ("fog", "rain"):
         files = sorted((ACDC / weather / "train").rglob("*.png"))
@@ -160,7 +166,7 @@ def synth_fog(clean: np.ndarray, entry: dict, rng: random.Random) -> np.ndarray:
     """按反演出的 (A, s) 复现同等强度的大气散射。"""
     h, w = clean.shape[:2]
     depth = depth_proxy(h, w, rng)
-    air = np.asarray(entry["air"], dtype=np.float32) * rng.uniform(0.97, 1.03)
+    air = calibration_rgb(entry, "air") * rng.uniform(0.97, 1.03)
     air = np.clip(air, 0.5, 1.0)
     strength = float(entry["strength"]) * rng.uniform(0.75, 1.25)
     # median(-ln t) = beta * median(d)，令其等于目标 s
@@ -255,13 +261,21 @@ def synth_rain(clean: np.ndarray, entry: dict, rng: random.Random) -> np.ndarray
     veiled = cv2.GaussianBlur(with_streaks, (k, k), 0)
     out = with_streaks * 0.75 + veiled * 0.25
 
-    mean_c = np.asarray(entry["mean_c"], dtype=np.float32) * rng.uniform(0.97, 1.03)
-    std_c = np.asarray(entry["std_c"], dtype=np.float32) * rng.uniform(0.92, 1.08)
+    mean_c = calibration_rgb(entry, "mean_c") * rng.uniform(0.97, 1.03)
+    std_c = calibration_rgb(entry, "std_c") * rng.uniform(0.92, 1.08)
     out = reinhard_transfer(out, mean_c, std_c, weight=rng.uniform(0.75, 0.95))
     return np.clip(lens_droplets(out, rng), 0, 1)
 
 
 # ---------------------------------------------------------------- 构建
+
+
+def calibration_rgb(entry: dict, key: str) -> np.ndarray:
+    """历史 calibration.json 的三通道参数是 BGR；合成图像使用 RGB。"""
+    value = np.asarray(entry[key], dtype=np.float32)
+    if value.shape != (3,):
+        raise ValueError(f"标定 {key} 必须包含三个BGR通道")
+    return value[::-1].copy()
 
 
 def photometric_jitter(clean: np.ndarray, rng: random.Random) -> np.ndarray:
@@ -283,6 +297,8 @@ def load_calibration() -> dict:
 
 
 def build(split: str, per_image: int, seed: int) -> None:
+    if (OUT / "manifests" / f"{split}.csv").exists() or any((OUT / name / split).exists() for name in ("clean", "degraded")):
+        raise FileExistsError(f"拒绝覆盖已有数据划分: {OUT}/{split}")
     calib = load_calibration()
     rng = random.Random(seed)
     ref_split = "train_ref" if split == "train" else "val_ref"
@@ -344,15 +360,28 @@ def build(split: str, per_image: int, seed: int) -> None:
         writer.writeheader()
         writer.writerows(rows)
     print(f"[{split}] 共 {len(rows)} 对 -> {manifest}")
+    (OUT / f"color_contract_{split}.json").write_text(json.dumps({
+        "version": "rgb_v2", "synthesis_color_order": "RGB", "calibration_color_order": "BGR",
+        "conversion": "reverse air/mean_c/std_c at synthesis entry", "opencv_encoding": "RGB2BGR",
+        "output_size": [OUT_W, OUT_H], "seed": seed, "per_image": per_image,
+        "pairs": len(rows), "calibration_sha256": hashlib.sha256(CALIB.read_bytes()).hexdigest(),
+        "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest(),
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def main() -> None:
+    global OUT, CALIB
     parser = argparse.ArgumentParser()
     parser.add_argument("--calibrate", action="store_true")
     parser.add_argument("--split", choices=["train", "dev"], default=None)
     parser.add_argument("--per-image", type=int, default=3)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--output-dir", type=Path, default=OUT)
+    parser.add_argument("--calibration", type=Path, default=CALIB)
     args = parser.parse_args()
+    OUT = args.output_dir.resolve()
+    OUT.relative_to(ROOT)
+    CALIB = args.calibration.resolve()
     if args.calibrate:
         build_calibration()
     if args.split:
