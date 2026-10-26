@@ -1,0 +1,588 @@
+{
+  "resamples": 1000,
+  "seed": 20261025,
+  "unit": "paired image bootstrap, percentile 95",
+  "limitation": "ACDC val 相邻帧高度相关；这是图像级重采样，不是场景独立、也不是多随机种子证据。区间跨零只表示证据不足，不能当成「无损」证明。",
+  "scopes": {
+    "rain": {
+      "histoformer_real:input": {
+        "map50": {
+          "delta": 0.0005825962591131384,
+          "ci95": [
+            -0.00048478619471423455,
+            0.0024547964342102368
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.002490263441615931,
+          "ci95": [
+            0.0003717943257716703,
+            0.006292224087185902
+          ],
+          "sign_positive": true,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": -0.0001998798218140474,
+          "ci95": [
+            -0.001488799534659736,
+            0.0014239757426827023
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.0033003300330033125,
+          "ci95": [
+            0.0,
+            0.01492434957781493
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 997
+        },
+        "bicycle": {
+          "delta": -0.000568230736117073,
+          "ci95": [
+            -0.0024598964704522245,
+            0.0
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 999
+        },
+        "car": {
+          "delta": 0.002105476747327306,
+          "ci95": [
+            -0.0010238035325858734,
+            0.0051361099395678955
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": -0.001289779263801527,
+          "ci95": [
+            -0.004991320286647806,
+            0.0032541373190818263
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      },
+      "histoformer_real:v4": {
+        "map50": {
+          "delta": 0.02102804177937917,
+          "ci95": [
+            -0.0013539936307861416,
+            0.049551184147094085
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.013306072822458104,
+          "ci95": [
+            -0.00034265487266417304,
+            0.03138064070744675
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.04683759892330101,
+          "ci95": [
+            -0.00018386462538293795,
+            0.12489784692754988
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.010372465818010324,
+          "ci95": [
+            0.0,
+            0.043607340325869354
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 997
+        },
+        "bicycle": {
+          "delta": 0.054730118173107634,
+          "ci95": [
+            0.0,
+            0.22141456736234885
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 999
+        },
+        "car": {
+          "delta": 0.010440994865308695,
+          "ci95": [
+            -0.004269364052804153,
+            0.024995427268539008
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": 0.0013775104209229339,
+          "ci95": [
+            -0.01600360770444257,
+            0.01777541688173596
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      },
+      "histoformer_real:C0": {
+        "map50": {
+          "delta": 0.017826470247602588,
+          "ci95": [
+            -0.0014855358359220604,
+            0.04745003332109135
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.01388026182876892,
+          "ci95": [
+            0.0011130825933521494,
+            0.033157325907939864
+          ],
+          "sign_positive": true,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.01936518256401802,
+          "ci95": [
+            -0.02188033088324185,
+            0.08085757508303247
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.0033003300330033125,
+          "ci95": [
+            0.0,
+            0.015109021448050475
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 997
+        },
+        "bicycle": {
+          "delta": 0.0585950023573786,
+          "ci95": [
+            0.0,
+            0.24211531829167
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 999
+        },
+        "car": {
+          "delta": 0.009850549333733416,
+          "ci95": [
+            -0.004768599504832684,
+            0.023154840168783088
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": 0.0021532646572927083,
+          "ci95": [
+            -0.01399676267591599,
+            0.01964463557561314
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      },
+      "histoformer_real:C1": {
+        "map50": {
+          "delta": 0.015528986822518603,
+          "ci95": [
+            -0.0033297825361852575,
+            0.04352945518822841
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.012087140852211214,
+          "ci95": [
+            -2.924859880944196e-06,
+            0.030572293179792234
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.025158556019010597,
+          "ci95": [
+            -0.01062214193623962,
+            0.0750136694876258
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.002593116454502553,
+          "ci95": [
+            -0.0008161803022407598,
+            0.014112446958981652
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 997
+        },
+        "bicycle": {
+          "delta": 0.0544381135626576,
+          "ci95": [
+            0.0,
+            0.21996284341266117
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 999
+        },
+        "car": {
+          "delta": 0.004315338948572167,
+          "ci95": [
+            -0.010073163470580909,
+            0.016679384330218438
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": -0.0026072563642920987,
+          "ci95": [
+            -0.018497729202063773,
+            0.013363512797879996
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      }
+    },
+    "snow": {
+      "histoformer_real:input": {
+        "map50": {
+          "delta": 0.00502744775425884,
+          "ci95": [
+            0.00012044158558099927,
+            0.01763495978412778
+          ],
+          "sign_positive": true,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.00034232692629623807,
+          "ci95": [
+            -0.008771508467987826,
+            0.00869723138652322
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.006800680068006805,
+          "ci95": [
+            0.0,
+            0.03278963610646778
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bicycle": {
+          "delta": 0.01815181518151815,
+          "ci95": [
+            0.0,
+            0.10412916291629162
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 996
+        },
+        "car": {
+          "delta": -0.0027118820172853386,
+          "ci95": [
+            -0.007177634311789294,
+            0.0005102648257510887
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": 0.005458338768302262,
+          "ci95": [
+            0.0007917428818417741,
+            0.010197519878587212
+          ],
+          "sign_positive": true,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      },
+      "histoformer_real:v4": {
+        "map50": {
+          "delta": 0.0184242982120576,
+          "ci95": [
+            -0.003922990033688149,
+            0.05089697437877862
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.008647471448067129,
+          "ci95": [
+            -0.005655122676670527,
+            0.02610011984041489
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.0389079292544639,
+          "ci95": [
+            -0.009692213492357007,
+            0.1832308312907599
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.0,
+          "ci95": [
+            -0.04840484048404825,
+            0.0528465346534655
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bicycle": {
+          "delta": 0.022689768976897687,
+          "ci95": [
+            -0.016996699669967,
+            0.12871287128712872
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 996
+        },
+        "car": {
+          "delta": -0.005057024379761632,
+          "ci95": [
+            -0.01858567773516134,
+            0.006521363019348072
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": -0.000562251359244037,
+          "ci95": [
+            -0.01780090447286891,
+            0.01630568535744442
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      },
+      "histoformer_real:C0": {
+        "map50": {
+          "delta": 0.020435547354281713,
+          "ci95": [
+            -0.0007193456808029281,
+            0.05316957687257855
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.011908645784249716,
+          "ci95": [
+            -0.007160664552979987,
+            0.030308257694314313
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.04196526795536697,
+          "ci95": [
+            0.0,
+            0.18330521317437853
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.0,
+          "ci95": [
+            -0.04840484048404825,
+            0.0528465346534655
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bicycle": {
+          "delta": 0.02852428099952852,
+          "ci95": [
+            0.0,
+            0.1472772277227723
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 996
+        },
+        "car": {
+          "delta": 0.0015423706381116897,
+          "ci95": [
+            -0.011131093450030471,
+            0.014211147208565953
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": 0.013656467524061161,
+          "ci95": [
+            -0.002984983027451325,
+            0.027589780669409692
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      },
+      "histoformer_real:C1": {
+        "map50": {
+          "delta": 0.02007352656721023,
+          "ci95": [
+            -0.0025642794359836975,
+            0.04773827211578114
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "map50_95": {
+          "delta": 0.010213415680065008,
+          "ci95": [
+            -0.008484081628973928,
+            0.02754807769524921
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bus": {
+          "delta": 0.028839383938393838,
+          "ci95": [
+            -0.009163440324901446,
+            0.12695388236302618
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "train": {
+          "delta": 0.012376237623762387,
+          "ci95": [
+            -0.04840484048404825,
+            0.09598459845984575
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "bicycle": {
+          "delta": 0.02792586951002792,
+          "ci95": [
+            0.0,
+            0.14632061032190177
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 996
+        },
+        "car": {
+          "delta": -0.008229282063137111,
+          "ci95": [
+            -0.02227402001467666,
+            0.00625455017751
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        },
+        "person": {
+          "delta": 0.010773932252839347,
+          "ci95": [
+            -0.007089109418461118,
+            0.024795978433344787
+          ],
+          "sign_positive": false,
+          "sign_negative": false,
+          "valid": 1000
+        }
+      }
+    }
+  }
+}

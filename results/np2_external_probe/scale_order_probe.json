@@ -1,0 +1,2160 @@
+{
+  "sample": {
+    "files": [
+      "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+      "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+      "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+      "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+      "fog/train/GOPR0477/GOPR0477_frame_000774_rgb_anon.png",
+      "rain/train/GOPR0402/GOPR0402_frame_000598_rgb_anon.png",
+      "night/train/GOPR0376/GOPR0376_frame_000067_rgb_anon.png",
+      "snow/train/GOPR0606/GOPR0606_frame_000550_rgb_anon.png",
+      "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+      "rain/train/GP010400/GP010400_frame_000059_rgb_anon.png",
+      "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+      "snow/train/GOPR0607/GOPR0607_frame_000286_rgb_anon.png",
+      "fog/train/GOPR0475/GOPR0475_frame_000096_rgb_anon.png",
+      "rain/train/GOPR0400/GOPR0400_frame_000436_rgb_anon.png",
+      "night/train/GOPR0351/GOPR0351_frame_000214_rgb_anon.png",
+      "snow/train/GOPR0122/GOPR0122_frame_000161_rgb_anon.png",
+      "fog/train/GOPR0476/GOPR0476_frame_000056_rgb_anon.png",
+      "rain/train/GOPR0402/GOPR0402_frame_000561_rgb_anon.png",
+      "night/train/GOPR0376/GOPR0376_frame_000298_rgb_anon.png",
+      "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+      "fog/train/GOPR0476/GOPR0476_frame_000180_rgb_anon.png",
+      "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+      "night/train/GP010376/GP010376_frame_000020_rgb_anon.png",
+      "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png"
+    ],
+    "n_bus": 12,
+    "n_train": 12
+  },
+  "models": {
+    "v4": {
+      "checkpoint": "runs/real_v4_allweather/latest.pt",
+      "n_gt": 28,
+      "gt_box_max_abs_diff_px": 6.103515625e-05,
+      "A": {
+        "n": 28,
+        "matched": 9,
+        "mean_best_iou": 0.2700821428571428,
+        "mean_score": 0.11443375046544063,
+        "zero_iou": 15
+      },
+      "B": {
+        "n": 28,
+        "matched": 11,
+        "mean_best_iou": 0.3013357142857143,
+        "mean_score": 0.15033141929262245,
+        "zero_iou": 15
+      },
+      "loss_A": {
+        "cls": 1.7979113856951396,
+        "box": 1.9561762412389119,
+        "dfl": 1.1014003331462543
+      },
+      "loss_B": {
+        "cls": 1.820517932375272,
+        "box": 1.9201177830497425,
+        "dfl": 1.0869390020767848
+      },
+      "switched_cases": [
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+          "gt_index": 2,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            298.7,
+            349.3,
+            356.3,
+            386.3
+          ],
+          "A": {
+            "best_iou": 0.4808,
+            "score": 0.01975584588944912,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.5151,
+            "score": 0.0050999438390135765,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            262.7,
+            375.7,
+            291.0,
+            400.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.7963,
+            "score": 0.2705172896385193,
+            "matched": true
+          }
+        }
+      ],
+      "per_gt": [
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+          "gt_index": 12,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            87.0,
+            359.0,
+            168.0,
+            426.3
+          ],
+          "A": {
+            "best_iou": 0.7881,
+            "score": 0.07338399440050125,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.8182,
+            "score": 0.2734760344028473,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+          "gt_index": 2,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            298.7,
+            349.3,
+            356.3,
+            386.3
+          ],
+          "A": {
+            "best_iou": 0.4808,
+            "score": 0.01975584588944912,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.5151,
+            "score": 0.0050999438390135765,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+          "gt_index": 6,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            269.7,
+            325.3,
+            289.0,
+            334.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+          "gt_index": 7,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            289.3,
+            321.0,
+            327.3,
+            334.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            262.7,
+            375.7,
+            291.0,
+            400.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.7963,
+            "score": 0.2705172896385193,
+            "matched": true
+          }
+        },
+        {
+          "image": "fog/train/GOPR0477/GOPR0477_frame_000774_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            254.0,
+            388.3,
+            280.0,
+            410.0
+          ],
+          "A": {
+            "best_iou": 0.7653,
+            "score": 0.07868599146604538,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.793,
+            "score": 0.06776800751686096,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0402/GOPR0402_frame_000598_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            280.7,
+            395.3,
+            307.7,
+            405.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0376/GOPR0376_frame_000067_rgb_anon.png",
+          "gt_index": 6,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            294.7,
+            308.7,
+            331.7,
+            332.3
+          ],
+          "A": {
+            "best_iou": 0.5861,
+            "score": 0.1815035045146942,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.5879,
+            "score": 0.15335306525230408,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000550_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            294.3,
+            394.3,
+            302.0,
+            403.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            301.7,
+            403.0,
+            312.7,
+            415.3
+          ],
+          "A": {
+            "best_iou": 0.0576,
+            "score": 0.0011820412473753095,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.062,
+            "score": 0.00219457084313035,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            97.7,
+            402.3,
+            131.3,
+            416.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000059_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            591.0,
+            380.3,
+            629.3,
+            397.0
+          ],
+          "A": {
+            "best_iou": 0.789,
+            "score": 0.018911054357886314,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7551,
+            "score": 0.01676999405026436,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            314.3,
+            323.0,
+            317.0,
+            329.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+          "gt_index": 5,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            318.3,
+            322.7,
+            319.7,
+            329.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0607/GOPR0607_frame_000286_rgb_anon.png",
+          "gt_index": 5,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            73.7,
+            374.7,
+            97.3,
+            397.0
+          ],
+          "A": {
+            "best_iou": 0.7729,
+            "score": 0.0018106908537447453,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.763,
+            "score": 0.0024880263954401016,
+            "matched": true
+          }
+        },
+        {
+          "image": "fog/train/GOPR0475/GOPR0475_frame_000096_rgb_anon.png",
+          "gt_index": 4,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            183.0,
+            364.7,
+            254.0,
+            420.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000436_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            317.3,
+            338.3,
+            379.7,
+            383.7
+          ],
+          "A": {
+            "best_iou": 0.8882,
+            "score": 0.0016578829381614923,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.8766,
+            "score": 0.001473833341151476,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000214_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            170.3,
+            272.0,
+            304.0,
+            374.7
+          ],
+          "A": {
+            "best_iou": 0.9462,
+            "score": 0.31315386295318604,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.9422,
+            "score": 0.2901668846607208,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0122/GOPR0122_frame_000161_rgb_anon.png",
+          "gt_index": 10,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            225.0,
+            337.0,
+            268.3,
+            391.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000056_rgb_anon.png",
+          "gt_index": 5,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            0.0,
+            169.0,
+            301.0,
+            500.0
+          ],
+          "A": {
+            "best_iou": 0.965,
+            "score": 0.7819462418556213,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.9683,
+            "score": 0.8600307106971741,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0402/GOPR0402_frame_000561_rgb_anon.png",
+          "gt_index": 5,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            275.0,
+            399.0,
+            301.7,
+            403.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0376/GOPR0376_frame_000298_rgb_anon.png",
+          "gt_index": 7,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            540.7,
+            320.3,
+            589.3,
+            332.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            455.3,
+            350.0,
+            584.7,
+            388.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000180_rgb_anon.png",
+          "gt_index": 6,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            229.7,
+            364.3,
+            320.3,
+            401.7
+          ],
+          "A": {
+            "best_iou": 0.0083,
+            "score": 0.0013769810320809484,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0098,
+            "score": 0.001619757735170424,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            241.3,
+            343.0,
+            282.3,
+            390.7
+          ],
+          "A": {
+            "best_iou": 0.5052,
+            "score": 0.01325888279825449,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.5499,
+            "score": 0.00935033243149519,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000020_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            214.7,
+            301.3,
+            295.7,
+            347.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+          "gt_index": 9,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            424.7,
+            402.0,
+            499.3,
+            422.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+          "gt_index": 10,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            398.0,
+            398.7,
+            411.3,
+            415.3
+          ],
+          "A": {
+            "best_iou": 0.0096,
+            "score": 0.0010117817437276244,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        }
+      ],
+      "note": "路径A=训练流(先letterbox640再复原)；路径B=评估流(全分辨率复原再letterbox640)；同GT/同检测器/同FP32/NMS规则"
+    },
+    "C0": {
+      "checkpoint": "runs/gt_next_phase_20261025_C0/latest.pt",
+      "n_gt": 28,
+      "gt_box_max_abs_diff_px": 6.103515625e-05,
+      "A": {
+        "n": 28,
+        "matched": 9,
+        "mean_best_iou": 0.270825,
+        "mean_score": 0.12271422171929422,
+        "zero_iou": 15
+      },
+      "B": {
+        "n": 28,
+        "matched": 10,
+        "mean_best_iou": 0.2944178571428572,
+        "mean_score": 0.16438688019899508,
+        "zero_iou": 15
+      },
+      "loss_A": {
+        "cls": 1.7810429533322651,
+        "box": 1.9588062167167664,
+        "dfl": 1.1080146754781406
+      },
+      "loss_B": {
+        "cls": 1.7875580141941707,
+        "box": 1.9096521387497585,
+        "dfl": 1.092509259780248
+      },
+      "switched_cases": [
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            262.7,
+            375.7,
+            291.0,
+            400.3
+          ],
+          "A": {
+            "best_iou": 0.0599,
+            "score": 0.0033093022648245096,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.7903,
+            "score": 0.2630675137042999,
+            "matched": true
+          }
+        }
+      ],
+      "per_gt": [
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+          "gt_index": 12,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            87.0,
+            359.0,
+            168.0,
+            426.3
+          ],
+          "A": {
+            "best_iou": 0.7911,
+            "score": 0.06056961044669151,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.8199,
+            "score": 0.3136543929576874,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+          "gt_index": 2,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            298.7,
+            349.3,
+            356.3,
+            386.3
+          ],
+          "A": {
+            "best_iou": 0.4722,
+            "score": 0.014559587463736534,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.3386,
+            "score": 0.003595035057514906,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+          "gt_index": 6,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            269.7,
+            325.3,
+            289.0,
+            334.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+          "gt_index": 7,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            289.3,
+            321.0,
+            327.3,
+            334.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            262.7,
+            375.7,
+            291.0,
+            400.3
+          ],
+          "A": {
+            "best_iou": 0.0599,
+            "score": 0.0033093022648245096,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.7903,
+            "score": 0.2630675137042999,
+            "matched": true
+          }
+        },
+        {
+          "image": "fog/train/GOPR0477/GOPR0477_frame_000774_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            254.0,
+            388.3,
+            280.0,
+            410.0
+          ],
+          "A": {
+            "best_iou": 0.758,
+            "score": 0.0682477131485939,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7691,
+            "score": 0.05775376781821251,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0402/GOPR0402_frame_000598_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            280.7,
+            395.3,
+            307.7,
+            405.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0376/GOPR0376_frame_000067_rgb_anon.png",
+          "gt_index": 6,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            294.7,
+            308.7,
+            331.7,
+            332.3
+          ],
+          "A": {
+            "best_iou": 0.5623,
+            "score": 0.11485248804092407,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.5674,
+            "score": 0.014799903146922588,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000550_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            294.3,
+            394.3,
+            302.0,
+            403.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            301.7,
+            403.0,
+            312.7,
+            415.3
+          ],
+          "A": {
+            "best_iou": 0.0614,
+            "score": 0.0012394004734233022,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0668,
+            "score": 0.002297636354342103,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            97.7,
+            402.3,
+            131.3,
+            416.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000059_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            591.0,
+            380.3,
+            629.3,
+            397.0
+          ],
+          "A": {
+            "best_iou": 0.7857,
+            "score": 0.020963085815310478,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7793,
+            "score": 0.02421698346734047,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            314.3,
+            323.0,
+            317.0,
+            329.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+          "gt_index": 5,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            318.3,
+            322.7,
+            319.7,
+            329.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0607/GOPR0607_frame_000286_rgb_anon.png",
+          "gt_index": 5,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            73.7,
+            374.7,
+            97.3,
+            397.0
+          ],
+          "A": {
+            "best_iou": 0.7692,
+            "score": 0.001842504134401679,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7685,
+            "score": 0.002656211843714118,
+            "matched": true
+          }
+        },
+        {
+          "image": "fog/train/GOPR0475/GOPR0475_frame_000096_rgb_anon.png",
+          "gt_index": 4,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            183.0,
+            364.7,
+            254.0,
+            420.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000436_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            317.3,
+            338.3,
+            379.7,
+            383.7
+          ],
+          "A": {
+            "best_iou": 0.8877,
+            "score": 0.0010678244289010763,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.8812,
+            "score": 0.002164674922823906,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000214_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            170.3,
+            272.0,
+            304.0,
+            374.7
+          ],
+          "A": {
+            "best_iou": 0.9572,
+            "score": 0.5156601667404175,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.9679,
+            "score": 0.5963886380195618,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0122/GOPR0122_frame_000161_rgb_anon.png",
+          "gt_index": 10,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            225.0,
+            337.0,
+            268.3,
+            391.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000056_rgb_anon.png",
+          "gt_index": 5,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            0.0,
+            169.0,
+            301.0,
+            500.0
+          ],
+          "A": {
+            "best_iou": 0.9641,
+            "score": 0.769227921962738,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.9679,
+            "score": 0.8409926891326904,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0402/GOPR0402_frame_000561_rgb_anon.png",
+          "gt_index": 5,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            275.0,
+            399.0,
+            301.7,
+            403.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0376/GOPR0376_frame_000298_rgb_anon.png",
+          "gt_index": 7,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            540.7,
+            320.3,
+            589.3,
+            332.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            455.3,
+            350.0,
+            584.7,
+            388.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000180_rgb_anon.png",
+          "gt_index": 6,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            229.7,
+            364.3,
+            320.3,
+            401.7
+          ],
+          "A": {
+            "best_iou": 0.0076,
+            "score": 0.0021913624368608,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0091,
+            "score": 0.001667278935201466,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            241.3,
+            343.0,
+            282.3,
+            390.7
+          ],
+          "A": {
+            "best_iou": 0.5067,
+            "score": 0.02155391499400139,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.5177,
+            "score": 0.013774717226624489,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000020_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            214.7,
+            301.3,
+            295.7,
+            347.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+          "gt_index": 9,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            424.7,
+            402.0,
+            499.3,
+            422.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+          "gt_index": 10,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            398.0,
+            398.7,
+            411.3,
+            415.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        }
+      ],
+      "note": "路径A=训练流(先letterbox640再复原)；路径B=评估流(全分辨率复原再letterbox640)；同GT/同检测器/同FP32/NMS规则"
+    },
+    "C1": {
+      "checkpoint": "runs/gt_next_phase_20261025_C1/latest.pt",
+      "n_gt": 28,
+      "gt_box_max_abs_diff_px": 6.103515625e-05,
+      "A": {
+        "n": 28,
+        "matched": 9,
+        "mean_best_iou": 0.26465,
+        "mean_score": 0.12789606585059887,
+        "zero_iou": 15
+      },
+      "B": {
+        "n": 28,
+        "matched": 10,
+        "mean_best_iou": 0.29559285714285716,
+        "mean_score": 0.16683572428659177,
+        "zero_iou": 15
+      },
+      "loss_A": {
+        "cls": 1.7579492678244908,
+        "box": 1.9078948895136516,
+        "dfl": 1.1026152993241947
+      },
+      "loss_B": {
+        "cls": 1.7710886274774869,
+        "box": 1.891944261888663,
+        "dfl": 1.0940403665105503
+      },
+      "switched_cases": [
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+          "gt_index": 12,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            87.0,
+            359.0,
+            168.0,
+            426.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.8181,
+            "score": 0.31640350818634033,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+          "gt_index": 2,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            298.7,
+            349.3,
+            356.3,
+            386.3
+          ],
+          "A": {
+            "best_iou": 0.5684,
+            "score": 0.001163593609817326,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.3436,
+            "score": 0.005959042813628912,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            262.7,
+            375.7,
+            291.0,
+            400.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.7945,
+            "score": 0.2663690149784088,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            455.3,
+            350.0,
+            584.7,
+            388.3
+          ],
+          "A": {
+            "best_iou": 0.5843,
+            "score": 0.0013411624822765589,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            241.3,
+            343.0,
+            282.3,
+            390.7
+          ],
+          "A": {
+            "best_iou": 0.4817,
+            "score": 0.022545794025063515,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.5243,
+            "score": 0.01659621298313141,
+            "matched": true
+          }
+        }
+      ],
+      "per_gt": [
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+          "gt_index": 12,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            87.0,
+            359.0,
+            168.0,
+            426.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.8181,
+            "score": 0.31640350818634033,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+          "gt_index": 2,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            298.7,
+            349.3,
+            356.3,
+            386.3
+          ],
+          "A": {
+            "best_iou": 0.5684,
+            "score": 0.001163593609817326,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.3436,
+            "score": 0.005959042813628912,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+          "gt_index": 6,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            269.7,
+            325.3,
+            289.0,
+            334.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+          "gt_index": 7,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            289.3,
+            321.0,
+            327.3,
+            334.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            262.7,
+            375.7,
+            291.0,
+            400.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.7945,
+            "score": 0.2663690149784088,
+            "matched": true
+          }
+        },
+        {
+          "image": "fog/train/GOPR0477/GOPR0477_frame_000774_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            254.0,
+            388.3,
+            280.0,
+            410.0
+          ],
+          "A": {
+            "best_iou": 0.768,
+            "score": 0.12007992714643478,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7755,
+            "score": 0.0658690482378006,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0402/GOPR0402_frame_000598_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            280.7,
+            395.3,
+            307.7,
+            405.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0376/GOPR0376_frame_000067_rgb_anon.png",
+          "gt_index": 6,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            294.7,
+            308.7,
+            331.7,
+            332.3
+          ],
+          "A": {
+            "best_iou": 0.5666,
+            "score": 0.11985902488231659,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.5708,
+            "score": 0.015137750655412674,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000550_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            294.3,
+            394.3,
+            302.0,
+            403.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            301.7,
+            403.0,
+            312.7,
+            415.3
+          ],
+          "A": {
+            "best_iou": 0.061,
+            "score": 0.0013747422490268946,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0672,
+            "score": 0.00210788962431252,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            97.7,
+            402.3,
+            131.3,
+            416.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000059_rgb_anon.png",
+          "gt_index": 3,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            591.0,
+            380.3,
+            629.3,
+            397.0
+          ],
+          "A": {
+            "best_iou": 0.7854,
+            "score": 0.04009858891367912,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7796,
+            "score": 0.02308027446269989,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+          "gt_index": 4,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            314.3,
+            323.0,
+            317.0,
+            329.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+          "gt_index": 5,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            318.3,
+            322.7,
+            319.7,
+            329.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0607/GOPR0607_frame_000286_rgb_anon.png",
+          "gt_index": 5,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            73.7,
+            374.7,
+            97.3,
+            397.0
+          ],
+          "A": {
+            "best_iou": 0.7763,
+            "score": 0.001903912634588778,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.7806,
+            "score": 0.0026805317029356956,
+            "matched": true
+          }
+        },
+        {
+          "image": "fog/train/GOPR0475/GOPR0475_frame_000096_rgb_anon.png",
+          "gt_index": 4,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            183.0,
+            364.7,
+            254.0,
+            420.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GOPR0400/GOPR0400_frame_000436_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            317.3,
+            338.3,
+            379.7,
+            383.7
+          ],
+          "A": {
+            "best_iou": 0.8778,
+            "score": 0.0024653980508446693,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.8792,
+            "score": 0.002187378006055951,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GOPR0351/GOPR0351_frame_000214_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            170.3,
+            272.0,
+            304.0,
+            374.7
+          ],
+          "A": {
+            "best_iou": 0.9565,
+            "score": 0.5602836608886719,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.967,
+            "score": 0.6101797223091125,
+            "matched": true
+          }
+        },
+        {
+          "image": "snow/train/GOPR0122/GOPR0122_frame_000161_rgb_anon.png",
+          "gt_index": 10,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            225.0,
+            337.0,
+            268.3,
+            391.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000056_rgb_anon.png",
+          "gt_index": 5,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            0.0,
+            169.0,
+            301.0,
+            500.0
+          ],
+          "A": {
+            "best_iou": 0.9656,
+            "score": 0.7865807414054871,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.9677,
+            "score": 0.8402103185653687,
+            "matched": true
+          }
+        },
+        {
+          "image": "rain/train/GOPR0402/GOPR0402_frame_000561_rgb_anon.png",
+          "gt_index": 5,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            275.0,
+            399.0,
+            301.7,
+            403.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "night/train/GOPR0376/GOPR0376_frame_000298_rgb_anon.png",
+          "gt_index": 7,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            540.7,
+            320.3,
+            589.3,
+            332.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+          "gt_index": 1,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            455.3,
+            350.0,
+            584.7,
+            388.3
+          ],
+          "A": {
+            "best_iou": 0.5843,
+            "score": 0.0013411624822765589,
+            "matched": true
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "fog/train/GOPR0476/GOPR0476_frame_000180_rgb_anon.png",
+          "gt_index": 6,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            229.7,
+            364.3,
+            320.3,
+            401.7
+          ],
+          "A": {
+            "best_iou": 0.0079,
+            "score": 0.003536313073709607,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0085,
+            "score": 0.0020837232004851103,
+            "matched": false
+          }
+        },
+        {
+          "image": "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            241.3,
+            343.0,
+            282.3,
+            390.7
+          ],
+          "A": {
+            "best_iou": 0.4817,
+            "score": 0.022545794025063515,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.5243,
+            "score": 0.01659621298313141,
+            "matched": true
+          }
+        },
+        {
+          "image": "night/train/GP010376/GP010376_frame_000020_rgb_anon.png",
+          "gt_index": 2,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            214.7,
+            301.3,
+            295.7,
+            347.3
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+          "gt_index": 9,
+          "category": 5,
+          "name": "bus",
+          "gt_box": [
+            424.7,
+            402.0,
+            499.3,
+            422.0
+          ],
+          "A": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        },
+        {
+          "image": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+          "gt_index": 10,
+          "category": 6,
+          "name": "train",
+          "gt_box": [
+            398.0,
+            398.7,
+            411.3,
+            415.3
+          ],
+          "A": {
+            "best_iou": 0.0107,
+            "score": 0.001415996695868671,
+            "matched": false
+          },
+          "B": {
+            "best_iou": 0.0,
+            "score": null,
+            "matched": false
+          }
+        }
+      ],
+      "note": "路径A=训练流(先letterbox640再复原)；路径B=评估流(全分辨率复原再letterbox640)；同GT/同检测器/同FP32/NMS规则"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26",
+  "python": "3.11.15",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "numpy": "2.4.4",
+    "cv2": "5.0.0",
+    "einops": "0.8.2",
+    "natsort": "8.4.0",
+    "scipy": "1.17.1",
+    "lpips": "unknown",
+    "tqdm": "4.70.1",
+    "ultralytics": "8.4.104"
+  },
+  "sources": {
+    "adair": {
+      "repo": "https://github.com/c-yn/AdaIR",
+      "commit": "ccb8b98e49614e07badd0641e5163fa7635c2f02",
+      "download": "https://codeload.github.com/c-yn/AdaIR/tar.gz/<commit>",
+      "license": "MIT（仓库 LICENSE）",
+      "official_weights": "https://drive.google.com/drive/folders/1x2LN4kWkO3S65jJlH-1INUFiYt8KFzPH",
+      "expected_file": "ckpt/adair5d.ckpt",
+      "status": "BLOCKED",
+      "block_reason": "本机对 drive.google.com / docs.google.com / www.googleapis.com / drive.usercontent.google.com 全部连接失败（curl 000，CONNECT 被拒或超时）；官方仓库 README 只给该 Drive 链接，GitHub 无 release 资源，HF 无 AdaIR 托管（issue #15 请求上传 HF 未被作者采纳），Gitee/ModelScope/HF 搜索都没有可用镜像。",
+      "prepared": {
+        "script": "scripts/np2_adair_restore.py",
+        "architecture_verified": true,
+        "params": 28784824,
+        "note": "结构与 strict 加载路径已就绪；缺权重时脚本直接报错，不会随机初始化继续推理"
+      },
+      "supported_weather": [
+        "fog",
+        "rain",
+        "night"
+      ],
+      "unsupported_weather": "snow（官方五退化不含去雪）"
+    },
+    "histoformer": {
+      "repo": "https://github.com/sunshangquan/Histoformer",
+      "commit": "1f045f06c03551c31504d8042dbe6ff9b9569108",
+      "download": "https://codeload.github.com/sunshangquan/Histoformer/tar.gz/<commit>",
+      "license": "官方 HF 元数据声明 MIT；GitHub 无独立 LICENSE 文件",
+      "official_hf": "https://huggingface.co/sunsean/Histoformer",
+      "official_hf_revision": "f6acde20acaa26ef5e235f2c71ff7637f4d9a945",
+      "official_hf_url_used": "https://hf-mirror.com/sunsean/Histoformer/resolve/main/Allweather/pretrained_models/net_g_real.pth",
+      "gdrive_mirror": "https://drive.google.com/drive/folders/1dmPhr8Z5iPRx9lh7TwdUFPSfwGIxp5l0（不可达）",
+      "weight_note": "官方 HF 只发布 net_g_real.pth；README 的 benchmark 使用 net_g_best.pth，两者是不同权重（339 个张量全部不同，体积同为 66,603,665 字节）"
+    }
+  },
+  "weights": {
+    "histoformer_official_net_g_real": {
+      "path": "third_party\\weights\\histoformer_official_net_g_real.pth",
+      "sha256": "8ae731d0fd5e2761cec7428322c7602146cba42c73188cc4b0fcc17232065958",
+      "bytes": 66603665
+    },
+    "histoformer_mirror_net_g_best": {
+      "path": "third_party\\weights\\histoformer_mirror_net_g_best.pth",
+      "sha256": "5c7423bbc18edd3adde14f0bb48b5968da95a134cb7ab4bdb06dd7d544fea480",
+      "bytes": 66603665
+    },
+    "histoformer_mirror_net_g_real": {
+      "path": "third_party\\weights\\histoformer_mirror_net_g_real.pth",
+      "sha256": "8ae731d0fd5e2761cec7428322c7602146cba42c73188cc4b0fcc17232065958",
+      "bytes": 66603665
+    },
+    "histoformer_official_hf_lfs_sha256": "8ae731d0fd5e2761cec7428322c7602146cba42c73188cc4b0fcc17232065958",
+    "mirror_provenance": {
+      "repo": "https://huggingface.co/dronefreak/Histoformer",
+      "note": "第三方镜像，官方未给出 net_g_best.pth 的哈希，无法独立确认版本；但该镜像的 net_g_real.pth 与官方 HF 字节完全一致（见 histoformer_mirror_net_g_real.sha256），说明它是官方文件的忠实转录。因此 net_g_best.pth 只能作为受限来源证据，不等同官方 benchmark 权重。"
+    }
+  },
+  "code_hashes": {
+    "third_party/histoformer/Allweather/test_histoformer.py": "b24128af0c0cbc7b66057a24a6c7ff44c7c2e75199260f1628d1993884dd3a18",
+    "third_party/histoformer/Allweather/util.py": "a237d4ddede1ef89232488302399dffb3eb7bf376717cea160c7abf8ae1fcbf5",
+    "third_party/histoformer/Allweather/Options/Allweather_Histoformer.yml": "bf4b73991d33d7bf682d7d2a30c341c01a92c60efd0b17f7455eed8993e32e3e",
+    "third_party/histoformer/basicsr/models/archs/histoformer_arch.py": "2480609a85c1d1c02144743f992bf4f8c9e979ac5cb7126f1c2e02be956670b0",
+    "third_party/adair/net/model.py": "0c3174ddce0c09fa9cf283f1c436a9e5e3075becfb863c727d3fff90e97a19c3",
+    "third_party/adair/utils/dataset_utils.py": "f539e47441596f43cf04e6c1468f0c921d273eef4fcb19753b23fa1ae25f4b9b",
+    "third_party/adair/utils/image_utils.py": "1d12415f65f6514b1e8b8646e894f98c3423204ed732d57930721383449980e5"
+  }
+}

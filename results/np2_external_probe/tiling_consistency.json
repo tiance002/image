@@ -1,0 +1,60 @@
+{
+  "weights": "D:\\数字图像处理\\SafeRestore-RF\\third_party\\weights\\histoformer_official_net_g_real.pth",
+  "tile": 640,
+  "overlap": 64,
+  "dtype": "float32",
+  "note": "全幅前向仅用于 1024x1024 裁剪的等价性检查；正式推理仍为分块",
+  "cases": [
+    {
+      "weather": "rain",
+      "file_name": "rain/val/GP030400/GP030400_frame_000129_rgb_anon.png",
+      "crop": [
+        56,
+        500,
+        1024,
+        1024
+      ],
+      "tiles": 4,
+      "psnr_full_vs_tiled": 44.75350608801243,
+      "max_abs_diff": 0.8995158076286316,
+      "mean_abs_diff": 0.0002778604393824935,
+      "seam_mean_abs_diff": 0.00010930611460935324,
+      "interior_mean_abs_diff": 0.00028891031979583204,
+      "full_out_of_range": 0
+    },
+    {
+      "weather": "snow",
+      "file_name": "snow/val/GOPR0605/GOPR0605_frame_000299_rgb_anon.png",
+      "crop": [
+        56,
+        600,
+        1024,
+        1024
+      ],
+      "tiles": 4,
+      "psnr_full_vs_tiled": 45.17295513845609,
+      "max_abs_diff": 0.9510513544082642,
+      "mean_abs_diff": 0.00025360615109093487,
+      "seam_mean_abs_diff": 0.0002347722911508754,
+      "interior_mean_abs_diff": 0.00025484085199423134,
+      "full_out_of_range": 0
+    },
+    {
+      "weather": "fog",
+      "file_name": "fog/val/GP020475/GP020475_frame_000130_rgb_anon.png",
+      "crop": [
+        56,
+        500,
+        1024,
+        1024
+      ],
+      "tiles": 4,
+      "psnr_full_vs_tiled": 42.13433563327268,
+      "max_abs_diff": 0.9443960785865784,
+      "mean_abs_diff": 0.005197415128350258,
+      "seam_mean_abs_diff": 0.005165587179362774,
+      "interior_mean_abs_diff": 0.005199502222239971,
+      "full_out_of_range": 0
+    }
+  ]
+}
