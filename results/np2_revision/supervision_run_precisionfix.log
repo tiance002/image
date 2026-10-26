@@ -1,0 +1,32 @@
+抽样： {'total': 64, 'by_group': {'bus': 24, 'train': 24, 'other': 16}, 'by_weather': {'fog': 16, 'rain': 17, 'night': 17, 'snow': 14}} 可用池： {'bus_images': 138, 'train_images': 184, 'overlap': 14}
+gradient checked 8 / 64
+gradient checked 16 / 64
+gradient checked 24 / 64
+gradient checked 32 / 64
+gradient checked 40 / 64
+gradient checked 48 / 64
+gradient checked 56 / 64
+gradient checked 64 / 64
+v4 逐批梯度校验：loss 最大偏差 1.9073486328125e-06 梯度相对误差最大 2.107835443581716e-06 余弦最小 0.9999993443489075
+v4 {'person': (81, 397, 4.9, 0.111), 'bicycle': (18, 82, 4.56, 0.056), 'car': (255, 1456, 5.71, 0.035), 'motorcycle': (10, 48, 4.8, 0.0), 'bus': (30, 198, 6.6, 0.067), 'train': (26, 215, 8.27, 0.0), 'truck': (11, 74, 6.73, 0.0)} 逐批 loss 最大偏差 4.76837158203125e-07
+gradient checked 8 / 64
+gradient checked 16 / 64
+gradient checked 24 / 64
+gradient checked 32 / 64
+gradient checked 40 / 64
+gradient checked 48 / 64
+gradient checked 56 / 64
+gradient checked 64 / 64
+C0 逐批梯度校验：loss 最大偏差 9.5367431640625e-07 梯度相对误差最大 1.9124192308577714e-06 余弦最小 0.9999993443489075
+C0 {'person': (81, 392, 4.84, 0.111), 'bicycle': (18, 84, 4.67, 0.056), 'car': (255, 1460, 5.73, 0.035), 'motorcycle': (10, 48, 4.8, 0.0), 'bus': (30, 197, 6.57, 0.067), 'train': (26, 216, 8.31, 0.0), 'truck': (11, 75, 6.82, 0.0)} 逐批 loss 最大偏差 4.76837158203125e-07
+gradient checked 8 / 64
+gradient checked 16 / 64
+gradient checked 24 / 64
+gradient checked 32 / 64
+gradient checked 40 / 64
+gradient checked 48 / 64
+gradient checked 56 / 64
+gradient checked 64 / 64
+C1 逐批梯度校验：loss 最大偏差 1.9073486328125e-06 梯度相对误差最大 2.230740424042829e-06 余弦最小 0.9999991655349731
+C1 {'person': (81, 398, 4.91, 0.099), 'bicycle': (18, 82, 4.56, 0.056), 'car': (255, 1455, 5.71, 0.035), 'motorcycle': (10, 49, 4.9, 0.0), 'bus': (30, 198, 6.6, 0.067), 'train': (26, 216, 8.31, 0.0), 'truck': (11, 75, 6.82, 0.0)} 逐批 loss 最大偏差 4.76837158203125e-07
+已写入并验证 D:\数字图像处理\SafeRestore-RF\results\np2_revision\supervision_probe.json

@@ -1,0 +1,7 @@
+# 本地NP2-R提交范围
+
+本地提交以3d53ca0为审查基线，未push。包含修订源码、六节报告、数值反例/失败版本、固定样本、预测与统计证据；不含数据图像、复原PNG、权重。
+
+原科研区保留全部文件。省略逐模型重复result.json（完整相同内容在scale_order_probe.json）、过程progress.json和私人规划记录；各路径原始NMS预测仍纳入。execution_manifest.artifact_sha256对应原科研区产物，PUBLICATION_MANIFEST对应实际提交副本，换行规范化可能改变字节SHA。HANDOFF_STATUS和readiness/failed/smoke属于历史进度/诊断，不替代完整报告。
+
+旧np2_external_probe文件未改写，受影响结果标记见LEGACY_RESULT_STATUS。监督新入口是np2r_supervision_probe.py；旧np2_supervision_probe.py作为历史证据保留。旧np2_histoformer_dev.py和np2_tiling_check.py的旧返回值/输出位置未适配，本轮不运行；质量及裁剪核查使用np2r_quality.py。

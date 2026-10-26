@@ -1,0 +1,134 @@
+{
+  "status": "completed",
+  "weights_sha256": "8ae731d0fd5e2761cec7428322c7602146cba42c73188cc4b0fcc17232065958",
+  "dtype": "float32",
+  "official_preprocessing": "RGB float[0,1]; right/bottom reflect to multiple8; clamp; no quantization",
+  "old_case_source": "results\\np2_external_probe\\tiling_consistency.json",
+  "old_case_source_sha256": "8de8a2d7941ca04dcea56adcf7b4fd4855a4d887482eed28c2e8a842cd7393e2",
+  "comparison": "single1024 forward vs corrected640 overlap64; identical fixed rain/snow crops",
+  "limitation": "Real network contexts differ. This is not a numerical-equivalence assertion. Full1920 forward not attempted.",
+  "cases": [
+    {
+      "weather": "rain",
+      "file_name": "rain/val/GP030400/GP030400_frame_000129_rgb_anon.png",
+      "crop": [
+        56,
+        500,
+        1024,
+        1024
+      ],
+      "tiles": 4,
+      "fusion_min_weight": 5.769926758603106e-10,
+      "max_abs_diff": 0.4545579254627228,
+      "mean_abs_diff": 0.0002270584664074704,
+      "p999_abs_diff": 0.03454773128032684,
+      "psnr_full_vs_tiled": 49.9517984141401,
+      "corner_abs_differences": {
+        "top_left": [
+          0.0025418996810913086,
+          0.0016742348670959473,
+          0.0015474557876586914
+        ],
+        "top_right": [
+          3.077089786529541e-05,
+          0.00012119114398956299,
+          0.0003896355628967285
+        ],
+        "bottom_left": [
+          0.000364840030670166,
+          0.0005739033222198486,
+          6.443262100219727e-05
+        ],
+        "bottom_right": [
+          0.0003661513328552246,
+          0.0003384053707122803,
+          9.387731552124023e-06
+        ]
+      },
+      "seam_mean_abs_diff": 0.00025578669738024473,
+      "interior_mean_abs_diff": 0.00022310036001726985,
+      "boundaries": {
+        "tile_starts_y": [
+          0,
+          384
+        ],
+        "tile_starts_x": [
+          0,
+          384
+        ],
+        "interior_tile_edges_y": [
+          384,
+          640
+        ],
+        "interior_tile_edges_x": [
+          384,
+          640
+        ],
+        "band_radius_pixels": 16
+      },
+      "elapsed_seconds": 95.90083009994123,
+      "legacy_fusion_result_status": "旧版本待修订; old maximum included fusion-normalization defect"
+    },
+    {
+      "weather": "snow",
+      "file_name": "snow/val/GOPR0605/GOPR0605_frame_000299_rgb_anon.png",
+      "crop": [
+        56,
+        600,
+        1024,
+        1024
+      ],
+      "tiles": 4,
+      "fusion_min_weight": 5.769926758603106e-10,
+      "max_abs_diff": 0.21594953536987305,
+      "mean_abs_diff": 0.00020056655921507627,
+      "p999_abs_diff": 0.01954822614789009,
+      "psnr_full_vs_tiled": 54.09397928907118,
+      "corner_abs_differences": {
+        "top_left": [
+          0.0019414424896240234,
+          0.0025034546852111816,
+          0.001280367374420166
+        ],
+        "top_right": [
+          0.00035706162452697754,
+          3.3676624298095703e-06,
+          0.0003138333559036255
+        ],
+        "bottom_left": [
+          0.000392228364944458,
+          0.0002600252628326416,
+          1.9043684005737305e-05
+        ],
+        "bottom_right": [
+          0.00023518502712249756,
+          0.0003175586462020874,
+          0.0002332627773284912
+        ]
+      },
+      "seam_mean_abs_diff": 0.00018022779840976,
+      "interior_mean_abs_diff": 0.00020336879242677242,
+      "boundaries": {
+        "tile_starts_y": [
+          0,
+          384
+        ],
+        "tile_starts_x": [
+          0,
+          384
+        ],
+        "interior_tile_edges_y": [
+          384,
+          640
+        ],
+        "interior_tile_edges_x": [
+          384,
+          640
+        ],
+        "band_radius_pixels": 16
+      },
+      "elapsed_seconds": 102.14653749996796,
+      "legacy_fusion_result_status": "旧版本待修订; old maximum included fusion-normalization defect"
+    }
+  ]
+}

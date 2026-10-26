@@ -1,0 +1,9 @@
+{
+  "np2r_finalize.py": "b80040a5346f96940df8c9b9de218f82a1b2adc5e149f1b44fabc7a47dd73e56",
+  "np2r_probe_tests.py": "273a7560ca970882d3be917a0da7d77946778072ecc8ad2d7220aaed0e58e3a7",
+  "np2r_quality.py": "2a0b6a5567598bd9456d31f43438c3a31d3ca5a16638eeb372f12a39e10ec56d",
+  "np2r_revision_report.py": "ea11164acdb09b386f739a4b67df39a1c369dfd1967e257f8af2c0bf54d58687",
+  "np2r_scale_checks.py": "06c5d743156f5bb00c58205bdab1693533341c1658c6e037c42d956b3c93cd0f",
+  "np2r_summarize.py": "18aa0304438345b4a3e4c855c025fab7564c73b793c7ad8fea0c95267961c5db",
+  "np2r_supervision_probe.py": "e64faf7a980b4f5cd23eca3559a36b5cc567c19fe00ccfd24d2258ae8b3864ee"
+}

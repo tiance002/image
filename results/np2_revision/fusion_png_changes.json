@@ -1,0 +1,10609 @@
+{
+  "n": 200,
+  "per_image": [
+    {
+      "image_id": 206,
+      "file_name": "rain/val/GP030400/GP030400_frame_000129_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007353234310699589,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00028115354938271605,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          208,
+          210,
+          214
+        ],
+        [
+          209,
+          207,
+          215
+        ],
+        [
+          25,
+          22,
+          24
+        ],
+        [
+          53,
+          47,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002037037037037037
+    },
+    {
+      "image_id": 207,
+      "file_name": "rain/val/GP030400/GP030400_frame_000121_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0062578768004115225,
+      "max_abs_u8": 236,
+      "changed_pixel_fraction": 0.0022125771604938273,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          227,
+          228,
+          236
+        ],
+        [
+          56,
+          58,
+          56
+        ],
+        [
+          49,
+          47,
+          48
+        ],
+        [
+          37,
+          33,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.01376977237654321
+    },
+    {
+      "image_id": 208,
+      "file_name": "rain/val/GP030400/GP030400_frame_000154_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.009495884773662552,
+      "max_abs_u8": 209,
+      "changed_pixel_fraction": 0.005061728395061729,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          203,
+          203,
+          206
+        ],
+        [
+          205,
+          206,
+          209
+        ],
+        [
+          51,
+          47,
+          52
+        ],
+        [
+          69,
+          63,
+          63
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.09279513888888889
+    },
+    {
+      "image_id": 209,
+      "file_name": "rain/val/GP030400/GP030400_frame_000135_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004334008487654321,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.00014033564814814814,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          207,
+          213
+        ],
+        [
+          20,
+          22,
+          17
+        ],
+        [
+          27,
+          29,
+          29
+        ],
+        [
+          36,
+          32,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0009066358024691358
+    },
+    {
+      "image_id": 210,
+      "file_name": "rain/val/GP030400/GP030400_frame_000184_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0032180748456790125,
+      "max_abs_u8": 115,
+      "changed_pixel_fraction": 0.00011236496913580248,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          99,
+          68,
+          48
+        ],
+        [
+          54,
+          56,
+          40
+        ],
+        [
+          48,
+          44,
+          43
+        ],
+        [
+          45,
+          43,
+          40
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00023726851851851852
+    },
+    {
+      "image_id": 211,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000331_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008115515689300412,
+      "max_abs_u8": 231,
+      "changed_pixel_fraction": 0.00023099922839506172,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          224,
+          225,
+          231
+        ],
+        [
+          217,
+          216,
+          222
+        ],
+        [
+          55,
+          51,
+          50
+        ],
+        [
+          50,
+          42,
+          42
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0027334104938271605
+    },
+    {
+      "image_id": 212,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000369_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007975180041152264,
+      "max_abs_u8": 223,
+      "changed_pixel_fraction": 0.0001644483024691358,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          218,
+          217,
+          223
+        ],
+        [
+          191,
+          192,
+          200
+        ],
+        [
+          76,
+          72,
+          73
+        ],
+        [
+          52,
+          46,
+          48
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006626157407407407
+    },
+    {
+      "image_id": 213,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000294_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008234471450617283,
+      "max_abs_u8": 238,
+      "changed_pixel_fraction": 0.0001335841049382716,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          219,
+          219,
+          227
+        ],
+        [
+          233,
+          232,
+          238
+        ],
+        [
+          48,
+          44,
+          45
+        ],
+        [
+          58,
+          52,
+          52
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000884934413580247
+    },
+    {
+      "image_id": 214,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000408_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008203446502057614,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.0021141975308641976,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          216,
+          213,
+          218
+        ],
+        [
+          186,
+          188,
+          194
+        ],
+        [
+          72,
+          68,
+          67
+        ],
+        [
+          43,
+          39,
+          37
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.017866994598765434
+    },
+    {
+      "image_id": 215,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000457_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005020576131687242,
+      "max_abs_u8": 244,
+      "changed_pixel_fraction": 0.0002879050925925926,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          239,
+          238,
+          244
+        ],
+        [
+          29,
+          29,
+          23
+        ],
+        [
+          38,
+          34,
+          31
+        ],
+        [
+          26,
+          18,
+          14
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0020558449074074073
+    },
+    {
+      "image_id": 216,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000755_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006570859053497942,
+      "max_abs_u8": 210,
+      "changed_pixel_fraction": 0.0005536265432098766,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          203,
+          204,
+          210
+        ],
+        [
+          110,
+          115,
+          117
+        ],
+        [
+          67,
+          63,
+          64
+        ],
+        [
+          71,
+          71,
+          67
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0032040895061728396
+    },
+    {
+      "image_id": 217,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000761_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005233249742798354,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.002143132716049383,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          206,
+          212
+        ],
+        [
+          42,
+          37,
+          25
+        ],
+        [
+          45,
+          39,
+          38
+        ],
+        [
+          14,
+          10,
+          11
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.07035108024691358
+    },
+    {
+      "image_id": 218,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000429_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00788451646090535,
+      "max_abs_u8": 219,
+      "changed_pixel_fraction": 0.00023099922839506172,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          215,
+          215,
+          219
+        ],
+        [
+          192,
+          191,
+          199
+        ],
+        [
+          74,
+          72,
+          69
+        ],
+        [
+          51,
+          47,
+          46
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0019290123456790122
+    },
+    {
+      "image_id": 219,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000402_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008133198302469136,
+      "max_abs_u8": 222,
+      "changed_pixel_fraction": 0.002318672839506173,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          216,
+          216,
+          222
+        ],
+        [
+          187,
+          188,
+          196
+        ],
+        [
+          65,
+          61,
+          58
+        ],
+        [
+          35,
+          29,
+          29
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002560763888888889
+    },
+    {
+      "image_id": 220,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000320_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004922196502057614,
+      "max_abs_u8": 225,
+      "changed_pixel_fraction": 0.00012201003086419753,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          32,
+          35,
+          22
+        ],
+        [
+          217,
+          217,
+          225
+        ],
+        [
+          51,
+          47,
+          46
+        ],
+        [
+          47,
+          41,
+          41
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0009837962962962962
+    },
+    {
+      "image_id": 221,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000336_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008152970679012345,
+      "max_abs_u8": 220,
+      "changed_pixel_fraction": 0.002406442901234568,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          217,
+          216,
+          220
+        ],
+        [
+          204,
+          203,
+          211
+        ],
+        [
+          39,
+          35,
+          34
+        ],
+        [
+          41,
+          33,
+          34
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.061163194444444444
+    },
+    {
+      "image_id": 222,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000424_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.009170685442386832,
+      "max_abs_u8": 228,
+      "changed_pixel_fraction": 0.0034428047839506174,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          226,
+          223,
+          228
+        ],
+        [
+          207,
+          207,
+          213
+        ],
+        [
+          54,
+          50,
+          49
+        ],
+        [
+          66,
+          60,
+          60
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0705444637345679
+    },
+    {
+      "image_id": 223,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000154_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00916136188271605,
+      "max_abs_u8": 207,
+      "changed_pixel_fraction": 0.004613715277777777,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          198,
+          197,
+          201
+        ],
+        [
+          204,
+          201,
+          207
+        ],
+        [
+          69,
+          65,
+          64
+        ],
+        [
+          36,
+          34,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.40623408564814817
+    },
+    {
+      "image_id": 224,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000254_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004166184413580247,
+      "max_abs_u8": 155,
+      "changed_pixel_fraction": 0.0002189429012345679,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          101,
+          90,
+          80
+        ],
+        [
+          57,
+          54,
+          37
+        ],
+        [
+          43,
+          46,
+          33
+        ],
+        [
+          97,
+          97,
+          98
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0023543595679012346
+    },
+    {
+      "image_id": 225,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000234_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004968653549382716,
+      "max_abs_u8": 230,
+      "changed_pixel_fraction": 0.00019675925925925926,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          11,
+          11,
+          9
+        ],
+        [
+          224,
+          223,
+          230
+        ],
+        [
+          42,
+          30,
+          23
+        ],
+        [
+          51,
+          45,
+          47
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0014400077160493826
+    },
+    {
+      "image_id": 226,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000214_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004768679269547325,
+      "max_abs_u8": 220,
+      "changed_pixel_fraction": 0.0001388888888888889,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          74,
+          77,
+          68
+        ],
+        [
+          214,
+          212,
+          220
+        ],
+        [
+          23,
+          18,
+          21
+        ],
+        [
+          40,
+          34,
+          36
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00046730324074074073
+    },
+    {
+      "image_id": 227,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000194_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005454282407407408,
+      "max_abs_u8": 216,
+      "changed_pixel_fraction": 0.0004552469135802469,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          82,
+          85,
+          46
+        ],
+        [
+          209,
+          208,
+          216
+        ],
+        [
+          45,
+          39,
+          39
+        ],
+        [
+          36,
+          30,
+          30
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.009157503858024692
+    },
+    {
+      "image_id": 228,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000741_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005033596965020576,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.00015239197530864197,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          212,
+          212,
+          218
+        ],
+        [
+          23,
+          24,
+          6
+        ],
+        [
+          66,
+          62,
+          61
+        ],
+        [
+          33,
+          27,
+          29
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007315779320987654
+    },
+    {
+      "image_id": 229,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000435_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005809059927983539,
+      "max_abs_u8": 227,
+      "changed_pixel_fraction": 0.0001398533950617284,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          221,
+          221,
+          227
+        ],
+        [
+          61,
+          65,
+          20
+        ],
+        [
+          72,
+          68,
+          67
+        ],
+        [
+          48,
+          47,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000574363425925926
+    },
+    {
+      "image_id": 230,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000120_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005702803497942387,
+      "max_abs_u8": 217,
+      "changed_pixel_fraction": 0.0026683063271604936,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          212,
+          211,
+          217
+        ],
+        [
+          20,
+          21,
+          8
+        ],
+        [
+          58,
+          52,
+          56
+        ],
+        [
+          44,
+          38,
+          36
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.11815007716049383
+    },
+    {
+      "image_id": 231,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000365_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.003818962191358025,
+      "max_abs_u8": 169,
+      "changed_pixel_fraction": 0.0001880787037037037,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          126,
+          125,
+          126
+        ],
+        [
+          39,
+          41,
+          11
+        ],
+        [
+          66,
+          62,
+          61
+        ],
+        [
+          36,
+          32,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.003439429012345679
+    },
+    {
+      "image_id": 232,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000315_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005631751543209876,
+      "max_abs_u8": 224,
+      "changed_pixel_fraction": 0.00012586805555555555,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          217,
+          218,
+          224
+        ],
+        [
+          20,
+          21,
+          8
+        ],
+        [
+          100,
+          98,
+          99
+        ],
+        [
+          40,
+          38,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00029562114197530866
+    },
+    {
+      "image_id": 233,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000304_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006647055041152264,
+      "max_abs_u8": 241,
+      "changed_pixel_fraction": 0.00020013503086419753,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          125,
+          132,
+          137
+        ],
+        [
+          230,
+          233,
+          241
+        ],
+        [
+          33,
+          28,
+          30
+        ],
+        [
+          57,
+          51,
+          51
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0011400462962962963
+    },
+    {
+      "image_id": 234,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000351_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007907021604938272,
+      "max_abs_u8": 223,
+      "changed_pixel_fraction": 0.00017409336419753086,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          220,
+          219,
+          223
+        ],
+        [
+          202,
+          203,
+          211
+        ],
+        [
+          90,
+          86,
+          81
+        ],
+        [
+          47,
+          41,
+          39
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007335069444444444
+    },
+    {
+      "image_id": 235,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000134_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008648566100823046,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.0021026234567901236,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          198,
+          200,
+          204
+        ],
+        [
+          211,
+          207,
+          214
+        ],
+        [
+          77,
+          75,
+          76
+        ],
+        [
+          64,
+          59,
+          41
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0027854938271604937
+    },
+    {
+      "image_id": 236,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000384_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.001704764660493827,
+      "max_abs_u8": 53,
+      "changed_pixel_fraction": 0.0002922453703703704,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          18,
+          18,
+          10
+        ],
+        [
+          18,
+          18,
+          17
+        ],
+        [
+          43,
+          38,
+          38
+        ],
+        [
+          33,
+          27,
+          29
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0018774112654320987
+    },
+    {
+      "image_id": 237,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000186_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0069552147633744855,
+      "max_abs_u8": 207,
+      "changed_pixel_fraction": 0.0027473958333333335,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          201,
+          201,
+          207
+        ],
+        [
+          63,
+          83,
+          92
+        ],
+        [
+          48,
+          40,
+          36
+        ],
+        [
+          46,
+          38,
+          38
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.016519097222222223
+    },
+    {
+      "image_id": 238,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000748_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005626125257201646,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.0008207947530864197,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          206,
+          213
+        ],
+        [
+          21,
+          26,
+          13
+        ],
+        [
+          83,
+          81,
+          82
+        ],
+        [
+          40,
+          36,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0023654513888888887
+    },
+    {
+      "image_id": 239,
+      "file_name": "rain/val/GOPR0402/GOPR0402_frame_000441_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005383873456790123,
+      "max_abs_u8": 211,
+      "changed_pixel_fraction": 0.000552662037037037,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          16,
+          11,
+          0
+        ],
+        [
+          200,
+          201,
+          211
+        ],
+        [
+          59,
+          53,
+          51
+        ],
+        [
+          46,
+          38,
+          34
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.004087094907407407
+    },
+    {
+      "image_id": 240,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000836_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004918177726337449,
+      "max_abs_u8": 158,
+      "changed_pixel_fraction": 0.0001171875,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          89,
+          89,
+          87
+        ],
+        [
+          156,
+          155,
+          157
+        ],
+        [
+          12,
+          7,
+          12
+        ],
+        [
+          49,
+          43,
+          43
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000548804012345679
+    },
+    {
+      "image_id": 241,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000756_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0076740933641975305,
+      "max_abs_u8": 205,
+      "changed_pixel_fraction": 0.0027078510802469135,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          200,
+          205
+        ],
+        [
+          196,
+          195,
+          201
+        ],
+        [
+          6,
+          3,
+          5
+        ],
+        [
+          48,
+          44,
+          41
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.013860918209876543
+    },
+    {
+      "image_id": 242,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000825_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0051935442386831275,
+      "max_abs_u8": 166,
+      "changed_pixel_fraction": 0.0001273148148148148,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          166,
+          160,
+          158
+        ],
+        [
+          100,
+          107,
+          110
+        ],
+        [
+          40,
+          0,
+          0
+        ],
+        [
+          69,
+          61,
+          55
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006495949074074074
+    },
+    {
+      "image_id": 243,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000752_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008088670267489712,
+      "max_abs_u8": 201,
+      "changed_pixel_fraction": 0.003438946759259259,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          194,
+          194,
+          199
+        ],
+        [
+          196,
+          195,
+          201
+        ],
+        [
+          24,
+          9,
+          13
+        ],
+        [
+          57,
+          53,
+          52
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.09094039351851851
+    },
+    {
+      "image_id": 244,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000820_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004420331790123457,
+      "max_abs_u8": 190,
+      "changed_pixel_fraction": 0.00015142746913580246,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          42,
+          45,
+          53
+        ],
+        [
+          93,
+          98,
+          106
+        ],
+        [
+          58,
+          52,
+          59
+        ],
+        [
+          73,
+          67,
+          65
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0019323881172839507
+    },
+    {
+      "image_id": 245,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000760_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00794286908436214,
+      "max_abs_u8": 208,
+      "changed_pixel_fraction": 0.0033940972222222224,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          202,
+          202,
+          208
+        ],
+        [
+          195,
+          198,
+          202
+        ],
+        [
+          16,
+          8,
+          10
+        ],
+        [
+          39,
+          33,
+          31
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.08230372299382716
+    },
+    {
+      "image_id": 246,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000740_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0052734375,
+      "max_abs_u8": 211,
+      "changed_pixel_fraction": 0.0001306905864197531,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          48,
+          46,
+          41
+        ],
+        [
+          206,
+          207,
+          211
+        ],
+        [
+          33,
+          17,
+          18
+        ],
+        [
+          49,
+          46,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007219328703703704
+    },
+    {
+      "image_id": 247,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000736_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006092946244855967,
+      "max_abs_u8": 254,
+      "changed_pixel_fraction": 0.00014660493827160494,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          37,
+          37,
+          28
+        ],
+        [
+          251,
+          249,
+          254
+        ],
+        [
+          15,
+          5,
+          8
+        ],
+        [
+          102,
+          99,
+          102
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007431520061728395
+    },
+    {
+      "image_id": 248,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000773_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004648759002057613,
+      "max_abs_u8": 235,
+      "changed_pixel_fraction": 0.00013792438271604938,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          40,
+          41,
+          28
+        ],
+        [
+          232,
+          231,
+          235
+        ],
+        [
+          18,
+          8,
+          7
+        ],
+        [
+          21,
+          19,
+          20
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000710841049382716
+    },
+    {
+      "image_id": 249,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000748_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008475437242798353,
+      "max_abs_u8": 200,
+      "changed_pixel_fraction": 0.003933738425925926,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          187,
+          187,
+          193
+        ],
+        [
+          195,
+          195,
+          200
+        ],
+        [
+          54,
+          38,
+          38
+        ],
+        [
+          39,
+          37,
+          39
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.13073350694444444
+    },
+    {
+      "image_id": 250,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000778_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005809220679012346,
+      "max_abs_u8": 212,
+      "changed_pixel_fraction": 0.0009500385802469136,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          201,
+          203,
+          210
+        ],
+        [
+          104,
+          96,
+          71
+        ],
+        [
+          27,
+          11,
+          17
+        ],
+        [
+          51,
+          49,
+          45
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.004058641975308642
+    },
+    {
+      "image_id": 251,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000830_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006276041666666667,
+      "max_abs_u8": 233,
+      "changed_pixel_fraction": 0.0001244212962962963,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          131,
+          127,
+          126
+        ],
+        [
+          222,
+          223,
+          233
+        ],
+        [
+          13,
+          6,
+          10
+        ],
+        [
+          64,
+          60,
+          61
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0009741512345679013
+    },
+    {
+      "image_id": 252,
+      "file_name": "rain/val/GOPR0572/GOPR0572_frame_000860_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0028981802983539095,
+      "max_abs_u8": 120,
+      "changed_pixel_fraction": 0.00012201003086419753,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          66,
+          101,
+          120
+        ],
+        [
+          19,
+          17,
+          18
+        ],
+        [
+          25,
+          15,
+          19
+        ],
+        [
+          57,
+          52,
+          41
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00047116126543209877
+    },
+    {
+      "image_id": 253,
+      "file_name": "rain/val/GP030402/GP030402_frame_000022_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0058494084362139915,
+      "max_abs_u8": 217,
+      "changed_pixel_fraction": 0.0020008680555555556,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          206,
+          209,
+          217
+        ],
+        [
+          64,
+          45,
+          36
+        ],
+        [
+          44,
+          38,
+          40
+        ],
+        [
+          45,
+          35,
+          36
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0052917631172839505
+    },
+    {
+      "image_id": 254,
+      "file_name": "rain/val/GP030402/GP030402_frame_000094_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0061717142489711935,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.0018643904320987655,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          198,
+          197,
+          201
+        ],
+        [
+          94,
+          94,
+          94
+        ],
+        [
+          61,
+          57,
+          57
+        ],
+        [
+          48,
+          46,
+          27
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0014313271604938272
+    },
+    {
+      "image_id": 255,
+      "file_name": "rain/val/GP030402/GP030402_frame_000266_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004886188271604939,
+      "max_abs_u8": 229,
+      "changed_pixel_fraction": 0.0003052662037037037,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          223,
+          223,
+          229
+        ],
+        [
+          49,
+          46,
+          47
+        ],
+        [
+          30,
+          23,
+          26
+        ],
+        [
+          37,
+          35,
+          28
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.006010802469135802
+    },
+    {
+      "image_id": 256,
+      "file_name": "rain/val/GP030402/GP030402_frame_000001_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.003941132973251029,
+      "max_abs_u8": 165,
+      "changed_pixel_fraction": 0.00020399305555555557,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          119,
+          118,
+          110
+        ],
+        [
+          97,
+          113,
+          110
+        ],
+        [
+          30,
+          22,
+          26
+        ],
+        [
+          28,
+          24,
+          25
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008767361111111111
+    },
+    {
+      "image_id": 257,
+      "file_name": "rain/val/GP030402/GP030402_frame_000428_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00399707433127572,
+      "max_abs_u8": 61,
+      "changed_pixel_fraction": 0.0033757716049382714,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          53,
+          57,
+          57
+        ],
+        [
+          59,
+          59,
+          59
+        ],
+        [
+          40,
+          34,
+          34
+        ],
+        [
+          26,
+          20,
+          24
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.01228732638888889
+    },
+    {
+      "image_id": 258,
+      "file_name": "rain/val/GP010400/GP010400_frame_000380_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005397858796296296,
+      "max_abs_u8": 240,
+      "changed_pixel_fraction": 0.0008434606481481482,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          234,
+          233,
+          239
+        ],
+        [
+          46,
+          47,
+          49
+        ],
+        [
+          53,
+          49,
+          53
+        ],
+        [
+          25,
+          19,
+          23
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0019868827160493827
+    },
+    {
+      "image_id": 259,
+      "file_name": "rain/val/GP010400/GP010400_frame_000360_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007270126028806585,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.004130497685185185,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          209,
+          210,
+          218
+        ],
+        [
+          135,
+          132,
+          114
+        ],
+        [
+          32,
+          29,
+          32
+        ],
+        [
+          30,
+          29,
+          31
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.020328414351851853
+    },
+    {
+      "image_id": 260,
+      "file_name": "rain/val/GP010400/GP010400_frame_000290_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0079419045781893,
+      "max_abs_u8": 247,
+      "changed_pixel_fraction": 0.00011574074074074075,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          242,
+          241,
+          247
+        ],
+        [
+          222,
+          223,
+          229
+        ],
+        [
+          44,
+          39,
+          42
+        ],
+        [
+          48,
+          45,
+          48
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00026861496913580245
+    },
+    {
+      "image_id": 261,
+      "file_name": "rain/val/GP010400/GP010400_frame_000234_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004370659722222222,
+      "max_abs_u8": 185,
+      "changed_pixel_fraction": 0.00044126157407407406,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          177,
+          179,
+          185
+        ],
+        [
+          36,
+          37,
+          41
+        ],
+        [
+          51,
+          48,
+          51
+        ],
+        [
+          24,
+          18,
+          21
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000788966049382716
+    },
+    {
+      "image_id": 262,
+      "file_name": "rain/val/GP010400/GP010400_frame_000214_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00422534079218107,
+      "max_abs_u8": 181,
+      "changed_pixel_fraction": 0.00014033564814814814,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          173,
+          175,
+          181
+        ],
+        [
+          34,
+          35,
+          39
+        ],
+        [
+          50,
+          46,
+          47
+        ],
+        [
+          25,
+          20,
+          23
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00036458333333333335
+    },
+    {
+      "image_id": 263,
+      "file_name": "rain/val/GP010400/GP010400_frame_000350_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006817611882716049,
+      "max_abs_u8": 238,
+      "changed_pixel_fraction": 0.00017312885802469135,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          225,
+          228,
+          238
+        ],
+        [
+          131,
+          120,
+          125
+        ],
+        [
+          63,
+          60,
+          65
+        ],
+        [
+          58,
+          55,
+          58
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007359182098765432
+    },
+    {
+      "image_id": 264,
+      "file_name": "rain/val/GP020402/GP020402_frame_000802_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005764531893004115,
+      "max_abs_u8": 197,
+      "changed_pixel_fraction": 0.0007421875,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          189,
+          190,
+          197
+        ],
+        [
+          80,
+          85,
+          94
+        ],
+        [
+          52,
+          47,
+          47
+        ],
+        [
+          52,
+          42,
+          39
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0009293016975308642
+    },
+    {
+      "image_id": 265,
+      "file_name": "rain/val/GP020402/GP020402_frame_000723_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.003080632716049383,
+      "max_abs_u8": 120,
+      "changed_pixel_fraction": 0.00038049768518518516,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          116,
+          120,
+          120
+        ],
+        [
+          48,
+          49,
+          36
+        ],
+        [
+          32,
+          29,
+          32
+        ],
+        [
+          44,
+          41,
+          29
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.003679108796296296
+    },
+    {
+      "image_id": 266,
+      "file_name": "rain/val/GP020402/GP020402_frame_000784_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007801890432098765,
+      "max_abs_u8": 255,
+      "changed_pixel_fraction": 0.0002290702160493827,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          252,
+          251,
+          255
+        ],
+        [
+          231,
+          227,
+          241
+        ],
+        [
+          41,
+          36,
+          35
+        ],
+        [
+          53,
+          51,
+          52
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0019164737654320987
+    },
+    {
+      "image_id": 267,
+      "file_name": "rain/val/GP020402/GP020402_frame_000919_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005570023148148148,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.0001654128086419753,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          58,
+          56,
+          30
+        ],
+        [
+          218,
+          217,
+          217
+        ],
+        [
+          61,
+          57,
+          54
+        ],
+        [
+          35,
+          27,
+          25
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005406057098765432
+    },
+    {
+      "image_id": 268,
+      "file_name": "rain/val/GP020402/GP020402_frame_000748_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008031442901234568,
+      "max_abs_u8": 225,
+      "changed_pixel_fraction": 0.0006413966049382716,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          213,
+          214,
+          222
+        ],
+        [
+          220,
+          219,
+          225
+        ],
+        [
+          48,
+          46,
+          45
+        ],
+        [
+          50,
+          51,
+          37
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0039617091049382715
+    },
+    {
+      "image_id": 269,
+      "file_name": "rain/val/GP020402/GP020402_frame_000904_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00507716049382716,
+      "max_abs_u8": 235,
+      "changed_pixel_fraction": 0.00015432098765432098,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          227,
+          227,
+          235
+        ],
+        [
+          31,
+          32,
+          19
+        ],
+        [
+          67,
+          63,
+          64
+        ],
+        [
+          29,
+          25,
+          26
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007595486111111111
+    },
+    {
+      "image_id": 270,
+      "file_name": "rain/val/GP020402/GP020402_frame_000644_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00799221965020576,
+      "max_abs_u8": 212,
+      "changed_pixel_fraction": 0.0037962962962962963,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          157,
+          156,
+          159
+        ],
+        [
+          209,
+          206,
+          212
+        ],
+        [
+          51,
+          45,
+          43
+        ],
+        [
+          56,
+          54,
+          53
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.1626707175925926
+    },
+    {
+      "image_id": 271,
+      "file_name": "rain/val/GP020402/GP020402_frame_000863_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007553530092592593,
+      "max_abs_u8": 211,
+      "changed_pixel_fraction": 0.00015432098765432098,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          205,
+          205,
+          211
+        ],
+        [
+          137,
+          135,
+          131
+        ],
+        [
+          76,
+          75,
+          79
+        ],
+        [
+          95,
+          89,
+          85
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006413966049382716
+    },
+    {
+      "image_id": 272,
+      "file_name": "rain/val/GP020402/GP020402_frame_000835_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004618698559670782,
+      "max_abs_u8": 224,
+      "changed_pixel_fraction": 0.00015673225308641974,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          219,
+          218,
+          224
+        ],
+        [
+          13,
+          13,
+          10
+        ],
+        [
+          58,
+          54,
+          53
+        ],
+        [
+          30,
+          24,
+          26
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006529706790123457
+    },
+    {
+      "image_id": 273,
+      "file_name": "rain/val/GP020402/GP020402_frame_000966_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0060177147633744855,
+      "max_abs_u8": 206,
+      "changed_pixel_fraction": 0.0022897376543209876,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          200,
+          206
+        ],
+        [
+          105,
+          70,
+          51
+        ],
+        [
+          54,
+          48,
+          48
+        ],
+        [
+          40,
+          31,
+          29
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002726658950617284
+    },
+    {
+      "image_id": 274,
+      "file_name": "rain/val/GP020402/GP020402_frame_000946_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007128182870370371,
+      "max_abs_u8": 211,
+      "changed_pixel_fraction": 0.00016396604938271605,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          206,
+          205,
+          211
+        ],
+        [
+          93,
+          92,
+          93
+        ],
+        [
+          63,
+          59,
+          58
+        ],
+        [
+          39,
+          33,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0004586226851851852
+    },
+    {
+      "image_id": 275,
+      "file_name": "rain/val/GP020402/GP020402_frame_001000_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007334908693415638,
+      "max_abs_u8": 226,
+      "changed_pixel_fraction": 0.0004996141975308642,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          217,
+          218,
+          226
+        ],
+        [
+          162,
+          161,
+          163
+        ],
+        [
+          53,
+          51,
+          52
+        ],
+        [
+          35,
+          31,
+          30
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0023389274691358024
+    },
+    {
+      "image_id": 276,
+      "file_name": "rain/val/GP020402/GP020402_frame_000830_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0049461484053497946,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.00017023533950617285,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          210,
+          210,
+          214
+        ],
+        [
+          33,
+          36,
+          13
+        ],
+        [
+          72,
+          70,
+          71
+        ],
+        [
+          22,
+          16,
+          18
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010556520061728396
+    },
+    {
+      "image_id": 277,
+      "file_name": "rain/val/GP020402/GP020402_frame_000843_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008235275205761316,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.00044656635802469135,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          208,
+          209,
+          216
+        ],
+        [
+          213,
+          212,
+          218
+        ],
+        [
+          85,
+          86,
+          88
+        ],
+        [
+          49,
+          43,
+          45
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002018229166666667
+    },
+    {
+      "image_id": 278,
+      "file_name": "rain/val/GP020402/GP020402_frame_000624_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008799672067901235,
+      "max_abs_u8": 210,
+      "changed_pixel_fraction": 0.0032151813271604937,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          200,
+          206
+        ],
+        [
+          207,
+          204,
+          209
+        ],
+        [
+          51,
+          45,
+          45
+        ],
+        [
+          63,
+          57,
+          59
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0359008487654321
+    },
+    {
+      "image_id": 279,
+      "file_name": "rain/val/GP020402/GP020402_frame_000738_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.003748070987654321,
+      "max_abs_u8": 158,
+      "changed_pixel_fraction": 0.002373649691358025,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          97,
+          98,
+          100
+        ],
+        [
+          24,
+          26,
+          18
+        ],
+        [
+          17,
+          14,
+          15
+        ],
+        [
+          20,
+          15,
+          18
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.011615065586419754
+    },
+    {
+      "image_id": 280,
+      "file_name": "rain/val/GP020402/GP020402_frame_000883_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006116415895061729,
+      "max_abs_u8": 207,
+      "changed_pixel_fraction": 0.0002416087962962963,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          201,
+          201,
+          207
+        ],
+        [
+          100,
+          100,
+          97
+        ],
+        [
+          20,
+          15,
+          18
+        ],
+        [
+          46,
+          38,
+          40
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.001216724537037037
+    },
+    {
+      "image_id": 281,
+      "file_name": "rain/val/GP020402/GP020402_frame_000753_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005049029063786009,
+      "max_abs_u8": 209,
+      "changed_pixel_fraction": 0.0004325810185185185,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          201,
+          209
+        ],
+        [
+          70,
+          68,
+          69
+        ],
+        [
+          30,
+          25,
+          28
+        ],
+        [
+          29,
+          24,
+          27
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0015904706790123458
+    },
+    {
+      "image_id": 282,
+      "file_name": "rain/val/GP020402/GP020402_frame_001020_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004992123199588477,
+      "max_abs_u8": 226,
+      "changed_pixel_fraction": 0.00018373842592592593,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          48,
+          48,
+          19
+        ],
+        [
+          219,
+          218,
+          226
+        ],
+        [
+          27,
+          21,
+          24
+        ],
+        [
+          43,
+          35,
+          37
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002544849537037037
+    },
+    {
+      "image_id": 283,
+      "file_name": "rain/val/GP020402/GP020402_frame_000795_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008386863425925926,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.0033627507716049382,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          196,
+          195,
+          201
+        ],
+        [
+          209,
+          208,
+          213
+        ],
+        [
+          87,
+          85,
+          84
+        ],
+        [
+          31,
+          29,
+          30
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.01175491898148148
+    },
+    {
+      "image_id": 284,
+      "file_name": "rain/val/GP020402/GP020402_frame_000599_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008111979166666667,
+      "max_abs_u8": 206,
+      "changed_pixel_fraction": 0.0013372878086419754,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          183,
+          184,
+          190
+        ],
+        [
+          202,
+          200,
+          206
+        ],
+        [
+          45,
+          39,
+          39
+        ],
+        [
+          97,
+          92,
+          92
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0028308256172839504
+    },
+    {
+      "image_id": 285,
+      "file_name": "rain/val/GP020402/GP020402_frame_000914_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008609182098765432,
+      "max_abs_u8": 230,
+      "changed_pixel_fraction": 0.0007195216049382716,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          216,
+          218,
+          226
+        ],
+        [
+          224,
+          223,
+          230
+        ],
+        [
+          58,
+          53,
+          55
+        ],
+        [
+          68,
+          64,
+          65
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.010890721450617284
+    },
+    {
+      "image_id": 286,
+      "file_name": "rain/val/GP020402/GP020402_frame_000951_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.009250096450617284,
+      "max_abs_u8": 210,
+      "changed_pixel_fraction": 0.003414351851851852,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          202,
+          202,
+          207
+        ],
+        [
+          206,
+          203,
+          210
+        ],
+        [
+          111,
+          108,
+          104
+        ],
+        [
+          52,
+          46,
+          46
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.021013695987654322
+    },
+    {
+      "image_id": 287,
+      "file_name": "rain/val/GP020402/GP020402_frame_000774_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006029610339506173,
+      "max_abs_u8": 250,
+      "changed_pixel_fraction": 0.0001644483024691358,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          19,
+          19,
+          12
+        ],
+        [
+          245,
+          244,
+          250
+        ],
+        [
+          84,
+          83,
+          85
+        ],
+        [
+          39,
+          34,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010281635802469136
+    },
+    {
+      "image_id": 288,
+      "file_name": "rain/val/GP020402/GP020402_frame_000994_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005097736625514404,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.0003539737654320988,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          210,
+          212,
+          218
+        ],
+        [
+          66,
+          69,
+          71
+        ],
+        [
+          42,
+          38,
+          39
+        ],
+        [
+          33,
+          29,
+          30
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.003818479938271605
+    },
+    {
+      "image_id": 289,
+      "file_name": "rain/val/GP020402/GP020402_frame_000981_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004688143004115226,
+      "max_abs_u8": 222,
+      "changed_pixel_fraction": 0.00014178240740740742,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          8,
+          6,
+          8
+        ],
+        [
+          215,
+          216,
+          222
+        ],
+        [
+          23,
+          20,
+          23
+        ],
+        [
+          50,
+          44,
+          44
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010296103395061728
+    },
+    {
+      "image_id": 290,
+      "file_name": "rain/val/GP020402/GP020402_frame_000615_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005855195473251029,
+      "max_abs_u8": 204,
+      "changed_pixel_fraction": 0.0033019868827160494,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          80,
+          73,
+          61
+        ],
+        [
+          199,
+          199,
+          204
+        ],
+        [
+          42,
+          32,
+          33
+        ],
+        [
+          27,
+          21,
+          19
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.03177758487654321
+    },
+    {
+      "image_id": 291,
+      "file_name": "rain/val/GP020402/GP020402_frame_000898_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006457208076131688,
+      "max_abs_u8": 212,
+      "changed_pixel_fraction": 0.00012297453703703702,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          208,
+          212
+        ],
+        [
+          112,
+          112,
+          106
+        ],
+        [
+          72,
+          68,
+          67
+        ],
+        [
+          41,
+          33,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005111882716049383
+    },
+    {
+      "image_id": 292,
+      "file_name": "rain/val/GP020402/GP020402_frame_000971_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0072040573559670786,
+      "max_abs_u8": 208,
+      "changed_pixel_fraction": 0.0005917245370370371,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          200,
+          206
+        ],
+        [
+          208,
+          206,
+          208
+        ],
+        [
+          43,
+          39,
+          40
+        ],
+        [
+          49,
+          43,
+          43
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010281635802469136
+    },
+    {
+      "image_id": 293,
+      "file_name": "rain/val/GP020402/GP020402_frame_000976_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007854616769547325,
+      "max_abs_u8": 212,
+      "changed_pixel_fraction": 0.001566358024691358,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          196,
+          198,
+          204
+        ],
+        [
+          208,
+          207,
+          212
+        ],
+        [
+          42,
+          34,
+          34
+        ],
+        [
+          58,
+          52,
+          50
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007185570987654321
+    },
+    {
+      "image_id": 294,
+      "file_name": "rain/val/GP020402/GP020402_frame_000809_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004999517746913581,
+      "max_abs_u8": 211,
+      "changed_pixel_fraction": 0.00014178240740740742,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          203,
+          205,
+          211
+        ],
+        [
+          19,
+          19,
+          5
+        ],
+        [
+          61,
+          57,
+          56
+        ],
+        [
+          29,
+          25,
+          24
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0003636188271604938
+    },
+    {
+      "image_id": 295,
+      "file_name": "rain/val/GP020402/GP020402_frame_000939_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.00509837962962963,
+      "max_abs_u8": 224,
+      "changed_pixel_fraction": 0.00011140046296296297,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          61,
+          66,
+          32
+        ],
+        [
+          217,
+          216,
+          224
+        ],
+        [
+          29,
+          27,
+          28
+        ],
+        [
+          58,
+          52,
+          50
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0009162808641975308
+    },
+    {
+      "image_id": 296,
+      "file_name": "rain/val/GP020402/GP020402_frame_000909_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.0028022119341563788,
+      "max_abs_u8": 111,
+      "changed_pixel_fraction": 0.0005333719135802469,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          85,
+          98,
+          82
+        ],
+        [
+          9,
+          7,
+          8
+        ],
+        [
+          49,
+          47,
+          47
+        ],
+        [
+          18,
+          13,
+          16
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0027068865740740742
+    },
+    {
+      "image_id": 297,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000125_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007510448816872428,
+      "max_abs_u8": 220,
+      "changed_pixel_fraction": 0.002571855709876543,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          215,
+          214,
+          220
+        ],
+        [
+          123,
+          119,
+          118
+        ],
+        [
+          68,
+          64,
+          65
+        ],
+        [
+          49,
+          43,
+          46
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.008395543981481481
+    },
+    {
+      "image_id": 298,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000087_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008092689043209877,
+      "max_abs_u8": 217,
+      "changed_pixel_fraction": 0.0006413966049382716,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          212,
+          211,
+          217
+        ],
+        [
+          206,
+          203,
+          210
+        ],
+        [
+          77,
+          74,
+          77
+        ],
+        [
+          51,
+          51,
+          34
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00021170910493827162
+    },
+    {
+      "image_id": 299,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000107_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008597125771604939,
+      "max_abs_u8": 223,
+      "changed_pixel_fraction": 0.0031688850308641977,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          214,
+          215,
+          223
+        ],
+        [
+          213,
+          213,
+          221
+        ],
+        [
+          47,
+          43,
+          44
+        ],
+        [
+          39,
+          33,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.027278645833333334
+    },
+    {
+      "image_id": 300,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000114_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006174286265432098,
+      "max_abs_u8": 230,
+      "changed_pixel_fraction": 0.0014028742283950617,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          219,
+          222,
+          230
+        ],
+        [
+          95,
+          99,
+          99
+        ],
+        [
+          44,
+          42,
+          43
+        ],
+        [
+          28,
+          24,
+          28
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0019613233024691357
+    },
+    {
+      "image_id": 301,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000058_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.006017393261316872,
+      "max_abs_u8": 234,
+      "changed_pixel_fraction": 0.001283275462962963,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          229,
+          228,
+          234
+        ],
+        [
+          77,
+          77,
+          52
+        ],
+        [
+          39,
+          36,
+          39
+        ],
+        [
+          50,
+          50,
+          38
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.006832561728395061
+    },
+    {
+      "image_id": 302,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000150_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.008561599794238683,
+      "max_abs_u8": 246,
+      "changed_pixel_fraction": 0.00046103395061728396,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          240,
+          239,
+          246
+        ],
+        [
+          229,
+          228,
+          236
+        ],
+        [
+          46,
+          44,
+          47
+        ],
+        [
+          52,
+          48,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0012876157407407406
+    },
+    {
+      "image_id": 303,
+      "file_name": "rain/val/GOPR0400/GOPR0400_frame_000094_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.007934510030864197,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.0010344328703703705,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          205,
+          204,
+          210
+        ],
+        [
+          211,
+          210,
+          214
+        ],
+        [
+          41,
+          40,
+          42
+        ],
+        [
+          63,
+          57,
+          57
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0027584876543209876
+    },
+    {
+      "image_id": 304,
+      "file_name": "rain/val/GOPR0571/GOPR0571_frame_000232_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.005383873456790123,
+      "max_abs_u8": 220,
+      "changed_pixel_fraction": 0.0001345486111111111,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          61,
+          59,
+          52
+        ],
+        [
+          207,
+          210,
+          220
+        ],
+        [
+          92,
+          43,
+          47
+        ],
+        [
+          51,
+          47,
+          44
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008950617283950618
+    },
+    {
+      "image_id": 305,
+      "file_name": "rain/val/GOPR0571/GOPR0571_frame_000275_rgb_anon.png",
+      "weather": "rain",
+      "mean_abs_u8": 0.004474504886831276,
+      "max_abs_u8": 129,
+      "changed_pixel_fraction": 0.0001297260802469136,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          129,
+          126,
+          129
+        ],
+        [
+          98,
+          92,
+          84
+        ],
+        [
+          79,
+          54,
+          62
+        ],
+        [
+          47,
+          41,
+          40
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010185185185185184
+    },
+    {
+      "image_id": 306,
+      "file_name": "snow/val/GOPR0605/GOPR0605_frame_000299_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005713091563786008,
+      "max_abs_u8": 230,
+      "changed_pixel_fraction": 0.00018229166666666667,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          225,
+          224,
+          230
+        ],
+        [
+          27,
+          31,
+          27
+        ],
+        [
+          58,
+          52,
+          52
+        ],
+        [
+          54,
+          52,
+          53
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0016459297839506173
+    },
+    {
+      "image_id": 307,
+      "file_name": "snow/val/GOPR0605/GOPR0605_frame_000161_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0049119084362139916,
+      "max_abs_u8": 236,
+      "changed_pixel_fraction": 0.0005174575617283951,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          230,
+          230,
+          236
+        ],
+        [
+          19,
+          21,
+          17
+        ],
+        [
+          48,
+          42,
+          48
+        ],
+        [
+          30,
+          25,
+          28
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.013883101851851851
+    },
+    {
+      "image_id": 308,
+      "file_name": "snow/val/GOPR0605/GOPR0605_frame_000181_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005539962705761317,
+      "max_abs_u8": 216,
+      "changed_pixel_fraction": 0.0006558641975308642,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          60,
+          60,
+          60
+        ],
+        [
+          207,
+          208,
+          216
+        ],
+        [
+          50,
+          46,
+          47
+        ],
+        [
+          24,
+          19,
+          22
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.008416280864197531
+    },
+    {
+      "image_id": 309,
+      "file_name": "snow/val/GP010607/GP010607_frame_000936_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007377346965020576,
+      "max_abs_u8": 197,
+      "changed_pixel_fraction": 0.00018422067901234567,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          187,
+          187,
+          193
+        ],
+        [
+          191,
+          189,
+          195
+        ],
+        [
+          50,
+          46,
+          47
+        ],
+        [
+          73,
+          70,
+          71
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002880497685185185
+    },
+    {
+      "image_id": 310,
+      "file_name": "snow/val/GP010607/GP010607_frame_000958_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007540509259259259,
+      "max_abs_u8": 202,
+      "changed_pixel_fraction": 0.00019097222222222223,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          188,
+          189,
+          193
+        ],
+        [
+          198,
+          196,
+          202
+        ],
+        [
+          58,
+          54,
+          55
+        ],
+        [
+          63,
+          59,
+          58
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0032880015432098764
+    },
+    {
+      "image_id": 311,
+      "file_name": "snow/val/GP010607/GP010607_frame_000926_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008129822530864198,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.0001789158950617284,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          158,
+          155,
+          162
+        ],
+        [
+          199,
+          198,
+          203
+        ],
+        [
+          71,
+          67,
+          42
+        ],
+        [
+          116,
+          115,
+          119
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0020751350308641976
+    },
+    {
+      "image_id": 312,
+      "file_name": "snow/val/GP010607/GP010607_frame_000954_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007389081790123457,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.00027874228395061726,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          193,
+          192,
+          197
+        ],
+        [
+          200,
+          196,
+          203
+        ],
+        [
+          60,
+          58,
+          59
+        ],
+        [
+          40,
+          36,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.004357156635802469
+    },
+    {
+      "image_id": 313,
+      "file_name": "snow/val/GP010607/GP010607_frame_000931_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006866158693415638,
+      "max_abs_u8": 210,
+      "changed_pixel_fraction": 0.0001818094135802469,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          188,
+          188,
+          194
+        ],
+        [
+          206,
+          203,
+          210
+        ],
+        [
+          55,
+          53,
+          50
+        ],
+        [
+          52,
+          48,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0031399498456790124
+    },
+    {
+      "image_id": 314,
+      "file_name": "snow/val/GP010607/GP010607_frame_000950_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005801826131687243,
+      "max_abs_u8": 200,
+      "changed_pixel_fraction": 0.00021026234567901234,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          192,
+          191,
+          200
+        ],
+        [
+          118,
+          119,
+          120
+        ],
+        [
+          47,
+          43,
+          42
+        ],
+        [
+          40,
+          36,
+          37
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0022665895061728396
+    },
+    {
+      "image_id": 315,
+      "file_name": "snow/val/GP010607/GP010607_frame_000921_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007149241255144033,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.0002107445987654321,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          177,
+          176,
+          179
+        ],
+        [
+          199,
+          198,
+          202
+        ],
+        [
+          64,
+          62,
+          63
+        ],
+        [
+          69,
+          67,
+          68
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.001603491512345679
+    },
+    {
+      "image_id": 316,
+      "file_name": "snow/val/GP010607/GP010607_frame_000995_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005313464506172839,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00025270061728395064,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          205,
+          207,
+          214
+        ],
+        [
+          20,
+          22,
+          20
+        ],
+        [
+          64,
+          62,
+          61
+        ],
+        [
+          35,
+          30,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0030492862654320986
+    },
+    {
+      "image_id": 317,
+      "file_name": "snow/val/GP010607/GP010607_frame_000968_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006444990997942387,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.00022569444444444443,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          109,
+          109,
+          115
+        ],
+        [
+          125,
+          121,
+          126
+        ],
+        [
+          69,
+          65,
+          66
+        ],
+        [
+          74,
+          70,
+          69
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002211130401234568
+    },
+    {
+      "image_id": 318,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000049_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0066512345679012345,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.00014274691358024693,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          213,
+          212,
+          218
+        ],
+        [
+          43,
+          44,
+          46
+        ],
+        [
+          63,
+          66,
+          72
+        ],
+        [
+          28,
+          25,
+          32
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006901041666666667
+    },
+    {
+      "image_id": 319,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000358_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006195344650205761,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00011091820987654321,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          208,
+          209,
+          215
+        ],
+        [
+          113,
+          109,
+          108
+        ],
+        [
+          52,
+          53,
+          59
+        ],
+        [
+          32,
+          31,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0004755015432098765
+    },
+    {
+      "image_id": 320,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000317_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007054076646090535,
+      "max_abs_u8": 221,
+      "changed_pixel_fraction": 0.00011140046296296297,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          209,
+          211,
+          221
+        ],
+        [
+          153,
+          147,
+          140
+        ],
+        [
+          62,
+          65,
+          73
+        ],
+        [
+          47,
+          46,
+          50
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000710841049382716
+    },
+    {
+      "image_id": 321,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000332_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004591692386831276,
+      "max_abs_u8": 114,
+      "changed_pixel_fraction": 0.0001171875,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          98,
+          99,
+          103
+        ],
+        [
+          103,
+          101,
+          96
+        ],
+        [
+          56,
+          57,
+          63
+        ],
+        [
+          43,
+          42,
+          46
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000732542438271605
+    },
+    {
+      "image_id": 322,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000077_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0057624421296296295,
+      "max_abs_u8": 222,
+      "changed_pixel_fraction": 0.00013551311728395062,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          213,
+          215,
+          222
+        ],
+        [
+          53,
+          64,
+          66
+        ],
+        [
+          68,
+          67,
+          71
+        ],
+        [
+          44,
+          41,
+          46
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007450810185185185
+    },
+    {
+      "image_id": 323,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000364_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006729520318930041,
+      "max_abs_u8": 217,
+      "changed_pixel_fraction": 0.0001080246913580247,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          212,
+          213,
+          217
+        ],
+        [
+          74,
+          70,
+          69
+        ],
+        [
+          60,
+          61,
+          67
+        ],
+        [
+          117,
+          116,
+          122
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00047212577160493825
+    },
+    {
+      "image_id": 324,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000070_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005479681069958848,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00012008101851851852,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          167,
+          166,
+          176
+        ],
+        [
+          127,
+          128,
+          130
+        ],
+        [
+          60,
+          61,
+          65
+        ],
+        [
+          36,
+          33,
+          40
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000626929012345679
+    },
+    {
+      "image_id": 325,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000431_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007472993827160494,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00014130015432098765,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          209,
+          215
+        ],
+        [
+          175,
+          172,
+          175
+        ],
+        [
+          48,
+          49,
+          54
+        ],
+        [
+          34,
+          31,
+          38
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0019950810185185184
+    },
+    {
+      "image_id": 326,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000425_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00591869212962963,
+      "max_abs_u8": 207,
+      "changed_pixel_fraction": 0.0001244212962962963,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          201,
+          201,
+          207
+        ],
+        [
+          57,
+          55,
+          52
+        ],
+        [
+          54,
+          57,
+          61
+        ],
+        [
+          41,
+          40,
+          46
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007118055555555556
+    },
+    {
+      "image_id": 327,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000106_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006505754886831276,
+      "max_abs_u8": 229,
+      "changed_pixel_fraction": 0.00011766975308641975,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          222,
+          221,
+          227
+        ],
+        [
+          109,
+          105,
+          102
+        ],
+        [
+          80,
+          83,
+          89
+        ],
+        [
+          39,
+          36,
+          41
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007243441358024691
+    },
+    {
+      "image_id": 328,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000406_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006051472479423868,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.00011959876543209877,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          206,
+          207,
+          214
+        ],
+        [
+          132,
+          88,
+          63
+        ],
+        [
+          56,
+          55,
+          59
+        ],
+        [
+          29,
+          22,
+          26
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008342978395061728
+    },
+    {
+      "image_id": 329,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000344_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004108957047325103,
+      "max_abs_u8": 112,
+      "changed_pixel_fraction": 0.00011188271604938272,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          59,
+          64,
+          71
+        ],
+        [
+          70,
+          67,
+          72
+        ],
+        [
+          68,
+          71,
+          77
+        ],
+        [
+          64,
+          63,
+          69
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005652006172839506
+    },
+    {
+      "image_id": 330,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000370_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006189557613168724,
+      "max_abs_u8": 220,
+      "changed_pixel_fraction": 0.00010657793209876543,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          213,
+          214,
+          220
+        ],
+        [
+          130,
+          88,
+          63
+        ],
+        [
+          57,
+          58,
+          64
+        ],
+        [
+          33,
+          30,
+          35
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007431520061728395
+    },
+    {
+      "image_id": 331,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000413_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0060122492283950614,
+      "max_abs_u8": 216,
+      "changed_pixel_fraction": 0.00012876157407407408,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          206,
+          207,
+          214
+        ],
+        [
+          58,
+          59,
+          61
+        ],
+        [
+          91,
+          94,
+          100
+        ],
+        [
+          53,
+          54,
+          62
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0015890239197530864
+    },
+    {
+      "image_id": 332,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000322_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004684767232510288,
+      "max_abs_u8": 134,
+      "changed_pixel_fraction": 0.00012249228395061728,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          125,
+          126,
+          134
+        ],
+        [
+          70,
+          68,
+          67
+        ],
+        [
+          44,
+          47,
+          53
+        ],
+        [
+          37,
+          36,
+          42
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006833526234567901
+    },
+    {
+      "image_id": 333,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000376_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00654931841563786,
+      "max_abs_u8": 217,
+      "changed_pixel_fraction": 0.00011188271604938272,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          208,
+          211,
+          217
+        ],
+        [
+          147,
+          109,
+          78
+        ],
+        [
+          56,
+          59,
+          67
+        ],
+        [
+          50,
+          48,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000580150462962963
+    },
+    {
+      "image_id": 334,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000312_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005130208333333333,
+      "max_abs_u8": 191,
+      "changed_pixel_fraction": 0.00011284722222222222,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          173,
+          172,
+          182
+        ],
+        [
+          63,
+          69,
+          66
+        ],
+        [
+          39,
+          40,
+          45
+        ],
+        [
+          35,
+          30,
+          37
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005242091049382716
+    },
+    {
+      "image_id": 335,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000018_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006513310185185185,
+      "max_abs_u8": 229,
+      "changed_pixel_fraction": 0.00011959876543209877,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          112,
+          115,
+          123
+        ],
+        [
+          225,
+          223,
+          229
+        ],
+        [
+          76,
+          75,
+          81
+        ],
+        [
+          31,
+          28,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.001078317901234568
+    },
+    {
+      "image_id": 336,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000419_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.003961869855967078,
+      "max_abs_u8": 106,
+      "changed_pixel_fraction": 0.00012924382716049382,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          71,
+          72,
+          80
+        ],
+        [
+          90,
+          84,
+          80
+        ],
+        [
+          60,
+          61,
+          67
+        ],
+        [
+          43,
+          40,
+          45
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0009047067901234568
+    },
+    {
+      "image_id": 337,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000121_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004851144547325103,
+      "max_abs_u8": 133,
+      "changed_pixel_fraction": 0.00014660493827160494,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          133,
+          131,
+          122
+        ],
+        [
+          124,
+          118,
+          116
+        ],
+        [
+          48,
+          47,
+          51
+        ],
+        [
+          35,
+          36,
+          40
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008550347222222222
+    },
+    {
+      "image_id": 338,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000099_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004300090020576131,
+      "max_abs_u8": 122,
+      "changed_pixel_fraction": 0.00011959876543209877,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          96,
+          91,
+          80
+        ],
+        [
+          56,
+          52,
+          49
+        ],
+        [
+          42,
+          45,
+          50
+        ],
+        [
+          40,
+          37,
+          42
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005738811728395062
+    },
+    {
+      "image_id": 339,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000327_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006629211676954732,
+      "max_abs_u8": 223,
+      "changed_pixel_fraction": 0.00011959876543209877,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          214,
+          215,
+          223
+        ],
+        [
+          119,
+          113,
+          105
+        ],
+        [
+          57,
+          60,
+          68
+        ],
+        [
+          38,
+          37,
+          43
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007267554012345679
+    },
+    {
+      "image_id": 340,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000057_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005968685699588477,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.0001408179012345679,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          206,
+          206,
+          212
+        ],
+        [
+          124,
+          118,
+          92
+        ],
+        [
+          75,
+          78,
+          82
+        ],
+        [
+          24,
+          19,
+          22
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008043981481481482
+    },
+    {
+      "image_id": 341,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000064_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007562210648148148,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00012586805555555555,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          202,
+          204,
+          210
+        ],
+        [
+          199,
+          196,
+          199
+        ],
+        [
+          38,
+          38,
+          41
+        ],
+        [
+          42,
+          37,
+          40
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005531442901234568
+    },
+    {
+      "image_id": 342,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000040_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007424447016460905,
+      "max_abs_u8": 227,
+      "changed_pixel_fraction": 0.00014274691358024693,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          206,
+          212
+        ],
+        [
+          224,
+          225,
+          227
+        ],
+        [
+          59,
+          58,
+          62
+        ],
+        [
+          43,
+          40,
+          47
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010050154320987654
+    },
+    {
+      "image_id": 343,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000352_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006466531635802469,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.00012779706790123457,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          209,
+          209,
+          213
+        ],
+        [
+          116,
+          80,
+          63
+        ],
+        [
+          96,
+          99,
+          105
+        ],
+        [
+          53,
+          50,
+          55
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005425347222222222
+    },
+    {
+      "image_id": 344,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000001_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005549768518518518,
+      "max_abs_u8": 218,
+      "changed_pixel_fraction": 0.00034191743827160495,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          218,
+          215,
+          218
+        ],
+        [
+          50,
+          48,
+          45
+        ],
+        [
+          64,
+          65,
+          69
+        ],
+        [
+          32,
+          29,
+          34
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00670042438271605
+    },
+    {
+      "image_id": 345,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000306_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0054034850823045264,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.00011863425925925926,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          110,
+          102,
+          85
+        ],
+        [
+          155,
+          156,
+          155
+        ],
+        [
+          59,
+          60,
+          66
+        ],
+        [
+          42,
+          40,
+          45
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006356095679012346
+    },
+    {
+      "image_id": 346,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000337_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005505240483539095,
+      "max_abs_u8": 215,
+      "changed_pixel_fraction": 0.00012924382716049382,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          209,
+          215
+        ],
+        [
+          94,
+          95,
+          96
+        ],
+        [
+          26,
+          29,
+          35
+        ],
+        [
+          28,
+          27,
+          31
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006462191358024692
+    },
+    {
+      "image_id": 347,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000085_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007606417181069959,
+      "max_abs_u8": 236,
+      "changed_pixel_fraction": 0.00013406635802469137,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          224,
+          223,
+          229
+        ],
+        [
+          227,
+          225,
+          230
+        ],
+        [
+          48,
+          49,
+          53
+        ],
+        [
+          34,
+          29,
+          32
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008270640432098765
+    },
+    {
+      "image_id": 348,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000113_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006001478909465021,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.00012056327160493826,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          85,
+          85,
+          80
+        ],
+        [
+          209,
+          208,
+          214
+        ],
+        [
+          42,
+          45,
+          51
+        ],
+        [
+          52,
+          49,
+          52
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0004904513888888889
+    },
+    {
+      "image_id": 349,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000028_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007182998971193416,
+      "max_abs_u8": 213,
+      "changed_pixel_fraction": 0.0001345486111111111,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          207,
+          213
+        ],
+        [
+          123,
+          122,
+          125
+        ],
+        [
+          52,
+          53,
+          57
+        ],
+        [
+          50,
+          47,
+          54
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0007494212962962963
+    },
+    {
+      "image_id": 350,
+      "file_name": "snow/val/GOPR0122/GOPR0122_frame_000092_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007466242283950617,
+      "max_abs_u8": 223,
+      "changed_pixel_fraction": 0.0001345486111111111,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          108,
+          107,
+          112
+        ],
+        [
+          222,
+          218,
+          223
+        ],
+        [
+          51,
+          52,
+          56
+        ],
+        [
+          94,
+          91,
+          98
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006746720679012345
+    },
+    {
+      "image_id": 351,
+      "file_name": "snow/val/GP020607/GP020607_frame_000226_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006017393261316872,
+      "max_abs_u8": 194,
+      "changed_pixel_fraction": 0.00045283564814814817,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          189,
+          188,
+          194
+        ],
+        [
+          65,
+          62,
+          65
+        ],
+        [
+          66,
+          64,
+          65
+        ],
+        [
+          74,
+          71,
+          72
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.004708719135802469
+    },
+    {
+      "image_id": 352,
+      "file_name": "snow/val/GP020607/GP020607_frame_000162_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007727462705761317,
+      "max_abs_u8": 197,
+      "changed_pixel_fraction": 0.0002035108024691358,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          184,
+          183,
+          187
+        ],
+        [
+          193,
+          190,
+          196
+        ],
+        [
+          69,
+          66,
+          69
+        ],
+        [
+          71,
+          67,
+          68
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0026051311728395063
+    },
+    {
+      "image_id": 353,
+      "file_name": "snow/val/GP020607/GP020607_frame_000001_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0074578832304526745,
+      "max_abs_u8": 206,
+      "changed_pixel_fraction": 0.00016300154320987654,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          197,
+          196,
+          203
+        ],
+        [
+          201,
+          200,
+          206
+        ],
+        [
+          58,
+          56,
+          57
+        ],
+        [
+          37,
+          33,
+          34
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0017597415123456791
+    },
+    {
+      "image_id": 354,
+      "file_name": "snow/val/GP020607/GP020607_frame_000201_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007841113683127572,
+      "max_abs_u8": 201,
+      "changed_pixel_fraction": 0.0013859953703703703,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          181,
+          181,
+          186
+        ],
+        [
+          196,
+          195,
+          200
+        ],
+        [
+          59,
+          57,
+          58
+        ],
+        [
+          63,
+          59,
+          60
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.020256076388888888
+    },
+    {
+      "image_id": 355,
+      "file_name": "snow/val/GP020607/GP020607_frame_000149_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007617348251028807,
+      "max_abs_u8": 194,
+      "changed_pixel_fraction": 0.0001996527777777778,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          187,
+          187,
+          193
+        ],
+        [
+          187,
+          188,
+          194
+        ],
+        [
+          41,
+          35,
+          33
+        ],
+        [
+          112,
+          108,
+          115
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0037721836419753085
+    },
+    {
+      "image_id": 356,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000110_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005681584362139918,
+      "max_abs_u8": 193,
+      "changed_pixel_fraction": 0.0010363618827160493,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          189,
+          188,
+          193
+        ],
+        [
+          46,
+          44,
+          41
+        ],
+        [
+          74,
+          76,
+          76
+        ],
+        [
+          48,
+          44,
+          43
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0010908564814814815
+    },
+    {
+      "image_id": 357,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000162_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008800958076131687,
+      "max_abs_u8": 197,
+      "changed_pixel_fraction": 0.004247685185185185,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          190,
+          189,
+          194
+        ],
+        [
+          190,
+          188,
+          194
+        ],
+        [
+          63,
+          58,
+          60
+        ],
+        [
+          54,
+          52,
+          53
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.29455873842592595
+    },
+    {
+      "image_id": 358,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000202_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00757249871399177,
+      "max_abs_u8": 206,
+      "changed_pixel_fraction": 0.0038739390432098765,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          199,
+          205
+        ],
+        [
+          80,
+          83,
+          89
+        ],
+        [
+          80,
+          77,
+          80
+        ],
+        [
+          59,
+          57,
+          56
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.08818287037037037
+    },
+    {
+      "image_id": 359,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000377_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006835776748971193,
+      "max_abs_u8": 206,
+      "changed_pixel_fraction": 0.0010233410493827161,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          200,
+          200,
+          206
+        ],
+        [
+          143,
+          141,
+          142
+        ],
+        [
+          64,
+          60,
+          61
+        ],
+        [
+          51,
+          46,
+          51
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.024835069444444444
+    },
+    {
+      "image_id": 360,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000182_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007709619341563786,
+      "max_abs_u8": 196,
+      "changed_pixel_fraction": 0.00033950617283950616,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          186,
+          186,
+          192
+        ],
+        [
+          192,
+          189,
+          195
+        ],
+        [
+          67,
+          65,
+          66
+        ],
+        [
+          67,
+          63,
+          64
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.012145543981481481
+    },
+    {
+      "image_id": 361,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000258_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005205600565843621,
+      "max_abs_u8": 177,
+      "changed_pixel_fraction": 0.0009659529320987654,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          93,
+          84,
+          76
+        ],
+        [
+          79,
+          78,
+          81
+        ],
+        [
+          90,
+          92,
+          90
+        ],
+        [
+          24,
+          23,
+          31
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.024722222222222222
+    },
+    {
+      "image_id": 362,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000357_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0077618634259259255,
+      "max_abs_u8": 205,
+      "changed_pixel_fraction": 0.0001282793209876543,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          198,
+          198,
+          204
+        ],
+        [
+          193,
+          192,
+          200
+        ],
+        [
+          70,
+          67,
+          70
+        ],
+        [
+          70,
+          66,
+          67
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006524884259259259
+    },
+    {
+      "image_id": 363,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000229_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007495016718106996,
+      "max_abs_u8": 219,
+      "changed_pixel_fraction": 0.0002507716049382716,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          139,
+          138,
+          145
+        ],
+        [
+          213,
+          212,
+          219
+        ],
+        [
+          61,
+          55,
+          57
+        ],
+        [
+          100,
+          99,
+          105
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0027970679012345677
+    },
+    {
+      "image_id": 364,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000220_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005020897633744856,
+      "max_abs_u8": 210,
+      "changed_pixel_fraction": 0.0001943479938271605,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          199,
+          198,
+          204
+        ],
+        [
+          40,
+          77,
+          105
+        ],
+        [
+          61,
+          55,
+          55
+        ],
+        [
+          19,
+          14,
+          17
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0020876736111111113
+    },
+    {
+      "image_id": 365,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000213_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007683738425925926,
+      "max_abs_u8": 205,
+      "changed_pixel_fraction": 0.0007523148148148148,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          195,
+          194,
+          200
+        ],
+        [
+          195,
+          194,
+          199
+        ],
+        [
+          56,
+          52,
+          53
+        ],
+        [
+          57,
+          57,
+          57
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008588927469135802
+    },
+    {
+      "image_id": 366,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000352_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005911940586419753,
+      "max_abs_u8": 205,
+      "changed_pixel_fraction": 0.0013724922839506173,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          98,
+          98,
+          98
+        ],
+        [
+          199,
+          198,
+          204
+        ],
+        [
+          38,
+          35,
+          38
+        ],
+        [
+          36,
+          31,
+          33
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.010144193672839506
+    },
+    {
+      "image_id": 367,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000196_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00548755787037037,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.00013551311728395062,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          197,
+          197,
+          203
+        ],
+        [
+          78,
+          78,
+          78
+        ],
+        [
+          61,
+          57,
+          58
+        ],
+        [
+          35,
+          33,
+          32
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005054012345679013
+    },
+    {
+      "image_id": 368,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000397_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0076469264403292185,
+      "max_abs_u8": 204,
+      "changed_pixel_fraction": 0.00023341049382716048,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          199,
+          199,
+          204
+        ],
+        [
+          194,
+          193,
+          197
+        ],
+        [
+          63,
+          59,
+          60
+        ],
+        [
+          54,
+          53,
+          54
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.004348476080246914
+    },
+    {
+      "image_id": 369,
+      "file_name": "snow/val/GOPR0606/GOPR0606_frame_000238_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005426150977366255,
+      "max_abs_u8": 199,
+      "changed_pixel_fraction": 0.0013387345679012346,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          65,
+          59,
+          55
+        ],
+        [
+          188,
+          189,
+          198
+        ],
+        [
+          43,
+          45,
+          45
+        ],
+        [
+          40,
+          35,
+          38
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.030344328703703703
+    },
+    {
+      "image_id": 370,
+      "file_name": "snow/val/GP030176/GP030176_frame_000736_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005691872427983539,
+      "max_abs_u8": 222,
+      "changed_pixel_fraction": 0.00021846064814814815,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          217,
+          216,
+          222
+        ],
+        [
+          83,
+          77,
+          69
+        ],
+        [
+          13,
+          10,
+          14
+        ],
+        [
+          77,
+          76,
+          78
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0022935956790123458
+    },
+    {
+      "image_id": 371,
+      "file_name": "snow/val/GP030176/GP030176_frame_000649_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008786008230452676,
+      "max_abs_u8": 223,
+      "changed_pixel_fraction": 0.0003125,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          217,
+          217,
+          223
+        ],
+        [
+          46,
+          49,
+          55
+        ],
+        [
+          125,
+          124,
+          128
+        ],
+        [
+          153,
+          152,
+          158
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002964891975308642
+    },
+    {
+      "image_id": 372,
+      "file_name": "snow/val/GP030176/GP030176_frame_000609_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006103716563786008,
+      "max_abs_u8": 245,
+      "changed_pixel_fraction": 0.00015576774691358024,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          240,
+          239,
+          245
+        ],
+        [
+          30,
+          27,
+          22
+        ],
+        [
+          90,
+          89,
+          92
+        ],
+        [
+          24,
+          19,
+          22
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0016049382716049382
+    },
+    {
+      "image_id": 373,
+      "file_name": "snow/val/GP030176/GP030176_frame_000569_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0073262281378600825,
+      "max_abs_u8": 230,
+      "changed_pixel_fraction": 0.00020206404320987655,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          225,
+          224,
+          230
+        ],
+        [
+          52,
+          48,
+          47
+        ],
+        [
+          98,
+          94,
+          87
+        ],
+        [
+          102,
+          103,
+          109
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.002423804012345679
+    },
+    {
+      "image_id": 374,
+      "file_name": "snow/val/GP030176/GP030176_frame_000706_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004204925411522634,
+      "max_abs_u8": 129,
+      "changed_pixel_fraction": 0.00014130015432098765,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          118,
+          119,
+          127
+        ],
+        [
+          114,
+          106,
+          100
+        ],
+        [
+          20,
+          21,
+          31
+        ],
+        [
+          24,
+          21,
+          24
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0011164158950617285
+    },
+    {
+      "image_id": 375,
+      "file_name": "snow/val/GP030176/GP030176_frame_000529_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008159561471193415,
+      "max_abs_u8": 216,
+      "changed_pixel_fraction": 0.0006254822530864198,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          212,
+          212,
+          216
+        ],
+        [
+          185,
+          183,
+          189
+        ],
+        [
+          22,
+          19,
+          22
+        ],
+        [
+          120,
+          117,
+          125
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.008369502314814814
+    },
+    {
+      "image_id": 376,
+      "file_name": "snow/val/GP030176/GP030176_frame_000549_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006447563014403292,
+      "max_abs_u8": 229,
+      "changed_pixel_fraction": 0.0003612075617283951,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          223,
+          223,
+          229
+        ],
+        [
+          135,
+          134,
+          139
+        ],
+        [
+          84,
+          78,
+          76
+        ],
+        [
+          30,
+          29,
+          31
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.007426215277777778
+    },
+    {
+      "image_id": 377,
+      "file_name": "snow/val/GP030176/GP030176_frame_000629_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.009215374228395062,
+      "max_abs_u8": 227,
+      "changed_pixel_fraction": 0.00020592206790123456,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          222,
+          221,
+          227
+        ],
+        [
+          193,
+          193,
+          199
+        ],
+        [
+          101,
+          102,
+          106
+        ],
+        [
+          95,
+          95,
+          99
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0017100694444444444
+    },
+    {
+      "image_id": 378,
+      "file_name": "snow/val/GP030176/GP030176_frame_000589_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007093460648148148,
+      "max_abs_u8": 238,
+      "changed_pixel_fraction": 0.00016059027777777778,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          233,
+          232,
+          238
+        ],
+        [
+          120,
+          117,
+          119
+        ],
+        [
+          102,
+          100,
+          101
+        ],
+        [
+          34,
+          31,
+          34
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.003174189814814815
+    },
+    {
+      "image_id": 379,
+      "file_name": "snow/val/GP030176/GP030176_frame_000721_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006254179526748971,
+      "max_abs_u8": 212,
+      "changed_pixel_fraction": 0.00017409336419753086,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          206,
+          212
+        ],
+        [
+          211,
+          206,
+          211
+        ],
+        [
+          27,
+          24,
+          29
+        ],
+        [
+          54,
+          51,
+          54
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0017467206790123457
+    },
+    {
+      "image_id": 380,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000445_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007636799125514403,
+      "max_abs_u8": 184,
+      "changed_pixel_fraction": 0.00019000771604938272,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          179,
+          179,
+          184
+        ],
+        [
+          171,
+          170,
+          174
+        ],
+        [
+          45,
+          40,
+          43
+        ],
+        [
+          139,
+          138,
+          144
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005203510802469136
+    },
+    {
+      "image_id": 381,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000465_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007048128858024691,
+      "max_abs_u8": 192,
+      "changed_pixel_fraction": 0.00011477623456790124,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          184,
+          186,
+          191
+        ],
+        [
+          66,
+          66,
+          64
+        ],
+        [
+          123,
+          122,
+          128
+        ],
+        [
+          122,
+          121,
+          127
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00036844135802469133
+    },
+    {
+      "image_id": 382,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000478_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0057241833847736625,
+      "max_abs_u8": 209,
+      "changed_pixel_fraction": 0.00026282793209876545,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          202,
+          203,
+          209
+        ],
+        [
+          81,
+          82,
+          86
+        ],
+        [
+          65,
+          63,
+          64
+        ],
+        [
+          41,
+          37,
+          38
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00026041666666666666
+    },
+    {
+      "image_id": 383,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000433_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008459522890946503,
+      "max_abs_u8": 196,
+      "changed_pixel_fraction": 0.00015094521604938272,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          103,
+          105,
+          109
+        ],
+        [
+          193,
+          192,
+          196
+        ],
+        [
+          130,
+          127,
+          130
+        ],
+        [
+          74,
+          70,
+          66
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005160108024691358
+    },
+    {
+      "image_id": 384,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000439_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007560924639917695,
+      "max_abs_u8": 203,
+      "changed_pixel_fraction": 0.00019145447530864197,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          114,
+          113,
+          115
+        ],
+        [
+          130,
+          129,
+          135
+        ],
+        [
+          80,
+          74,
+          72
+        ],
+        [
+          129,
+          126,
+          133
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005362654320987655
+    },
+    {
+      "image_id": 385,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000373_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.004805491255144033,
+      "max_abs_u8": 187,
+      "changed_pixel_fraction": 0.00011863425925925926,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          181,
+          181,
+          187
+        ],
+        [
+          56,
+          67,
+          73
+        ],
+        [
+          57,
+          53,
+          54
+        ],
+        [
+          18,
+          15,
+          18
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.00032744984567901233
+    },
+    {
+      "image_id": 386,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000337_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00989599408436214,
+      "max_abs_u8": 200,
+      "changed_pixel_fraction": 0.003956404320987654,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          156,
+          156,
+          163
+        ],
+        [
+          195,
+          195,
+          200
+        ],
+        [
+          106,
+          104,
+          105
+        ],
+        [
+          82,
+          78,
+          75
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.12834828317901234
+    },
+    {
+      "image_id": 387,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000460_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008207947530864198,
+      "max_abs_u8": 193,
+      "changed_pixel_fraction": 0.00012635030864197532,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          188,
+          188,
+          193
+        ],
+        [
+          154,
+          153,
+          157
+        ],
+        [
+          108,
+          104,
+          103
+        ],
+        [
+          135,
+          132,
+          137
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0002719907407407407
+    },
+    {
+      "image_id": 388,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000322_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006497395833333333,
+      "max_abs_u8": 134,
+      "changed_pixel_fraction": 0.0031688850308641977,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          114,
+          116,
+          117
+        ],
+        [
+          76,
+          70,
+          64
+        ],
+        [
+          74,
+          72,
+          71
+        ],
+        [
+          127,
+          128,
+          134
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.03754629629629629
+    },
+    {
+      "image_id": 389,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000332_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008720100308641975,
+      "max_abs_u8": 198,
+      "changed_pixel_fraction": 0.0035812114197530864,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          179,
+          179,
+          185
+        ],
+        [
+          194,
+          191,
+          198
+        ],
+        [
+          55,
+          51,
+          52
+        ],
+        [
+          49,
+          48,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.10992283950617283
+    },
+    {
+      "image_id": 390,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000284_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008226594650205761,
+      "max_abs_u8": 208,
+      "changed_pixel_fraction": 0.0001552854938271605,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          186,
+          186,
+          194
+        ],
+        [
+          201,
+          202,
+          208
+        ],
+        [
+          51,
+          49,
+          50
+        ],
+        [
+          127,
+          128,
+          130
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.000619212962962963
+    },
+    {
+      "image_id": 391,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000290_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008170492541152263,
+      "max_abs_u8": 199,
+      "changed_pixel_fraction": 0.00016782407407407406,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          189,
+          191,
+          197
+        ],
+        [
+          81,
+          81,
+          80
+        ],
+        [
+          101,
+          99,
+          98
+        ],
+        [
+          135,
+          134,
+          138
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0008709490740740741
+    },
+    {
+      "image_id": 392,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000327_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.010341274434156379,
+      "max_abs_u8": 201,
+      "changed_pixel_fraction": 0.0058429783950617285,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          177,
+          177,
+          183
+        ],
+        [
+          198,
+          196,
+          201
+        ],
+        [
+          65,
+          60,
+          63
+        ],
+        [
+          125,
+          122,
+          127
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.12300009645061728
+    },
+    {
+      "image_id": 393,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000316_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007795942644032922,
+      "max_abs_u8": 197,
+      "changed_pixel_fraction": 0.00016010802469135801,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          190,
+          189,
+          197
+        ],
+        [
+          101,
+          95,
+          83
+        ],
+        [
+          113,
+          111,
+          112
+        ],
+        [
+          127,
+          126,
+          132
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0006630979938271605
+    },
+    {
+      "image_id": 394,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000488_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008577996399176955,
+      "max_abs_u8": 206,
+      "changed_pixel_fraction": 0.0024638310185185184,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          201,
+          200,
+          205
+        ],
+        [
+          125,
+          118,
+          122
+        ],
+        [
+          122,
+          121,
+          125
+        ],
+        [
+          104,
+          101,
+          106
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.08337528935185186
+    },
+    {
+      "image_id": 395,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000413_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008940168467078189,
+      "max_abs_u8": 197,
+      "changed_pixel_fraction": 0.003882619598765432,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          184,
+          184,
+          190
+        ],
+        [
+          192,
+          191,
+          197
+        ],
+        [
+          68,
+          66,
+          65
+        ],
+        [
+          58,
+          52,
+          52
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.12409336419753086
+    },
+    {
+      "image_id": 396,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000470_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007494695216049382,
+      "max_abs_u8": 194,
+      "changed_pixel_fraction": 0.00012586805555555555,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          184,
+          186,
+          194
+        ],
+        [
+          78,
+          73,
+          62
+        ],
+        [
+          118,
+          115,
+          120
+        ],
+        [
+          124,
+          123,
+          129
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0003443287037037037
+    },
+    {
+      "image_id": 397,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000305_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.0069576260288065845,
+      "max_abs_u8": 196,
+      "changed_pixel_fraction": 0.0001253858024691358,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          183,
+          182,
+          189
+        ],
+        [
+          196,
+          194,
+          194
+        ],
+        [
+          42,
+          36,
+          38
+        ],
+        [
+          117,
+          116,
+          119
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0002917631172839506
+    },
+    {
+      "image_id": 398,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000393_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00874292695473251,
+      "max_abs_u8": 191,
+      "changed_pixel_fraction": 0.0037075617283950616,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          185,
+          185,
+          191
+        ],
+        [
+          186,
+          185,
+          191
+        ],
+        [
+          71,
+          67,
+          68
+        ],
+        [
+          55,
+          53,
+          52
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.10737991898148148
+    },
+    {
+      "image_id": 399,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000310_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.005138245884773663,
+      "max_abs_u8": 200,
+      "changed_pixel_fraction": 0.0001244212962962963,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          190,
+          192,
+          200
+        ],
+        [
+          117,
+          113,
+          91
+        ],
+        [
+          45,
+          38,
+          42
+        ],
+        [
+          19,
+          16,
+          19
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0005078125
+    },
+    {
+      "image_id": 400,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000455_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.00900977366255144,
+      "max_abs_u8": 196,
+      "changed_pixel_fraction": 0.0020842978395061726,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          189,
+          189,
+          194
+        ],
+        [
+          184,
+          183,
+          189
+        ],
+        [
+          53,
+          49,
+          50
+        ],
+        [
+          132,
+          131,
+          134
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.015298514660493827
+    },
+    {
+      "image_id": 401,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000278_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008302790637860082,
+      "max_abs_u8": 199,
+      "changed_pixel_fraction": 0.000234375,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          183,
+          183,
+          190
+        ],
+        [
+          194,
+          193,
+          199
+        ],
+        [
+          44,
+          42,
+          43
+        ],
+        [
+          115,
+          114,
+          119
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.0004017168209876543
+    },
+    {
+      "image_id": 402,
+      "file_name": "snow/val/GOPR0604/GOPR0604_frame_000300_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.009165702160493828,
+      "max_abs_u8": 204,
+      "changed_pixel_fraction": 0.002724729938271605,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          184,
+          184,
+          190
+        ],
+        [
+          200,
+          199,
+          204
+        ],
+        [
+          43,
+          37,
+          39
+        ],
+        [
+          128,
+          127,
+          131
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.1521219135802469
+    },
+    {
+      "image_id": 403,
+      "file_name": "snow/val/GOPR0607/GOPR0607_frame_000360_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.006621977880658436,
+      "max_abs_u8": 185,
+      "changed_pixel_fraction": 0.00040316358024691356,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          124,
+          125,
+          132
+        ],
+        [
+          122,
+          120,
+          121
+        ],
+        [
+          60,
+          57,
+          60
+        ],
+        [
+          116,
+          115,
+          119
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.008414351851851852
+    },
+    {
+      "image_id": 404,
+      "file_name": "snow/val/GOPR0607/GOPR0607_frame_000474_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.008576549639917696,
+      "max_abs_u8": 200,
+      "changed_pixel_fraction": 0.00033998842592592593,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          194,
+          194,
+          198
+        ],
+        [
+          197,
+          196,
+          200
+        ],
+        [
+          133,
+          132,
+          138
+        ],
+        [
+          49,
+          46,
+          49
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.007804783950617284
+    },
+    {
+      "image_id": 405,
+      "file_name": "snow/val/GOPR0607/GOPR0607_frame_000410_rgb_anon.png",
+      "weather": "snow",
+      "mean_abs_u8": 0.007117573302469136,
+      "max_abs_u8": 214,
+      "changed_pixel_fraction": 0.00016010802469135801,
+      "old_corners_rgb": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "new_corners_rgb": [
+        [
+          207,
+          208,
+          214
+        ],
+        [
+          56,
+          56,
+          56
+        ],
+        [
+          136,
+          135,
+          139
+        ],
+        [
+          78,
+          82,
+          85
+        ]
+      ],
+      "changed_frac_maxchan_gt_0p02": 0.001742380401234568
+    }
+  ],
+  "mean_abs_u8": 0.006534365354938272,
+  "maximum_abs_u8": 255,
+  "changed_frac_maxchan_gt_0p02_median": 0.001744550540123457,
+  "note": "New forward from same official checkpoint; no amplification of quantized historical PNGs."
+}

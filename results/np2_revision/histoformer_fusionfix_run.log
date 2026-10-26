@@ -1,0 +1,32 @@
+COMMAND ["scripts/np2_histoformer_restore.py", "--weights", "third_party/weights/histoformer_official_net_g_real.pth", "--name", "histoformer_real_fusionfix", "--weather", "rain", "snow", "--out-root", "results/np2_revision/restored"]
+histoformer_real_fusionfix 10/200 平均 14920ms/图 预计剩余 47.9min
+histoformer_real_fusionfix 20/200 平均 14777ms/图 预计剩余 44.9min
+histoformer_real_fusionfix 30/200 平均 14745ms/图 预计剩余 42.4min
+histoformer_real_fusionfix 40/200 平均 14733ms/图 预计剩余 39.8min
+histoformer_real_fusionfix 50/200 平均 14704ms/图 预计剩余 37.3min
+histoformer_real_fusionfix 60/200 平均 14685ms/图 预计剩余 34.7min
+histoformer_real_fusionfix 70/200 平均 14669ms/图 预计剩余 32.2min
+histoformer_real_fusionfix 80/200 平均 14657ms/图 预计剩余 29.7min
+histoformer_real_fusionfix 90/200 平均 14647ms/图 预计剩余 27.2min
+histoformer_real_fusionfix 100/200 平均 14640ms/图 预计剩余 24.7min
+histoformer_real_fusionfix 110/200 平均 14634ms/图 预计剩余 22.2min
+histoformer_real_fusionfix 120/200 平均 14628ms/图 预计剩余 19.8min
+histoformer_real_fusionfix 130/200 平均 14625ms/图 预计剩余 17.3min
+histoformer_real_fusionfix 140/200 平均 14622ms/图 预计剩余 14.8min
+histoformer_real_fusionfix 150/200 平均 14620ms/图 预计剩余 12.3min
+histoformer_real_fusionfix 160/200 平均 14620ms/图 预计剩余 9.9min
+histoformer_real_fusionfix 170/200 平均 14617ms/图 预计剩余 7.4min
+histoformer_real_fusionfix 180/200 平均 14615ms/图 预计剩余 4.9min
+histoformer_real_fusionfix 190/200 平均 14613ms/图 预计剩余 2.5min
+histoformer_real_fusionfix 200/200 平均 14610ms/图 预计剩余 0.0min
+完成： D:\数字图像处理\SafeRestore-RF\results\np2_revision\restored\histoformer_real_fusionfix
+COMMAND ["scripts/np2_detect.py", "--name", "histoformer_real_fusionfix", "--images", "results/np2_revision/restored/histoformer_real_fusionfix", "--out-root", "results/np2_revision/predictions"]
+histoformer_real_fusionfix detect 25/200
+histoformer_real_fusionfix detect 50/200
+histoformer_real_fusionfix detect 75/200
+histoformer_real_fusionfix detect 100/200
+histoformer_real_fusionfix detect 125/200
+histoformer_real_fusionfix detect 150/200
+histoformer_real_fusionfix detect 175/200
+histoformer_real_fusionfix detect 200/200
+完成： D:\数字图像处理\SafeRestore-RF\results\np2_revision\predictions\histoformer_real_fusionfix

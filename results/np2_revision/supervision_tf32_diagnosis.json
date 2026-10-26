@@ -1,0 +1,144 @@
+{
+  "scope": "one first original fixed64 train image; no updates",
+  "image": {
+    "group": "bus",
+    "image_id": 367,
+    "file_name": "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+    "weather": "fog",
+    "width": 1920,
+    "height": 1080,
+    "categories": {
+      "24": 4,
+      "26": 7,
+      "27": 1,
+      "28": 1,
+      "33": 1
+    }
+  },
+  "original_flags": {
+    "cudnn_allow_tf32": true,
+    "matmul_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false
+  },
+  "cases": [
+    {
+      "name": "tf32_forward_and_backward",
+      "forward_cudnn_tf32": true,
+      "backward_global_cudnn_tf32": true,
+      "native_loss": 3.3953466415405273,
+      "manual_loss": 3.3953464031219482,
+      "loss_abs_diff": 2.384185791015625e-07,
+      "positive_anchors_by_class": {
+        "0": 16,
+        "1": 1,
+        "2": 41,
+        "3": 0,
+        "5": 10,
+        "6": 0,
+        "7": 5
+      },
+      "native_vs_manual_total_gradient": {
+        "norm_sum": 13.859939575195312,
+        "norm_native": 13.865730285644531,
+        "relative_l2_error": 0.0010817871390629119,
+        "cosine": 0.9999991655349731,
+        "max_abs_diff": 0.006208658218383789
+      },
+      "native_vs_sum_class_gradients": {
+        "norm_sum": 13.860379219055176,
+        "norm_native": 13.865730285644531,
+        "relative_l2_error": 0.0011215341482752714,
+        "cosine": 0.9999989867210388,
+        "max_abs_diff": 0.006570100784301758
+      },
+      "same_manual_graph_sumclass_vs_total_gradient": {
+        "norm_sum": 13.860379219055176,
+        "norm_native": 13.859939575195312,
+        "relative_l2_error": 0.0005661748294422426,
+        "cosine": 0.9999994039535522,
+        "max_abs_diff": 0.0005733855068683624
+      }
+    },
+    {
+      "name": "tf32_forward_only",
+      "forward_cudnn_tf32": true,
+      "backward_global_cudnn_tf32": false,
+      "native_loss": 3.3953466415405273,
+      "manual_loss": 3.3953464031219482,
+      "loss_abs_diff": 2.384185791015625e-07,
+      "positive_anchors_by_class": {
+        "0": 16,
+        "1": 1,
+        "2": 41,
+        "3": 0,
+        "5": 10,
+        "6": 0,
+        "7": 5
+      },
+      "native_vs_manual_total_gradient": {
+        "norm_sum": 13.862004280090332,
+        "norm_native": 13.8620023727417,
+        "relative_l2_error": 1.0201612414714288e-06,
+        "cosine": 0.9999997019767761,
+        "max_abs_diff": 2.9802322387695312e-06
+      },
+      "native_vs_sum_class_gradients": {
+        "norm_sum": 13.862005233764648,
+        "norm_native": 13.8620023727417,
+        "relative_l2_error": 1.3872189240363581e-06,
+        "cosine": 0.9999995231628418,
+        "max_abs_diff": 3.635883331298828e-06
+      },
+      "same_manual_graph_sumclass_vs_total_gradient": {
+        "norm_sum": 13.862005233764648,
+        "norm_native": 13.862004280090332,
+        "relative_l2_error": 1.3013571322409574e-06,
+        "cosine": 0.9999995231628418,
+        "max_abs_diff": 3.2186508178710938e-06
+      }
+    },
+    {
+      "name": "tf32_disabled",
+      "forward_cudnn_tf32": false,
+      "backward_global_cudnn_tf32": false,
+      "native_loss": 3.3949623107910156,
+      "manual_loss": 3.3949623107910156,
+      "loss_abs_diff": 0.0,
+      "positive_anchors_by_class": {
+        "0": 16,
+        "1": 1,
+        "2": 41,
+        "3": 0,
+        "5": 10,
+        "6": 0,
+        "7": 5
+      },
+      "native_vs_manual_total_gradient": {
+        "norm_sum": 13.761246681213379,
+        "norm_native": 13.761246681213379,
+        "relative_l2_error": 8.713574338404972e-07,
+        "cosine": 0.9999995231628418,
+        "max_abs_diff": 1.9073486328125e-06
+      },
+      "native_vs_sum_class_gradients": {
+        "norm_sum": 13.761249542236328,
+        "norm_native": 13.761246681213379,
+        "relative_l2_error": 1.2652547686564349e-06,
+        "cosine": 0.9999996423721313,
+        "max_abs_diff": 2.0265579223632812e-06
+      },
+      "same_manual_graph_sumclass_vs_total_gradient": {
+        "norm_sum": 13.761249542236328,
+        "norm_native": 13.761246681213379,
+        "relative_l2_error": 1.426258418933755e-06,
+        "cosine": 0.9999995827674866,
+        "max_abs_diff": 2.7418136596679688e-06
+      }
+    }
+  ],
+  "model_unchanged": true,
+  "detector_including_bn_unchanged": true,
+  "no_optimizer_created": true,
+  "optimizer_steps": 0
+}

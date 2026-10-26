@@ -1,0 +1,8 @@
+{
+  "executed_source": "results/np2_revision/execution_sources/np2_histoformer_restore.py",
+  "executed_raw_sha256": "df11702c4967d332f1aeddd8608638fdf0ddcb2c15d610c0e11c37cc5be2bb02",
+  "current_raw_sha256": "a7f9404291c98c734b597b290364809a03a2f86223c45d4874cce0990483317e",
+  "only_comments_and_docstrings_changed": true,
+  "executable_ast_identical": true,
+  "reason": "maxchannel>threshold equals anychannel>threshold pixel fraction; correct false distinction and symmetric Hann wording; no numerical change"
+}

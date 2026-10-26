@@ -1,0 +1,36 @@
+{
+  "status": "CPU_ready_no_GPU_execution",
+  "source_sha256": "2a0b6a5567598bd9456d31f43438c3a31d3ca5a16638eeb372f12a39e10ec56d",
+  "seam_geometry": {
+    "tile_starts_y": [
+      0,
+      384
+    ],
+    "tile_starts_x": [
+      0,
+      384
+    ],
+    "interior_tile_edges_y": [
+      384,
+      640
+    ],
+    "interior_tile_edges_x": [
+      384,
+      640
+    ],
+    "band_radius_pixels": 16
+  },
+  "reference_methods_reused": [
+    "input",
+    "v4",
+    "C0",
+    "C1"
+  ],
+  "reference_images_per_method": 200,
+  "gpu_initialized": false,
+  "estimated_gpu_minutes": 15,
+  "quality_precisions": [
+    "float32",
+    "PNG_equivalent_uint8"
+  ]
+}

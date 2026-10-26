@@ -1,0 +1,79 @@
+{
+  "revision": "np2r-scale-2",
+  "sample": {
+    "files": [
+      "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+      "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+      "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+      "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+      "fog/train/GOPR0477/GOPR0477_frame_000774_rgb_anon.png",
+      "rain/train/GOPR0402/GOPR0402_frame_000598_rgb_anon.png",
+      "night/train/GOPR0376/GOPR0376_frame_000067_rgb_anon.png",
+      "snow/train/GOPR0606/GOPR0606_frame_000550_rgb_anon.png",
+      "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+      "rain/train/GP010400/GP010400_frame_000059_rgb_anon.png",
+      "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+      "snow/train/GOPR0607/GOPR0607_frame_000286_rgb_anon.png",
+      "fog/train/GOPR0475/GOPR0475_frame_000096_rgb_anon.png",
+      "rain/train/GOPR0400/GOPR0400_frame_000436_rgb_anon.png",
+      "night/train/GOPR0351/GOPR0351_frame_000214_rgb_anon.png",
+      "snow/train/GOPR0122/GOPR0122_frame_000161_rgb_anon.png",
+      "fog/train/GOPR0476/GOPR0476_frame_000056_rgb_anon.png",
+      "rain/train/GOPR0402/GOPR0402_frame_000561_rgb_anon.png",
+      "night/train/GOPR0376/GOPR0376_frame_000298_rgb_anon.png",
+      "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+      "fog/train/GOPR0476/GOPR0476_frame_000180_rgb_anon.png",
+      "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+      "night/train/GP010376/GP010376_frame_000020_rgb_anon.png",
+      "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png"
+    ],
+    "count": 24,
+    "source": "results\\np2_external_probe\\scale_order_probe.json",
+    "sha256": "3aded40847a048b55e9fb59289bf21c668d09330bca0aed51eb4ff00fa188082",
+    "n_bus": 12,
+    "n_train": 12
+  },
+  "protocol": {
+    "ap_conf": 0.001,
+    "ap_max_dets_per_class": 100,
+    "runtime_conf": 0.25,
+    "runtime_max_dets": 300,
+    "nms_iou": 0.7,
+    "class_aware": true,
+    "global_nms_max_det": 300,
+    "classes": {
+      "0": "person",
+      "1": "bicycle",
+      "2": "car",
+      "3": "motorcycle",
+      "5": "bus",
+      "6": "train",
+      "7": "truck"
+    },
+    "detection_canvas": [
+      640,
+      640
+    ],
+    "interpolation": "cv2.INTER_LINEAR on RGB float32 before/after restoration",
+    "coordinate_transform": "actual integer resize sx/sy and identical left/top; inverse same actual sx/sy",
+    "main_precision": "FP32; TF32 off; autocast off (also retained for separately rect=True detector sidepaths)",
+    "main_padding": "114/255 only at common detector preprocessing after A restoration",
+    "perturbations": {
+      "uint8": "D/A/B common 640 canvas round*255 -> uint8 -> float, same location",
+      "historical": "A_pad_historical_fp32 restores the padded gray 640 canvas",
+      "bf16": "B_bf16_float restores full image bf16 then float resize, no quantization",
+      "restoration_only": "B_restoration_bf16_prequant_square uses bf16 full restoration -> uint8 at full resolution -> uint8 square letterbox; detector remains square640",
+      "actual_production_rect": "separate D_original_u8_rect / B_bf16_prequant_rect use YOLO.predict rect=True, imgsz640, FP32 detector, source original-size uint8 BGR; no native square loss attribution"
+    },
+    "context": "A restores one unpadded 360x640 image (NAF internal pad); B full1920x1080 uses1024/64 four tiles; context remains different",
+    "interpretation": "fixed train diagnostic; not validation AP and not independent test; same-sequence correlation remains"
+  },
+  "resources": {
+    "annotation_sha256": "33be9416b6c4c66d55fe61ee0d3dd1e2ecf06fc82db38480aa377e5341c24487",
+    "detector_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "script_sha256": "9e6f5929ee50d9e39a87fa3170dfdfb787fde008f6a025ff31c67c4ac0764bdc",
+    "torch": "2.6.0+cu124",
+    "opencv": "5.0.0",
+    "numpy": "2.4.4"
+  }
+}

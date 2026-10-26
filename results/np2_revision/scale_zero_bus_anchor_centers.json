@@ -1,0 +1,82 @@
+{
+  "protocol": "640 square train diagnostic; exact integer resize; TAL strict interior >1e-9; IDs positive=source+1",
+  "actual_zero_positive_bus": [
+    {
+      "image_id": 766,
+      "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+      "gt_id": 5124,
+      "source_gt_id": 5123,
+      "detector_xyxy": [
+        314.3333435058594,
+        323.0,
+        317.0,
+        329.0
+      ],
+      "detector_size": {
+        "width": 2.666656494140625,
+        "height": 6.0,
+        "area": 15.99993896484375,
+        "coco_area": "small",
+        "min_side_bin": "<8"
+      },
+      "coverage": {
+        "8": {
+          "strict_inside": 1,
+          "closed_inside": 1,
+          "strict_centers": [
+            [
+              316.0,
+              324.0
+            ]
+          ]
+        },
+        "16": {
+          "strict_inside": 0,
+          "closed_inside": 0,
+          "strict_centers": []
+        },
+        "32": {
+          "strict_inside": 0,
+          "closed_inside": 0,
+          "strict_centers": []
+        }
+      }
+    },
+    {
+      "image_id": 766,
+      "image": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+      "gt_id": 5125,
+      "source_gt_id": 5124,
+      "detector_xyxy": [
+        318.3333435058594,
+        322.66668701171875,
+        319.66668701171875,
+        329.3333435058594
+      ],
+      "detector_size": {
+        "width": 1.333343505859375,
+        "height": 6.666656494140625,
+        "area": 8.88894314225763,
+        "coco_area": "small",
+        "min_side_bin": "<8"
+      },
+      "coverage": {
+        "8": {
+          "strict_inside": 0,
+          "closed_inside": 0,
+          "strict_centers": []
+        },
+        "16": {
+          "strict_inside": 0,
+          "closed_inside": 0,
+          "strict_centers": []
+        },
+        "32": {
+          "strict_inside": 0,
+          "closed_inside": 0,
+          "strict_centers": []
+        }
+      }
+    }
+  ]
+}

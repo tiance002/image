@@ -1,0 +1,10 @@
+{
+  "status": "旧版本待修订：firstbatch gradient vector consistency failed; no weights updated",
+  "archived_file": "supervision_probe.failed_tf32_v1.json",
+  "sha256": "eaa93195437d4dafe0a77a3f5945c718ce555e5e57cc98126593ac668ab8f5fd",
+  "failed_log": "supervision_run.log",
+  "first_batch_loss_abs_diff": 2.384185791015625e-07,
+  "first_batch_grad_relative_l2_error": 0.0006743173546225272,
+  "tolerance": 0.0001,
+  "diagnosis": "pending TF32 controlled precision probe"
+}

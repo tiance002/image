@@ -29,3 +29,5 @@ __pycache__/
 /results/next_phase/qualitative/
 /results/next_phase/failure_cases.json
 /results/next_phase/*.log
+
+/results/np2_revision/restored/**/*.png

@@ -1,0 +1,23 @@
+D:\Drivers\anaconda\envs\yolo_daily\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Drivers\anaconda\envs\yolo_daily\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+fusionfix dev 30 / 200 wall_seconds 35.5
+fusionfix dev 40 / 200 wall_seconds 69.1
+fusionfix dev 50 / 200 wall_seconds 102.8
+fusionfix dev 60 / 200 wall_seconds 136.6
+fusionfix dev 70 / 200 wall_seconds 170.3
+fusionfix dev 80 / 200 wall_seconds 204.0
+fusionfix dev 90 / 200 wall_seconds 237.7
+fusionfix dev 100 / 200 wall_seconds 271.5
+fusionfix dev 110 / 200 wall_seconds 305.3
+fusionfix dev 120 / 200 wall_seconds 339.1
+fusionfix dev 130 / 200 wall_seconds 372.9
+fusionfix dev 140 / 200 wall_seconds 406.7
+fusionfix dev 150 / 200 wall_seconds 440.4
+fusionfix dev 160 / 200 wall_seconds 474.2
+fusionfix dev 170 / 200 wall_seconds 507.9
+fusionfix dev 180 / 200 wall_seconds 541.6
+fusionfix dev 190 / 200 wall_seconds 575.3
+fusionfix dev 200 / 200 wall_seconds 609.1
+Wrote D:\数字图像处理\SafeRestore-RF\results\np2_revision\quality_lpips_fusionfix.json

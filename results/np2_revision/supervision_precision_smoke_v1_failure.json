@@ -1,0 +1,9 @@
+{
+  "status": "failed_saved_initial_only",
+  "file": "supervision_precision_smoke.json",
+  "gradient_relative_l2": 3.4267060813806728e-06,
+  "gradient_cosine": 0.9999995231628418,
+  "loss_abs_diff": 2.384185791015625e-07,
+  "error": "AttributeError: 'dict' object has no attribute 'write_text'",
+  "fix": "report_path name separated from batch out dict; explicit cudnn context flags"
+}

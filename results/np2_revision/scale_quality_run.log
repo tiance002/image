@@ -1,0 +1,372 @@
+START scripts/np2_scale_order_probe.py
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 1/24 3.43s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 2/24 2.82s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 3/24 2.73s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 4/24 2.71s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 5/24 2.66s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 6/24 2.72s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 7/24 2.72s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 8/24 2.68s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 9/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 10/24 2.69s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 11/24 2.71s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 12/24 2.75s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 13/24 2.68s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 14/24 2.66s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 15/24 2.68s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 16/24 2.73s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 17/24 2.71s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 18/24 2.66s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 19/24 2.75s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 20/24 2.75s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 21/24 2.74s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 22/24 2.69s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 23/24 2.71s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+v4 scale 24/24 2.76s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 1/24 3.02s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 2/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 3/24 2.80s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 4/24 2.74s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 5/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 6/24 2.72s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 7/24 2.76s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 8/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 9/24 2.73s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 10/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 11/24 2.66s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 12/24 2.72s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 13/24 2.73s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 14/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 15/24 2.67s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 16/24 2.76s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 17/24 2.80s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 18/24 2.75s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 19/24 2.76s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 20/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 21/24 2.81s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 22/24 2.69s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 23/24 2.90s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C0 scale 24/24 2.76s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 1/24 3.33s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 2/24 2.65s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 3/24 2.75s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 4/24 2.73s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 5/24 2.69s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 6/24 2.69s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 7/24 2.76s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 8/24 2.77s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 9/24 2.74s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 10/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 11/24 2.71s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 12/24 2.77s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 13/24 2.71s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 14/24 2.68s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 15/24 2.88s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 16/24 2.78s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 17/24 2.70s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 18/24 2.69s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 19/24 2.82s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 20/24 2.78s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 21/24 2.72s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 22/24 2.73s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 23/24 2.68s
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+C1 scale 24/24 2.77s
+Completed scale diagnostic: D:\数字图像处理\SafeRestore-RF\results\np2_revision\scale_order_probe.json
+START scripts/np2r_quality.py
+corrected tiling: rain 0.4545579254627228
+corrected tiling: snow 0.21594953536987305
+Wrote D:\数字图像处理\SafeRestore-RF\results\np2_revision\tiling_consistency_fusionfix.json
+D:\Drivers\anaconda\envs\yolo_daily\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\Drivers\anaconda\envs\yolo_daily\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+fusionfix dev 10 / 200 wall_seconds 267.6
+fusionfix dev 20 / 200 wall_seconds 535.7

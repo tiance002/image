@@ -1,0 +1,40 @@
+{
+  "cpu_readiness": "passed",
+  "sample_manifest_exact_match": true,
+  "fixed_images": 64,
+  "supervised_gt": 431,
+  "mathematical_functions_unchanged": [
+    "assign_targets",
+    "class_components",
+    "batch_forward",
+    "decomposed_total",
+    "grad_vector",
+    "compare_vectors"
+  ],
+  "raw_gt_ids_mapped_in_exact_dataset_order": true,
+  "tensor_hash_tracks_bn_changes": true,
+  "checkpoint_sha256_match_old_evidence": {
+    "v4": "8221a9037db0a907dc5d56698b209299061fccf0f01ac72b700cd57910d768d9",
+    "C0": "512b8677945ceee1161c568081d9660fcaaf2f1a3eb02b54f0be55405e6bd3ad",
+    "C1": "e17b1940179e00b705ee3f5bd5e828555de0b6ca4c86d043af7bbe1d288d91ff"
+  },
+  "no_gpu_used": true,
+  "full_run_not_executed": true,
+  "script_sha256": "2d01e79f9420678b94b3197660bdf5b17d1c6b078faf0b90a34c287bba58ad80",
+  "graph_cleanup": "delete final per-class term after retain_graph backwards before next forward",
+  "precision_fix": "historical forward/assignment preserved; cuDNN TF32 disabled only during backward; tolerance1e-4 unchanged",
+  "integration_fixes": [
+    "report_path distinct from batch output dict",
+    "preserve cudnn enabled/benchmark/deterministic; only TF32 disabled in backward context"
+  ],
+  "gpu_precision_smoke": {
+    "status": "passed",
+    "source_sha256": "2d01e79f9420678b94b3197660bdf5b17d1c6b078faf0b90a34c287bba58ad80",
+    "artifact": "results/np2_revision/supervision_precision_smoke_v2.json",
+    "loss_abs_diff": 2.384185791015625e-07,
+    "gradient_relative_l2": 1.1769048077938245e-06,
+    "gradient_cosine": 0.9999995827674866,
+    "all_parameter_and_file_invariants": true,
+    "same_forward_native_loss": 3.3953466415405273
+  }
+}

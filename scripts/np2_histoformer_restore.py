@@ -86,12 +86,24 @@ def tile_positions(total: int, tile: int, stride: int):
 
 
 def hann_window(size: int, device: str) -> torch.Tensor:
-    """一维汉宁窗，避免边界为 0 导致权重和过小，加 1e-6 下限。"""
-    w = torch.hann_window(size, periodic=False, device=device, dtype=torch.float32)
-    return w.clamp_min(1e-6)
+    """无零端点的汉宁窗：取 size+2 点的对称汉宁窗（periodic=False）后去掉首尾两点。
+
+    修复记录（NP2-R）：旧实现用 `hann_window(size)` 后 `clamp_min(1e-6)`，两维相乘后
+    角点权重约 1e-12；融合时又把分母截到 `max(weight, 1e-8)`，等于把 1e-12 的权重
+    除以 1e-8，输出被缩小 1e-4，恒等模型在四角会变黑。这里改用真正 >0 的窗口，
+    并让分子、分母用同一个权重、分母完全不截断（见 restore_tiled 的全覆盖断言）。
+    """
+    return torch.hann_window(size + 2, periodic=False, device=device, dtype=torch.float32)[1:-1]
 
 
 def restore_tiled(net, rgb: np.ndarray, device: str, tile: int, overlap: int, use_bf16: bool):
+    """分块复原 + 归一化融合。
+
+    融合约束（这是修复的核心）：
+    1. 分子 `sum(out * w)` 与分母 `sum(w)` 使用**同一个** `w`；
+    2. 分母不做任何截断，除法是逐像素精确的，因此恒等模型必须逐像素还原输入；
+    3. 断言每个像素至少被一块覆盖（分母严格 > 0），否则说明块位置有遗漏，直接报错。
+    """
     h, w = rgb.shape[:2]
     stride = tile - overlap
     ys, xs = tile_positions(h, tile, stride), tile_positions(w, tile, stride)
@@ -107,8 +119,11 @@ def restore_tiled(net, rgb: np.ndarray, device: str, tile: int, overlap: int, us
             win = window[:ph, :pw]
             acc[y:y + ph, x:x + pw] += out.astype(np.float64) * win
             weight[y:y + ph, x:x + pw] += win
-    out = (acc / np.maximum(weight, 1e-8)).clip(0, 1)
-    return out.astype(np.float32), len(ys) * len(xs)
+    uncovered = int((weight <= 0).sum())
+    if uncovered:
+        raise RuntimeError(f'分块融合存在未覆盖像素 {uncovered} 个（tile={tile}, overlap={overlap}）')
+    out = (acc / weight).clip(0, 1)
+    return out.astype(np.float32), len(ys) * len(xs), float(weight.min())
 
 
 def load_image_list(weathers, limit):
@@ -129,7 +144,8 @@ def main():
     parser.add_argument('--overlap', type=int, default=64)
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--limit', type=int, default=0)
-    parser.add_argument('--out-root', default='results/np2_external_probe/restored')
+    parser.add_argument('--out-root', default='results/np2_revision/restored',
+                        help='NP2-R 默认写入新目录，避免覆盖 np2_external_probe 的旧产物')
     args = parser.parse_args()
 
     images = load_image_list(set(args.weather), args.limit)
@@ -149,7 +165,7 @@ def main():
         rgb = read_rgb(src).astype(np.float32) / 255.0
         torch.cuda.synchronize() if device == 'cuda' else None
         begin = time.perf_counter()
-        restored, n_tiles = restore_tiled(net, rgb, device, args.tile, args.overlap, args.bf16)
+        restored, n_tiles, min_weight = restore_tiled(net, rgb, device, args.tile, args.overlap, args.bf16)
         torch.cuda.synchronize() if device == 'cuda' else None
         elapsed = time.perf_counter() - begin
         if restored.shape != rgb.shape:
@@ -163,7 +179,10 @@ def main():
         records.append(dict(image_id=image['id'], file_name=image['file_name'],
                             weather=rel.parts[0], tiles=n_tiles,
                             diff_mean=float(diff.mean()), diff_max=float(diff.max()),
-                            changed_frac_002=float((diff.max(axis=2) > 0.02).mean()),
+                            # 明确语义：逐像素取三通道绝对差的最大值，统计其 > 0.02 的像素占比
+                            # （等价于任一通道超过阈值的像素比例；不是通道元素比例或平均通道改变量）。
+                            changed_frac_maxchan_gt_0p02=float((diff.max(axis=2) > 0.02).mean()),
+                            fusion_min_weight=min_weight,
                             restore_ms=elapsed * 1000))
         timings.append(elapsed * 1000)
         if (index + 1) % 10 == 0 or index + 1 == len(images):
@@ -176,7 +195,10 @@ def main():
                 official_commit='1f045f06c03551c31504d8042dbe6ff9b9569108',
                 config='third_party/histoformer/Allweather/Options/Allweather_Histoformer.yml',
                 preprocessing='BGR->RGB, /255, reflect pad to multiple of 8, clamp[0,1], ->BGR uint8',
-                adaptation=dict(tiling=True, tile=args.tile, overlap=args.overlap, fusion='hann',
+                adaptation=dict(tiling=True, tile=args.tile, overlap=args.overlap,
+                                fusion='hann_no_zero_endpoint_exact_denominator',
+                                fusion_version='np2r-1',
+                                fusion_note='分子分母同权重，分母不截断；断言全覆盖；恒等模型逐像素还原（见 fusion_identity_check.json）',
                                 dtype='bfloat16' if args.bf16 else 'float32',
                                 reason='全幅 1920x1080 在 8GB 显存溢出到统一内存，实测 214s/图、峰值 14985MiB'),
                 images=len(images), weathers=sorted(args.weather),

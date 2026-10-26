@@ -1,0 +1,1 @@
+{"full64_all3": true, "gradient_batches": 192, "elapsed_seconds": 493.97884590004105, "precision": "forwardhistorical, backwardcuDNNTF32off"}

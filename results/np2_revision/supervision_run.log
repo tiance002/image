@@ -1,0 +1,10 @@
+抽样： {'total': 64, 'by_group': {'bus': 24, 'train': 24, 'other': 16}, 'by_weather': {'fog': 16, 'rain': 17, 'night': 17, 'snow': 14}} 可用池： {'bus_images': 138, 'train_images': 184, 'overlap': 14}
+Traceback (most recent call last):
+  File "D:\数字图像处理\SafeRestore-RF\scripts\np2r_supervision_probe.py", line 598, in <module>
+    main()
+  File "D:\数字图像处理\SafeRestore-RF\scripts\np2r_supervision_probe.py", line 512, in main
+    gradient = gradient_check(model, loss_fn, dataset, order, device, args.grad_batch, limit, gt_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\数字图像处理\SafeRestore-RF\scripts\np2r_supervision_probe.py", line 333, in gradient_check
+    raise RuntimeError(f'gradient batch {index} failed consistency: {per_batch[-1]}')
+RuntimeError: gradient batch 0 failed consistency: {'batch': 0, 'images': 1, 'file_names': ['fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png'], 'gt_ids': [2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 2066, 2067], 'native_loss': 3.3953466415405273, 'decomposed_loss': 3.3953464031219482, 'loss_abs_diff': 2.384185791015625e-07, 'grad': {'norm_sum': 13.859636306762695, 'norm_native': 13.862711906433105, 'relative_l2_error': 0.0006743173546225272, 'cosine': 0.9999993443489075, 'max_abs_diff': 0.0019370317459106445}, 'class_grad_norm': {0: 4.6194539070129395, 1: 0.5746232271194458, 2: 9.480843544006348, 3: 0.043059781193733215, 5: 5.77035665512085, 6: 5.415288925170898, 7: 3.6523334980010986}, 'class_grad_norm_ratio_nonadditive': {0: 0.3332287317367711, 1: 0.04145099681778622, 2: 0.6839097290629464, 3: 0.0031061585557260966, 5: 0.41625020371685484, 6: 0.3906370529606035, 7: 0.26346457479984153}}

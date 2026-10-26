@@ -1,0 +1,7 @@
+# 源码与数值版本
+
+prepared_sources.json是数值问题暴露前的CPU准备快照，不是最终运行源码清单。最终以execution_manifest.json中的source_sha256为准。
+
+np2r_supervision_probe_pre_readiness.py为交接修正版；np2r_supervision_probe.failed_tf32_v1.py.txt为首次严格GPU校验失败的数值版本。supervision_precision_smoke*.json是少量端到端诊断/失败证据，不能当成完整64张。正式统计只读supervision_probe.json，要求3检查点、16统计批/模型、64梯度批/模型全部通过。
+
+旧版本待修订的范围详见LEGACY_RESULT_STATUS.md；现有np2_external_probe原始证据不改写。

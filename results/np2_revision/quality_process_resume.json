@@ -1,0 +1,8 @@
+{
+  "reason": "GPUmemory full after1024cropchecks, restore25-30seconds perdevimage; resume same unmodified code in independent quality-only process",
+  "completed_saved": 20,
+  "preserved_progress_sha256": "0d4a6e321c788eca4d26531d21bb01c8fc02e715b2a51d2e198fa174497a28ed",
+  "precision_changed": false,
+  "cohort_or_weights_changed": false,
+  "consistency_checks_repeated": false
+}
