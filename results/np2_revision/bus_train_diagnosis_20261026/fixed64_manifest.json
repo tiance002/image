@@ -1,0 +1,879 @@
+{
+  "annotation": "data\\raw\\ACDC_detection\\gt_detection\\instancesonly_train_gt_detection.json",
+  "annotation_sha256": "33be9416b6c4c66d55fe61ee0d3dd1e2ecf06fc82db38480aa377e5341c24487",
+  "rule": "bus 24 + train 24（去掉与 bus 重叠）+ 其他/背景 16；按天气 round-robin，组内路径字典序；对照按路径 md5 等距抽样；不足不用 val 补足",
+  "available": {
+    "bus_images": 138,
+    "train_images": 184,
+    "overlap": 14
+  },
+  "revision": "np2r-1：修正网格/像素坐标混用、weight=[N] 广播、缺少逐批与梯度校验",
+  "counts": {
+    "total": 64,
+    "by_group": {
+      "bus": 24,
+      "train": 24,
+      "other": 16
+    },
+    "by_weather": {
+      "fog": 16,
+      "rain": 17,
+      "night": 17,
+      "snow": 14
+    }
+  },
+  "images": [
+    {
+      "group": "bus",
+      "image_id": 367,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000001_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 4,
+        "26": 7,
+        "27": 1,
+        "28": 1,
+        "33": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1096,
+      "file_name": "rain/train/GOPR0400/GOPR0400_frame_000683_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 2,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 586,
+      "file_name": "night/train/GOPR0351/GOPR0351_frame_000392_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "25": 1,
+        "26": 6,
+        "28": 1,
+        "31": 1,
+        "33": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1398,
+      "file_name": "snow/train/GOPR0604/GOPR0604_frame_000599_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 3,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 200,
+      "file_name": "fog/train/GOPR0477/GOPR0477_frame_000774_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 3,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 816,
+      "file_name": "rain/train/GOPR0402/GOPR0402_frame_000598_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 5,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 682,
+      "file_name": "night/train/GOPR0376/GOPR0376_frame_000067_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "25": 1,
+        "26": 5,
+        "28": 1,
+        "32": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1304,
+      "file_name": "snow/train/GOPR0606/GOPR0606_frame_000550_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 3,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 290,
+      "file_name": "fog/train/GOPR0480/GOPR0480_frame_000029_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 3,
+        "28": 2,
+        "32": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 963,
+      "file_name": "rain/train/GP010400/GP010400_frame_000059_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 3,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 766,
+      "file_name": "night/train/GP010376/GP010376_frame_000009_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 3,
+        "28": 2
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1517,
+      "file_name": "snow/train/GOPR0607/GOPR0607_frame_000286_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 4,
+        "28": 1,
+        "33": 2
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 141,
+      "file_name": "fog/train/GP010477/GP010477_frame_000661_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 4,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1188,
+      "file_name": "rain/train/GP010402/GP010402_frame_000001_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 10,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 456,
+      "file_name": "night/train/GP010397/GP010397_frame_000498_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 7,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1588,
+      "file_name": "snow/train/GP010122/GP010122_frame_000473_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 5,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 56,
+      "file_name": "fog/train/GP020478/GP020478_frame_000130_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 4,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 882,
+      "file_name": "rain/train/GP020400/GP020400_frame_000728_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 4,
+        "26": 5,
+        "28": 1,
+        "33": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 489,
+      "file_name": "night/train/GP020397/GP020397_frame_000322_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 2,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1213,
+      "file_name": "snow/train/GP010607/GP010607_frame_000247_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 4,
+        "26": 11,
+        "27": 1,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 349,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000152_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 7,
+        "27": 2,
+        "28": 1,
+        "32": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1036,
+      "file_name": "rain/train/GP020402/GP020402_frame_000171_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 3,
+        "26": 4,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 585,
+      "file_name": "night/train/GOPR0351/GOPR0351_frame_000615_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 1,
+        "28": 1
+      }
+    },
+    {
+      "group": "bus",
+      "image_id": 1567,
+      "file_name": "snow/train/GP020606/GP020606_frame_000487_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 3,
+        "26": 1,
+        "28": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 390,
+      "file_name": "fog/train/GOPR0475/GOPR0475_frame_000096_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 3,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1109,
+      "file_name": "rain/train/GOPR0400/GOPR0400_frame_000436_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 530,
+      "file_name": "night/train/GOPR0351/GOPR0351_frame_000214_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 1,
+        "31": 1,
+        "32": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1262,
+      "file_name": "snow/train/GOPR0122/GOPR0122_frame_000161_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 6,
+        "26": 3,
+        "27": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 334,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000056_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 4,
+        "27": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 831,
+      "file_name": "rain/train/GOPR0402/GOPR0402_frame_000561_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 5,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 633,
+      "file_name": "night/train/GOPR0376/GOPR0376_frame_000298_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 7,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1403,
+      "file_name": "snow/train/GOPR0604/GOPR0604_frame_000632_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 359,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000180_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 4,
+        "27": 1,
+        "31": 1,
+        "32": 2
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1016,
+      "file_name": "rain/train/GP010400/GP010400_frame_000605_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 2,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 769,
+      "file_name": "night/train/GP010376/GP010376_frame_000020_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 3,
+        "31": 1,
+        "32": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1303,
+      "file_name": "snow/train/GOPR0606/GOPR0606_frame_000723_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 2,
+        "26": 7,
+        "28": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 326,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000264_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 4,
+        "26": 3,
+        "27": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1193,
+      "file_name": "rain/train/GP010402/GP010402_frame_000016_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 5,
+        "28": 2,
+        "31": 2
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 414,
+      "file_name": "night/train/GP010397/GP010397_frame_000337_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 3,
+        "26": 3,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1556,
+      "file_name": "snow/train/GOPR0607/GOPR0607_frame_000078_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 17,
+        "26": 1,
+        "31": 1,
+        "33": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 343,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000284_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "25": 1,
+        "26": 4,
+        "31": 1,
+        "33": 2
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 954,
+      "file_name": "rain/train/GP020400/GP020400_frame_000239_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 4,
+        "31": 1,
+        "33": 2
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 463,
+      "file_name": "night/train/GP020397/GP020397_frame_000030_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "25": 2,
+        "26": 1,
+        "31": 1,
+        "33": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1585,
+      "file_name": "snow/train/GP010122/GP010122_frame_000942_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 2,
+        "27": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 329,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000297_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 3,
+        "26": 3,
+        "31": 1,
+        "33": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1027,
+      "file_name": "rain/train/GP020402/GP020402_frame_000007_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 4,
+        "31": 1
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 569,
+      "file_name": "night/train/GOPR0351/GOPR0351_frame_000216_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 3,
+        "31": 1,
+        "32": 3,
+        "33": 2
+      }
+    },
+    {
+      "group": "train",
+      "image_id": 1217,
+      "file_name": "snow/train/GP010607/GP010607_frame_000344_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 11,
+        "26": 6,
+        "28": 1,
+        "31": 1
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 375,
+      "file_name": "fog/train/GOPR0476/GOPR0476_frame_000518_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 3,
+        "33": 1
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 425,
+      "file_name": "night/train/GP010397/GP010397_frame_001019_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 1
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 1370,
+      "file_name": "snow/train/GP050176/GP050176_frame_000469_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 13
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 719,
+      "file_name": "night/train/GOPR0376/GOPR0376_frame_000882_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 6
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 989,
+      "file_name": "rain/train/GP010400/GP010400_frame_000027_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 1,
+        "26": 2
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 1472,
+      "file_name": "snow/train/GP040176/GP040176_frame_000408_rgb_anon.png",
+      "weather": "snow",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 2,
+        "26": 12
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 986,
+      "file_name": "rain/train/GP010400/GP010400_frame_000184_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 6
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 112,
+      "file_name": "fog/train/GP010477/GP010477_frame_000377_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 2
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 775,
+      "file_name": "night/train/GP010376/GP010376_frame_000303_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 5,
+        "33": 1
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 879,
+      "file_name": "rain/train/GP020400/GP020400_frame_000714_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 4
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 712,
+      "file_name": "night/train/GOPR0376/GOPR0376_frame_000764_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "25": 1,
+        "26": 3,
+        "33": 1
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 123,
+      "file_name": "fog/train/GP010477/GP010477_frame_000297_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 5,
+        "27": 2
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 951,
+      "file_name": "rain/train/GP020400/GP020400_frame_000440_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 2
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 1087,
+      "file_name": "rain/train/GP020402/GP020402_frame_000478_rgb_anon.png",
+      "weather": "rain",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "24": 3,
+        "26": 4,
+        "33": 2
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 263,
+      "file_name": "fog/train/GOPR0477/GOPR0477_frame_000561_rgb_anon.png",
+      "weather": "fog",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "26": 1
+      }
+    },
+    {
+      "group": "other",
+      "image_id": 662,
+      "file_name": "night/train/GOPR0376/GOPR0376_frame_000054_rgb_anon.png",
+      "weather": "night",
+      "width": 1920,
+      "height": 1080,
+      "categories": {
+        "25": 1,
+        "26": 6,
+        "32": 1
+      }
+    }
+  ],
+  "legacy_manifest_exact_match": true,
+  "legacy_evidence_sha256": "0ec525f16b8fe1182f74580d8bf225e80403609820547aee6f6c8fc31112a8be",
+  "loss_units": "Per batch mean native scalar: gained cls/box/DFL, shared target_scores_sum. Dataset totals sum batches (not an image mean).",
+  "legacy_cls_units": "Legacy cls_pos/cls_neg were BCE/target_scores_sum without hyp.cls gain; saved explicitly alongside gained fields.",
+  "command_options": {
+    "models": [
+      "v4=runs/real_v4_allweather/latest.pt",
+      "C0=runs/gt_next_phase_20261025_C0/latest.pt",
+      "C1=runs/gt_next_phase_20261025_C1/latest.pt"
+    ],
+    "batch": 4,
+    "out": "results/np2_revision/supervision_probe.json",
+    "max_batches": 0,
+    "grad": true,
+    "grad_batch": 1,
+    "grad_max_batches": 0
+  },
+  "precision": {
+    "original_flags": {
+      "cudnn_allow_tf32": true,
+      "matmul_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false
+    },
+    "forward_cudnn_allow_tf32": true,
+    "backward_cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "backward_only_tf32_disabled": true,
+    "validation_tolerance": 0.0001,
+    "numerical_diagnosis": "results/np2_revision/supervision_tf32_diagnosis.json"
+  }
+}

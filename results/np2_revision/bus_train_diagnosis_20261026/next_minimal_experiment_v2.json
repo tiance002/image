@@ -1,0 +1,50 @@
+{
+  "status": "PROPOSED_ONLY_NOT_EXECUTED",
+  "root_cause_status": "BLOCKED_ROOT_CAUSE_UNRESOLVED",
+  "name": "固定C1及原64张的原生TAL阶段只读追踪",
+  "only_variable": "instrumentation granularity: final assignment only -> native intermediate trace; no algorithm/model/weight/data behavior change; diagnostic experiment, not efficacy training ablation",
+  "checkpoint": "runs/gt_next_phase_20261025_C1/latest.pt",
+  "checkpoint_sha256": "e17b1940179e00b705ee3f5bd5e828555de0b6ca4c86d043af7bbe1d288d91ff",
+  "data_order": "Original fixed64 train manifest/order, all GT jointly assigned, no class removal",
+  "training_budget": 0,
+  "optimizer": "None",
+  "control": "Existing completed C1 native64 probe with final anchors/scores/losses; require exact replay consistency",
+  "fixed": [
+    "C1EMA",
+    "all64 originaltrainfiles/order/GT",
+    "640RGBletterbox/restored-gray historicaldiagnosticpath",
+    "sameforwardTF32/backwardFP32, batch1, seed42,noaugmentation",
+    "same frozenYOLO/nativeTAL/gain/masks",
+    "same.001/.25protocol if checking existing formal predictions; no newvalinference"
+  ],
+  "trace": [
+    "actual expanded candidate mask",
+    "per-GT candidate class scores/predicted boxes/IoU/alignment metric",
+    "topk mask and preconflict mask_pos",
+    "select_highest_overlaps before/after conflict and final GTindices",
+    "target_scores and existing native loss equivalence"
+  ],
+  "evidence": [
+    "Both zero-positive bus have five native geometric candidates each",
+    "At final assignment otherGT occupy5/5 and3/5 candidate centers; final occupancy does not identify topk vsconflict mechanism",
+    "Bus positiveclassification/box/DFLgradzero while negativeclassgradnonzero; globalweightincrease cannot create these missing terms at this frozenconfiguration"
+  ],
+  "expected_metrics": [
+    "Lower unresolved zero-positive stage-attribution count; no expected AP/Recall improvement because modelbehavior must remain unchanged",
+    "Keep native loss, positiveanchorindices, target_scores and model/BN hashes exactly the same"
+  ],
+  "potential_side_effects": [
+    "trace memory/I/O/latency overhead; any change to native outputs invalidates observation"
+  ],
+  "stop_conditions": [
+    "Hash/dataorder/checkpoint/precision mismatch: stop",
+    "Extra assigner calls, altered native losses/anchorindices/target_scores, modelBN/parameterchange or any optimizer: stop",
+    "OOM/missing intermediate traces: stop and markINCOMPLETE; do not change algorithm/precision/GT subset"
+  ],
+  "reject_adoption_conditions": [
+    "Cannot reconstruct final native assignment from trace: reject explanation",
+    "Trace still cannot distinguish stages: remainBLOCKED, no training",
+    "A local stagefinding from one frame is not fullclass/wholetraining/validation causal proof; no automaticweightincrease or assignerchange"
+  ],
+  "blocked_training": "No model efficacy training experiment recommended until native stage evidence resolves local gaps and broader causality remains qualified."
+}

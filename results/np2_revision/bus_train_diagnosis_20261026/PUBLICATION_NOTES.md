@@ -1,0 +1,3 @@
+# Public copy notes
+
+The published report is a redacted copy of the locally archived final v2 report. Only machine-specific absolute paths were replaced with neutral placeholders; metrics, conclusions, identifiers, and diagnostic content were not changed. The research workspace retains the unmodified original and its SHA256. Original images, model weights, formal prediction files, local input inventories, and intermediate failed-run logs are not included. Diagnostic scripts require the authorized local research assets and are published as source for review, not as a self-contained runnable bundle.

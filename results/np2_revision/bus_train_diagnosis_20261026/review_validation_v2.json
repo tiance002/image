@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Offline consistency/hash/geometry validation; does not recompute raw autograd vectors or NMS",
+  "checks": {
+    "batches": 192,
+    "actual_native_assigner_calls": 192,
+    "vector_checks": 768,
+    "anchor_slots_checked": 7415,
+    "GT_rows": 1293
+  },
+  "formal_prediction_inferences": 0,
+  "training_steps": 0
+}

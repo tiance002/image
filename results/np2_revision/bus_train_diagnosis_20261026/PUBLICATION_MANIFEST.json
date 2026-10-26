@@ -1,0 +1,230 @@
+{
+  "baseline": "np2r-revision-20261026",
+  "files": [
+    {
+      "local_original_sha256": null,
+      "bytes": 40716,
+      "published_sha256": "7124C9A34155F5DBD7F8863305113FA234D562A4FD7675C12DC88B8FCD67D756",
+      "path": "assemble_report_v2.py"
+    },
+    {
+      "local_original_sha256": "82055B9FD0140698DD1ACF11EFD94A785CCFF1209C016BE40AEFE8AA614514CA",
+      "bytes": 33575,
+      "published_sha256": "1D71F1510464A8629B848D14639BE53B59BF4D06BF7643267A2B3B47AF0C4ECE",
+      "path": "BUS_TRAIN_DIAGNOSIS_REPORT_v2.md"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 17859,
+      "published_sha256": "B28D8AC46C26D6EBF490E73940E80D7A4CDCCEFB4DD7648A180978C85E994513",
+      "path": "bus_train_gt_matrix_all406.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 4324,
+      "published_sha256": "E664922400CBB94F0D92FD9C73EC99EFD07ACA6ABA5B7DCAED8789CB7B6642D8",
+      "path": "class_loss_gradient_summary.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 14889,
+      "published_sha256": "35A28C9D3E8F7E2B5F8FE81F0EB7FC32E75291A2A3CAEB46E1ED94C26610CABA",
+      "path": "component_gradient_probe_fp64_metrics.py"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 15018,
+      "published_sha256": "B0D207DBD38A31E92ABD0FED0EC90641D67EFE7875BA77960A9565E7F222221C",
+      "path": "component_gradient_probe_fp64_minimal.py"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 1274252,
+      "published_sha256": "B589C4A40B5EDE4D1D63D4F62D07E10EE9EC193A01ECFD3D5BD034CEF6DB722D",
+      "path": "component_gradients_per_image.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 59127,
+      "published_sha256": "45E2072DBE9CC1AB6003B5F4DC9A4E3DA0E5DB8D844B2131069A1E91C3510E01",
+      "path": "component_loss_gradient_summary.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 31857,
+      "published_sha256": "5D7C8DC471198C010568E5DFD5ABC4771751459C9A04D8AB3BBB4CBFD86E85F7",
+      "path": "component_native_batches.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 146541,
+      "published_sha256": "1AA532994D1A9E08FEE82FD843AF211598F81352BC43D746027446B251C2169C",
+      "path": "component_vector_checks.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 2744,
+      "published_sha256": "3A597D7D85D08ED9FEB554DF63DA5BF0108A536281F18781222C973C98A65037",
+      "path": "contract_checks_source.py"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 931,
+      "published_sha256": "1E8122172E2238022A9B04497B64C8A3FB77A9954572DE74353B82D2BBA45142",
+      "path": "final_checks_v2.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 20071,
+      "published_sha256": "71E0E3A2CE0FBD73BD63297308FC25D124FAF76DECF7633B75EEADABF82B0B8E",
+      "path": "fixed64_manifest.json"
+    },
+    {
+      "local_original_sha256": "3681CC066519CACAA873412732DB5D4832655CF9DE54437DECFC24A741EE1503",
+      "bytes": 2005,
+      "published_sha256": "19E11994513079DAE2C2518F6E93B9A3DC05D82639F9B2850EA0E4A49D3EA4FD",
+      "path": "NATIVE_CANDIDATE_CORRECTION.md"
+    },
+    {
+      "local_original_sha256": "42FBC9347C6ECC629BB8DDD5B28A0A64E7EC540C83C50BDC7B7B2E51825C525F",
+      "bytes": 1789698,
+      "published_sha256": "42FBC9347C6ECC629BB8DDD5B28A0A64E7EC540C83C50BDC7B7B2E51825C525F",
+      "path": "native_candidate_geometry_audit.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 1784,
+      "published_sha256": "539DEC433807E6CF96A3D209483FAE6091C440736961816E125C34B36F7FDFAD",
+      "path": "native_geometry_replay.py"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 492219,
+      "published_sha256": "FFECD2B32578FC35851971CEBD9471F57E76DB95EF212A7B9F74F9F4793E6FCE",
+      "path": "native_positive_anchor_trace.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 3028,
+      "published_sha256": "9571CCC4941DF98D7A5CACACF8883F0E3AF58AA7748159194A1DCA21D5A0D90C",
+      "path": "next_minimal_experiment_v2.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 235274,
+      "published_sha256": "DEE7F8E874C5EA2E56E9A9099EE997E2B6ED8ED781CC9134989677C6A207C67E",
+      "path": "nms_evidence_unresolved.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 20525,
+      "published_sha256": "F8A10770AA9BB0CBBCEC2D4430688389C272B2C06C8E03AB52CD9B529DD0A2F5",
+      "path": "offline_audit.py"
+    },
+    {
+      "local_original_sha256": "AA3C9815DC6217E25332A609F7CFFD9895042F2697C59CA693CE9BEF69243AE7",
+      "bytes": 4188,
+      "published_sha256": "73D3666806E88F7F45CBD9FCAD92A1243598099045C4CCED6BAB5777814C59E6",
+      "path": "PINNED_NATIVE_TAL_SOURCE.txt"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 606,
+      "published_sha256": "21EFD25BFEF85B19944C6BB7876D6E5B19A00786D30867FF1F0F28EF74EAE65E",
+      "path": "PUBLICATION_NOTES.md"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 948,
+      "published_sha256": "660114039628FDF6513FA531085E425178026A6FB5A9F43DC69A039677B3AA01",
+      "path": "README.md"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 1927,
+      "published_sha256": "FC8B45B579C672942A4DED4AB79E63176EA92BA0F9923B01D929662D7EFE08BC",
+      "path": "REPORT_STATUS.md"
+    },
+    {
+      "local_original_sha256": "7C492447915EE6B16D9C89BF046D4F25B2868CE82DBEE7638BFF8E9C7F3D1C9D",
+      "bytes": 5468,
+      "published_sha256": "DD060157C218BCFF7305E622C72B4FEA4C1602F99339FB1009A9E6FC599B25F7",
+      "path": "REPRODUCE_v2.md"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 350,
+      "published_sha256": "446CFC00B9C23618D920C9C632A386CD4EC79A36D171AD4190C99510C160883D",
+      "path": "review_validation_v2.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 490998,
+      "published_sha256": "C825F05AA134CA6EDFF7872C17473625E3042655EA212226089829B20861CD1A",
+      "path": "same_train_gt_evidence_links.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 17323,
+      "published_sha256": "09F0AF9F8C7FEF0D1992B4963DC47231356250DC859B10A57C2F66516B1CE04C",
+      "path": "supervision_audit.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 360426,
+      "published_sha256": "FBA0AC5D5FF78C70225BCED1D2C7FCBB8249BE7D2973D06B0ABC5CA7563D8575",
+      "path": "supervision_gradients_per_batch1.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 94931,
+      "published_sha256": "3A061EFD526D5E8DC6D49658F5A299566C4037C0F9351A520C3282F48A0AB112",
+      "path": "supervision_per_batch4.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 190805,
+      "published_sha256": "7B59183D33737DA3E0AB22994D03D84A7CBBC3931DDFCFAAD55F5D02DDBC975E",
+      "path": "supervision_per_gt.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 274981,
+      "published_sha256": "952E1B44C8B31D7636A2D04C11FA283A1142A923757A2FCEFF86C0FD79E2F9D7",
+      "path": "supervision_per_image.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 5240,
+      "published_sha256": "C067B8B499A20FEE5FEF8DC88E50F21030B444A1323DC7ED5BC9E641624A7AB0",
+      "path": "validate_delivery.py"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 56698,
+      "published_sha256": "F5471C9FC4E27F65BC92EBC677BAEA147DF9E8B46916FFF11D3CC603167227C7",
+      "path": "validation_case_observations.csv"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 760726,
+      "published_sha256": "8EBF1CD88A9D142CA23AA21D3D82219D4218EF2BBFDC764E18F983E68F793BD5",
+      "path": "validation_cases.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 55817,
+      "published_sha256": "29A357EA58457F1A75677AF80A0F36A54BFD5A0D89245AC5724E1CEE210283E1",
+      "path": "validation_training_links.json"
+    },
+    {
+      "local_original_sha256": null,
+      "bytes": 4608,
+      "published_sha256": "8D27B0FA03575BF645F1D35FC33ACD7F7E96082A1DD4D48167259C5C8533A49C",
+      "path": "zero_bus_candidate_final_occupancy.json"
+    }
+  ],
+  "file_count": 37,
+  "baseline_sha": "fa209be9036a9619d9298535470b51574bccd73a",
+  "notes": "Five text files have only local absolute paths redacted; original hashes are recorded. No raw images, checkpoints, or prediction files."
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "model": "v4",
+    "image_id": 766,
+    "bus_source_gt_id": 5123,
+    "native_geometry_candidates": [
+      3238,
+      3239,
+      3318,
+      3319,
+      7219
+    ],
+    "final_assignments_at_candidates": {
+      "3238": {
+        "source_gt_id": 5121,
+        "score": 0.004023176152259111
+      },
+      "3239": {
+        "source_gt_id": 5122,
+        "score": 8.704717177100696e-13
+      },
+      "3318": {
+        "source_gt_id": 5121,
+        "score": 0.009258562698960304
+      },
+      "3319": {
+        "source_gt_id": 5122,
+        "score": 0.0022735213860869408
+      },
+      "7219": {
+        "source_gt_id": 5121,
+        "score": 0.022774333134293556
+      }
+    },
+    "interpretation": "Final occupancy observation only. Does not prove conflict-stage suppression; missing alignmetric/topk intermediate trace."
+  },
+  {
+    "model": "v4",
+    "image_id": 766,
+    "bus_source_gt_id": 5124,
+    "native_geometry_candidates": [
+      3239,
+      3240,
+      3319,
+      3320,
+      7219
+    ],
+    "final_assignments_at_candidates": {
+      "3239": {
+        "source_gt_id": 5122,
+        "score": 8.704717177100696e-13
+      },
+      "3240": null,
+      "3319": {
+        "source_gt_id": 5122,
+        "score": 0.0022735213860869408
+      },
+      "3320": null,
+      "7219": {
+        "source_gt_id": 5121,
+        "score": 0.022774333134293556
+      }
+    },
+    "interpretation": "Final occupancy observation only. Does not prove conflict-stage suppression; missing alignmetric/topk intermediate trace."
+  },
+  {
+    "model": "C0",
+    "image_id": 766,
+    "bus_source_gt_id": 5123,
+    "native_geometry_candidates": [
+      3238,
+      3239,
+      3318,
+      3319,
+      7219
+    ],
+    "final_assignments_at_candidates": {
+      "3238": {
+        "source_gt_id": 5121,
+        "score": 0.0018192218849435449
+      },
+      "3239": {
+        "source_gt_id": 5122,
+        "score": 1.7696368188099137e-13
+      },
+      "3318": {
+        "source_gt_id": 5121,
+        "score": 0.03726324066519737
+      },
+      "3319": {
+        "source_gt_id": 5122,
+        "score": 0.01930776983499527
+      },
+      "7219": {
+        "source_gt_id": 5121,
+        "score": 0.02088659070432186
+      }
+    },
+    "interpretation": "Final occupancy observation only. Does not prove conflict-stage suppression; missing alignmetric/topk intermediate trace."
+  },
+  {
+    "model": "C0",
+    "image_id": 766,
+    "bus_source_gt_id": 5124,
+    "native_geometry_candidates": [
+      3239,
+      3240,
+      3319,
+      3320,
+      7219
+    ],
+    "final_assignments_at_candidates": {
+      "3239": {
+        "source_gt_id": 5122,
+        "score": 1.7696368188099137e-13
+      },
+      "3240": null,
+      "3319": {
+        "source_gt_id": 5122,
+        "score": 0.01930776983499527
+      },
+      "3320": null,
+      "7219": {
+        "source_gt_id": 5121,
+        "score": 0.02088659070432186
+      }
+    },
+    "interpretation": "Final occupancy observation only. Does not prove conflict-stage suppression; missing alignmetric/topk intermediate trace."
+  },
+  {
+    "model": "C1",
+    "image_id": 766,
+    "bus_source_gt_id": 5123,
+    "native_geometry_candidates": [
+      3238,
+      3239,
+      3318,
+      3319,
+      7219
+    ],
+    "final_assignments_at_candidates": {
+      "3238": {
+        "source_gt_id": 5121,
+        "score": 0.0015456767287105322
+      },
+      "3239": {
+        "source_gt_id": 5122,
+        "score": 3.6993101915072657e-09
+      },
+      "3318": {
+        "source_gt_id": 5121,
+        "score": 0.045348186045885086
+      },
+      "3319": {
+        "source_gt_id": 5122,
+        "score": 0.030324915423989296
+      },
+      "7219": {
+        "source_gt_id": 5121,
+        "score": 0.019559325650334358
+      }
+    },
+    "interpretation": "Final occupancy observation only. Does not prove conflict-stage suppression; missing alignmetric/topk intermediate trace."
+  },
+  {
+    "model": "C1",
+    "image_id": 766,
+    "bus_source_gt_id": 5124,
+    "native_geometry_candidates": [
+      3239,
+      3240,
+      3319,
+      3320,
+      7219
+    ],
+    "final_assignments_at_candidates": {
+      "3239": {
+        "source_gt_id": 5122,
+        "score": 3.6993101915072657e-09
+      },
+      "3240": null,
+      "3319": {
+        "source_gt_id": 5122,
+        "score": 0.030324915423989296
+      },
+      "3320": null,
+      "7219": {
+        "source_gt_id": 5121,
+        "score": 0.019559325650334358
+      }
+    },
+    "interpretation": "Final occupancy observation only. Does not prove conflict-stage suppression; missing alignmetric/topk intermediate trace."
+  }
+]
